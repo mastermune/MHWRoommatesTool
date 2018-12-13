@@ -1,0 +1,71 @@
+﻿<Window x:Class="MHWRoommates.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MHWRoommates"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="MHW Roommates" Height="285" Width="585" MinHeight="285" MinWidth="585" MaxHeight="285"
+        Closing="Window_Closing">
+    <StackPanel>
+        <DockPanel LastChildFill="True">
+            <Label IsHitTestVisible="False" DockPanel.Dock="Left">NPC:</Label>
+            <ComboBox x:Name="NPC_Select" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" Width="175" SelectionChanged="NPCRoom_Select_SelectionChanged" TabIndex="0"/>
+            <Button x:Name="Color_Help_Button" Content="?" Background="Yellow" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="5,0,0,0" Width="20" Click="Color_Help_Button_Click" FontWeight="Bold" BorderBrush="#FF4D4F19" TabIndex="13"/>
+            <Button x:Name="Select_Button" IsEnabled="False" Content="Select" Width="47" DockPanel.Dock="Right" Margin="0,0,5,0" VerticalAlignment="Center" Click="Select_Button_Click" Background="#FF78B8F7" BorderBrush="#FF1E3042" FontWeight="Bold" TabIndex="3"/>
+            <xctk:IntegerUpDown x:Name="NPC_Instance" DockPanel.Dock="Right" VerticalAlignment="Center" FormatString="D3" Increment="1" Margin="0,0,5,0" ValueChanged="NPC_Instance_ValueChanged" Minimum="0" Maximum="999" IsEnabled="False" TabIndex="2"/>
+            <Label IsHitTestVisible="False" DockPanel.Dock="Right" HorizontalAlignment="Right" VerticalAlignment="Center">Copy:</Label>
+            <ComboBox x:Name="Room_Select" HorizontalAlignment="Right" VerticalAlignment="Center" Width="125" DockPanel.Dock="Right" HorizontalContentAlignment="Right" Margin="0,0,5,0" SelectionChanged="NPCRoom_Select_SelectionChanged" TabIndex="1"/>
+            <Label IsHitTestVisible="False" DockPanel.Dock="Right" HorizontalAlignment="Right" HorizontalContentAlignment="Right">Room:</Label>
+        </DockPanel>
+        <GroupBox Header="Position">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <DockPanel LastChildFill="True">
+                    <Label x:Name="X_Position_Label" IsHitTestVisible="False">X</Label>
+                    <xctk:SingleUpDown x:Name="X_Position" VerticalAlignment="Center" Margin="0,0,5,0" IsEnabled="False" Increment="1" Value="0" TabIndex="4"/>
+                </DockPanel>
+                <DockPanel LastChildFill="True" Grid.Column="1">
+                    <Label x:Name="Y_Position_Label" IsHitTestVisible="False">Y</Label>
+                    <xctk:SingleUpDown x:Name="Y_Position" VerticalAlignment="Center" Margin="0,0,5,0" IsEnabled="False" Increment="1" Value="0" TabIndex="5"/>
+                </DockPanel>
+                <DockPanel LastChildFill="True" Grid.Column="2">
+                    <Label x:Name="Z_Position_Label" IsHitTestVisible="False">Z</Label>
+                    <xctk:SingleUpDown x:Name="Z_Position" VerticalAlignment="Center" Margin="0,0,5,0" IsEnabled="False" Increment="1" Value="0" TabIndex="6"/>
+                </DockPanel>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Rotation [0-360)">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <DockPanel LastChildFill="True">
+                    <Label x:Name="X_Rotation_Label" IsHitTestVisible="False">X</Label>
+                    <xctk:SingleUpDown x:Name="X_Rotation" VerticalAlignment="Center" Margin="0,0,5,0" IsEnabled="False" Increment="1" Value="0" TabIndex="7" Maximum="360" Minimum="-360"/>
+                </DockPanel>
+                <DockPanel LastChildFill="True" Grid.Column="1">
+                    <Label x:Name="Y_Rotation_Label" IsHitTestVisible="False">Y</Label>
+                    <xctk:SingleUpDown x:Name="Y_Rotation" VerticalAlignment="Center" Margin="0,0,5,0" IsEnabled="False" Increment="1" Value="0" TabIndex="8" Maximum="360" Minimum="-360"/>
+                </DockPanel>
+                <DockPanel LastChildFill="True" Grid.Column="2">
+                    <Label x:Name="Z_Rotation_Label" IsHitTestVisible="False">Z</Label>
+                    <xctk:SingleUpDown x:Name="Z_Rotation" VerticalAlignment="Center" Margin="0,0,5,0" IsEnabled="False" Increment="1" Value="0" TabIndex="9" Maximum="360" Minimum="-360"/>
+                </DockPanel>
+            </Grid>
+        </GroupBox>
+        <DockPanel LastChildFill="True">
+            <Label IsHitTestVisible="False" DockPanel.Dock="Left">Animation:</Label>
+            <ComboBox IsEnabled="False" x:Name="Animation_Select" DockPanel.Dock="Left" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" Margin="0,0,5,0" TabIndex="10"/>
+        </DockPanel>
+        <Button x:Name="Save_Button" Margin="100,10,100,3" TabIndex="11" IsEnabled="False" Click="SaveButton_Click" Background="#FF78B8F7" BorderBrush="#FF1E3042" Height="50" FontWeight="Bold">Save</Button>
+        <Button x:Name="Delete_Button" Margin="160,3,160,5" TabIndex="12" IsEnabled="False" Content="Delete" Click="Delete_Button_Click" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold"/>
+    </StackPanel>
+</Window>

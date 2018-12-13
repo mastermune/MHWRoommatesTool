@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NPCList>
+  <NPC>
+    <Name>Commander</Name>
+    <Animation>001</Animation>
+    <Animations>
+      <Animation>0001</Animation>
+      <Animation>1001</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>The Handler</Name>
+    <Animation>002</Animation>
+    <Animations>
+      <Animation>0002</Animation>
+      <Animation>12002</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Field Team Leader</Name>
+    <Animation>003</Animation>
+    <Animations>
+      <Animation>0003</Animation>
+      <Animation>1003</Animation>
+      <Animation>2003</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Provisions Manager</Name>
+    <Animation>004</Animation>
+    <Animations>
+      <Animation>0004</Animation>
+      <Animation>1004</Animation>
+      <Animation>2004</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Analytics Director</Name>
+    <Animation>005</Animation>
+    <Animations>
+      <Animation>0005</Animation>
+      <Animation>1005</Animation>
+      <Animation>2005</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Tech Chief</Name>
+    <Animation>006</Animation>
+    <Animations>
+      <Animation>0006</Animation>
+      <Animation>1006</Animation>
+      <Animation>2006</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Provisions Stockpile</Name>
+    <Animation>007</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Chief Ecologist</Name>
+    <Animation>009</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Chief Botanist</Name>
+    <Animation>010</Animation>
+    <Animations>
+      <Animation>0010</Animation>
+      <Animation>1010</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Elder Melder</Name>
+    <Animation>011</Animation>
+    <Animations>
+      <Animation>0011</Animation>
+      <Animation>1011</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Second Fleet Master</Name>
+    <Animation>012</Animation>
+    <Warning>Bounds</Warning>
+  </NPC>
+  <NPC>
+    <Name>Armory</Name>
+    <Animation>014</Animation>
+    <Warning>Bounds</Warning>
+  </NPC>
+  <NPC>
+    <Name>Meowscular Chef</Name>
+    <Animation>015</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Housekeeper</Name>
+    <Animation>016</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>The Huntsman</Name>
+    <Animation>017</Animation>
+    <Warning>Missing</Warning>
+  </NPC>
+  <NPC>
+    <Name>The Tracker</Name>
+    <Animation>1018</Animation>
+    <Warning>Missing</Warning>
+  </NPC>
+  <NPC>
+    <Name>The Admiral</Name>
+    <Animation>019</Animation>
+    <Warning>Missing</Warning>
+  </NPC>
+  <NPC>
+    <Name>The Seeker</Name>
+    <Animation>1020</Animation>
+    <Warning>Missing</Warning>
+  </NPC>
+  <NPC>
+    <Name>Third Fleet Master</Name>
+    <Animation>021</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Third Fleet Provisions</Name>
+    <Animation>022</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Lynian Expert</Name>
+    <Animation>023</Animation>
+    <Warning>Bounds</Warning>
+  </NPC>
+  <NPC>
+    <Name>First Wyverian</Name>
+    <Animation>024</Animation>
+    <Warning>Story</Warning>
+  </NPC>
+  <NPC>
+    <Name>Excitable AceCadet-Lister</Name>
+    <Warning></Warning>
+    <Animation>025</Animation>
+    <Animations>
+      <Animation>0025</Animation>
+      <Animation>1025</Animation>
+      <Animation>2025</Animation>
+    </Animations>
+  </NPC>
+  <NPC>
+    <Name>Serious Handler</Name>
+    <Animation>026</Animation>
+    <Animations>
+      <Animation>0026</Animation>
+      <Animation>1026</Animation>
+      <Animation>2026</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Missing Scholar</Name>
+    <Animation>027</Animation>
+    <Warning>Story</Warning>
+  </NPC>
+  <NPC>
+    <Name>Jovial Scholar (Mute)</Name>
+    <Animation>027</Animation><!--028,1028 crash-->
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Upbeat Scholar (Mute)</Name>
+    <Animation>027</Animation><!--029,1029 crash-->
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Lively Scholar (Mute)</Name>
+    <Animation>027</Animation><!--030,1030 crash-->
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Captain</Name>
+    <Animation>032</Animation>
+    <Animations>
+      <Animation>0032</Animation>
+      <Animation>1032</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Housekeeper Alt 1</Name>
+    <Animation>016</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>Housekeeper Alt 2</Name>
+    <Animation>016</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>Housekeeper Alt 3</Name>
+    <Animation>016</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>First Wyverian 1</Name>
+    <Animation>024</Animation><!--034 crash-->
+    <Warning>Cheat</Warning>
+  </NPC>
+  <NPC>
+    <Name>Piscine Researcher</Name>
+    <Animation>037</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Endemic Life Researcher</Name>
+    <Animation>038</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Lynian Researcher</Name>
+    <Animation>039</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>First Wyverian 2</Name>
+    <Animation>024</Animation><!--0040 crash-->
+    <Warning>Cheat</Warning>
+  </NPC>
+  <NPC>
+    <Name>"Housekeeper" 1</Name>
+    <Animation>15</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>"Housekeeper" 2</Name>
+    <Animation>15</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>Feisty Fiver</Name>
+    <Animation>102</Animation>
+    <Animations>
+      <Animation>0102</Animation>
+      <Animation>1102</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Gentle Fourth</Name>
+    <Animation>103</Animation>
+    <Animations>
+      <Animation>0103</Animation>
+      <Animation>1103</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Eager Fourth</Name>
+    <Animation>104</Animation>
+    <Animations>
+      <Animation>0104</Animation>
+      <Animation>1104</Animation>
+      <Animation>2104</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Cool Fiver</Name>
+    <Animation>105</Animation>
+    <Animations>
+      <Animation>0105</Animation>
+      <Animation>1105</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Fun Fourth</Name>
+    <Animation>106</Animation>
+    <Animations>
+      <Animation>0106</Animation>
+      <Animation>1106</Animation>
+      <Animation>2106</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Forceful Fiver</Name>
+    <Animation>107</Animation>
+    <Animations>
+      <Animation>0107</Animation>
+      <Animation>1107</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Timid Fiver</Name>
+    <Animation>108</Animation>
+    <Animations>
+      <Animation>0108</Animation>
+      <Animation>1108</Animation>
+      <Animation>2108</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Sisterly Fourth</Name>
+    <Animation>109</Animation>
+    <Animations>
+      <Animation>0109</Animation>
+      <Animation>1109</Animation>
+      <Animation>2109</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Research Hunter</Name>
+    <Animation>111</Animation>
+    <Animations>
+      <Animation>0111</Animation>
+      <Animation>1111</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Smart Biologist</Name>
+    <Animation>112</Animation>
+    <Animations>
+      <Animation>0112</Animation>
+      <Animation>1112</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Impatient Biologist</Name>
+    <Animation>113</Animation>
+    <Animations>
+      <Animation>0113</Animation>
+      <Animation>1113</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Laid-back Botanist</Name>
+    <Animation>114</Animation>
+    <Animations>
+      <Animation>0114</Animation>
+      <Animation>1114</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Kettle Wyverian</Name>
+    <Animation>1114</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>Fiver Bro</Name>
+    <Animation>116</Animation>
+    <Animations>
+      <Animation>0116</Animation>
+      <Animation>1116</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Soup Felyne</Name>
+    <Animation>117</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Oven Felyne</Name>
+    <Animation>118</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Softspoken Fourth</Name>
+    <Animation>123</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Hotblooded Fourth</Name>
+    <Animation>123</Animation>
+    <Animations>
+      <Animation>0123</Animation>
+      <Animation>1123</Animation>
+      <Animation>2123</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Easygoing Fiver</Name>
+    <Animation>124</Animation>
+    <Animations>
+      <Animation>0124</Animation>
+      <Animation>1124</Animation>
+      <Animation>2124</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Airship Engineer</Name>
+    <Animation>125</Animation>
+    <Animations>
+      <Animation>0125</Animation>
+      <Animation>1125</Animation>
+      <Animation>2125</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Cheerful Scholar</Name>
+    <Animation>130</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Shy Scholar</Name>
+    <Animation>131</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Squad Manager</Name>
+    <Animation>134</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Harp Felyne on Chair?</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Harp Felyne on Floor?</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Jovial Scholar</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Upbeat Scholar</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Lively Scholar</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>No Idea</Name>
+    <Animation>16</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>Generic Wyverian</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>"Squad Manager"</Name>
+    <Animation>16</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>Smithy Bro 1</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Smithy Bro 2</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>"Jovial Scholar"</Name>
+    <Animation>16</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>"Upbeat Scholar"</Name>
+    <Animation>16</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>"Lively Scholar" (Pot Cat)</Name>
+    <Animation>16</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>"Unavailable" (Banana Cat)</Name>
+    <Animation>16</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>A Dude</Name>
+    <Animation>16</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>A Dudette</Name>
+    <Animation>16</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>Dude with Knife</Name>
+    <Animation>16</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>Dudette with Book</Name>
+    <Animation>16</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>Banana Cat</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Armored Dude</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Armored Baldy</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Shirtless Bandana</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Basket Girl</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Armored Cat</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Box Cat</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>"Housekeeper" 3</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>(Cat)Sapphire/Valerie</Name>
+    <Animation>201</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>(Cat)Rocky/Alex</Name>
+    <Animation>202</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Acrobat/TrapWhiz</Name>
+    <Animation>203</Animation>
+    <Warning>Story</Warning>
+  </NPC>
+  <NPC>
+    <Name>(Cat)Finn/Lucy</Name>
+    <Animation>204</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>(Cat)Biscuit/Roy</Name>
+    <Animation>205</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Lead Hunter</Name>
+    <Animation>206</Animation>
+    <Warning>Story</Warning>
+  </NPC>
+  <NPC>
+    <Name>(Cat)Jr/Kidd</Name>
+    <Animation>207</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>(Cat)Araujo/David</Name>
+    <Animation>208</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Gajalaka Knight</Name>
+    <Animation>209</Animation>
+    <Warning>Story</Warning>
+  </NPC>
+  <NPC>
+    <Name>(Flailing Hands Cat)</Name>
+    <Animation>210</Animation>
+    <Warning>Missing</Warning>
+  </NPC>
+  <NPC>
+    <Name>(Pointing Cat)</Name>
+    <Animation>211</Animation>
+    <Warning>Missing</Warning>
+  </NPC>
+  <NPC>
+    <Name>(Cat Idle)</Name>
+    <Animation>212</Animation>
+    <Warning>Missing</Warning>
+  </NPC>
+  <NPC>
+    <Name>Apple Enthusiast</Name>
+    <Animation>251</Animation>
+    <Animations>
+      <Animation>0251</Animation>
+      <Animation>1251</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Engaged Fiver</Name>
+    <Animation>1252</Animation>
+    <Animations>
+      <Animation>1252</Animation>
+      <Animation>2252</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Fish Aficionado</Name>
+    <Animation>1253</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Hide Expert</Name>
+    <Animation>1254</Animation>
+    <Animations>
+      <Animation>1254</Animation>
+      <Animation>2254</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Occupied Fiver</Name>
+    <Animation>1255</Animation>
+    <Animations>
+      <Animation>1255</Animation>
+      <Animation>2255</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Busy Fiver</Name>
+    <Animation>1256</Animation>
+    <Animations>
+      <Animation>1256</Animation>
+      <Animation>2256</Animation>
+    </Animations>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Commision Member 1</Name>
+    <Animation>257</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Commision Member 2</Name>
+    <Animation>258</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Blondie</Name>
+    <Animation>16</Animation>
+    <Warning>Animation</Warning>
+  </NPC>
+  <NPC>
+    <Name>Blondie</Name>
+    <Animation>16</Animation>
+    <Warning>Ignore</Warning>
+  </NPC>
+  <NPC>
+    <Name>Blondie</Name>
+    <Animation>16</Animation>
+    <Warning>Ignore</Warning>
+  </NPC>
+  <NPC>
+    <Name>Blondie</Name>
+    <Animation>16</Animation>
+    <Warning>Ignore</Warning>
+  </NPC>
+  <NPC>
+    <Name>Blondie</Name>
+    <Animation>16</Animation>
+    <Warning>Ignore</Warning>
+  </NPC>
+  <NPC>
+    <Name>Blondie</Name>
+    <Animation>16</Animation>
+    <Warning>Ignore</Warning>
+  </NPC>
+  <NPC>
+    <Name>Blondie</Name>
+    <Animation>16</Animation>
+    <Warning>Ignore</Warning>
+  </NPC>
+  <NPC>
+    <Name>Hub Lass</Name>
+    <Animation>301</Animation>
+    <Warning>Bounds</Warning>
+  </NPC>
+  <NPC>
+    <Name>Arena Lass</Name>
+    <Animation>302</Animation>
+    <Warning>Bounds</Warning>
+  </NPC>
+  <NPC>
+    <Name>Hub Provisions</Name>
+    <Animation>303</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Event Manager</Name>
+    <Animation>304</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Hopeful Felyne</Name>
+    <Animation>305</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Headless Man</Name>
+    <Animation>16</Animation>
+    <Warning>Placeholder</Warning>
+  </NPC>
+  <NPC>
+    <Name>Feeder Felyne</Name>
+    <Animation>307</Animation>
+    <Warning></Warning>
+  </NPC>
+  
+<!--  
+
+  <NPC>
+    <Name>858?id203</Name>
+    <Animation>212?</Animation>
+    <Warning>?</Warning>
+  </NPC>
+  <NPC>
+    <Name>856?id201</Name>
+    <Animation>202?</Animation>
+    <Warning>?</Warning>
+  </NPC>
+  <NPC>
+    <Name>855?id200</Name>
+    <Animation>210?</Animation>
+    <Warning>?</Warning>
+  </NPC>
+  
+-->
+
+</NPCList>
