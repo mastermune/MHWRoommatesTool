@@ -57,7 +57,7 @@ namespace MHWRoommates
 
             if (!parentFileNames.Contains("MonsterHunterWorld.exe"))
             {
-                monHunEXEMissing = true;
+                monHunEXEMissing = false; // change back to true
                 const string errorMessage = "\"MonsterHunterWorld.exe\" not found in parent directory!";
                 MessageBox.Show(errorMessage, "MonHun EXE Missing!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
@@ -93,6 +93,7 @@ namespace MHWRoommates
             Room_Select.Items.Add(LIVING_QUARTERS);
             Room_Select.Items.Add(PRIVATE_QUARTERS);
             Room_Select.Items.Add(PRIVATE_SUITE);
+            Room_Select.Items.Add(RESEARCH_BASE);
         }
 
         private void PopulateNPCComboBox()
@@ -326,7 +327,7 @@ namespace MHWRoommates
             if (selectedNPC.Index != HOUSEKEEPER)
                 return;
 
-            char roomiD = (Room_Select.SelectedItem as Room).ID;
+            string roomiD = (Room_Select.SelectedItem as Room).ID;
 
             writer.BaseStream.Position = OFFSET_FSM;
             writer.Write(fsm);
@@ -341,7 +342,7 @@ namespace MHWRoommates
             writer.Write("016".ToCharArray());
 
             // Possible typo fix, overwrites "_000"
-            if (roomiD != '1')
+            if (roomiD != "501")
             {
                 writer.Write("_00".ToCharArray());
                 writer.Write(fsm, 0x26, 6);
@@ -376,7 +377,7 @@ namespace MHWRoommates
         {
             string npcFile = npcDirectory;
 
-            int index = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).Index;
+            int index = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).NpcID;
 
             npcFile += $"n{index:D3}_{instance:D3}.sobj";
 
@@ -389,7 +390,7 @@ namespace MHWRoommates
 
             npcDirectory = (Room_Select.SelectedItem as Room).Path;
 
-            int index = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).Index;
+            int index = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).NpcID;
 
             npcDirectory += $"n{index:D3}\\";
 

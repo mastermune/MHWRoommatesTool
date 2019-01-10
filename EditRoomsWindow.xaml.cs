@@ -2,8 +2,10 @@
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Xml.Serialization;
 using static MHWRoommates.Room;
 
 namespace MHWRoommates
@@ -13,6 +15,7 @@ namespace MHWRoommates
         private ObservableCollection<NPC> usingLivingNPCs;
         private ObservableCollection<NPC> usingPrivateNPCs;
         private ObservableCollection<NPC> usingSuiteNPCs;
+        private ObservableCollection<NPC> usingResearchBaseNPCs;
 
         private const string SAMPLE_SOBJL = "st50x_snSample.sobjl";
 
@@ -20,7 +23,7 @@ namespace MHWRoommates
 
         private const int OFFSET_SOBJL_COUNT = 0x04;
         private const int OFFSET_SOBJL_NPC_START = 0x08;
-        private const int OFFSET_SOBJL_NPC_ST50X = 0x1F;
+        private const int OFFSET_SOBJL_NPC_ST50X = 0x1D;
         private const int OFFSET_SOBJL_NPC_FOLDER = 0x22;
         private const int OFFSET_SOBJL_NPC_FILE = 0x27;
         private const int OFFSET_SOBJL_NPC_INSTANCE = 0x2B;
@@ -38,22 +41,27 @@ namespace MHWRoommates
             usingLivingNPCs = new ObservableCollection<NPC>();
             usingPrivateNPCs = new ObservableCollection<NPC>();
             usingSuiteNPCs = new ObservableCollection<NPC>();
+            usingResearchBaseNPCs = new ObservableCollection<NPC>();
 
             NPCs_Available_Living.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
             NPCs_Available_Private.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
             NPCs_Available_Suite.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
+            NPCs_Available_ResearchBase.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
 
             NPCs_Using_Living.ItemsSource = usingLivingNPCs;
             NPCs_Using_Private.ItemsSource = usingPrivateNPCs;
             NPCs_Using_Suite.ItemsSource = usingSuiteNPCs;
+            NPCs_Using_ResearchBase.ItemsSource = usingResearchBaseNPCs;
 
             NPCs_Using_Living.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_Private.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_Suite.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
+            NPCs_Using_ResearchBase.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
 
             LoadSOBJL(npcList, LIVING_QUARTERS.SOBJPaths[0], usingLivingNPCs);
             LoadSOBJL(npcList, PRIVATE_QUARTERS.SOBJPaths[0], usingPrivateNPCs);
             LoadSOBJL(npcList, PRIVATE_SUITE.SOBJPaths[0], usingSuiteNPCs);
+            LoadSOBJL(npcList, RESEARCH_BASE.SOBJPaths[1], usingResearchBaseNPCs);
 
             selectedRoom = LIVING_QUARTERS;
             selectedList = usingLivingNPCs;
@@ -67,9 +75,9 @@ namespace MHWRoommates
                 const int HOUSEKEEPER_INDEX = 13;
                 const int ACE_CADET_INDEX = 22;
                 const int SRSHANDLER_INDEX = 23;
-                usingNPCs.Add(npcList.NPCs[HOUSEKEEPER_INDEX]);
-                usingNPCs.Add(npcList.NPCs[ACE_CADET_INDEX]);
-                usingNPCs.Add(npcList.NPCs[SRSHANDLER_INDEX]);
+                //usingNPCs.Add(npcList.NPCs[HOUSEKEEPER_INDEX]);
+                //usingNPCs.Add(npcList.NPCs[ACE_CADET_INDEX]);
+                //usingNPCs.Add(npcList.NPCs[SRSHANDLER_INDEX]);
                 
                 return;
             }
@@ -83,7 +91,14 @@ namespace MHWRoommates
                 {
                     reader.BaseStream.Position = OFFSET_SOBJL_NPC_START + OFFSET_SOBJL_NPC_FILE + (i * SOBJL_NPC_SIZE);
                     int npcIndex = int.Parse(new string(reader.ReadChars(3)));
-                    usingNPCs.Add(npcList.NPCs[npcIndex - 1]);
+
+                    // Needs optimization, too lazy to look up the proper way
+                    bool found = false;
+                    for (int j = 0; j < npcList.NPCs.Count; j++)
+                    {
+                        if (npcList.NPCs[j].NpcID == npcIndex) { usingNPCs.Add(npcList.NPCs[j]); found = true; }
+                    }
+                    if (found == false) MessageBox.Show($"Couldn't parse index {npcIndex}", "Parsing error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }
@@ -138,6 +153,18 @@ namespace MHWRoommates
             usingSuiteNPCs = RemoveNPC(NPCs_Using_Suite, usingSuiteNPCs);
             NPCs_Using_Suite.ItemsSource = usingSuiteNPCs;
         }
+
+        private void Button_Add_NPC_ResearchBase_Click(object sender, RoutedEventArgs e)
+        {
+            usingResearchBaseNPCs = AddNPC(NPCs_Available_ResearchBase, usingResearchBaseNPCs);
+            NPCs_Using_ResearchBase.ItemsSource = usingResearchBaseNPCs;
+        }
+
+        private void Button_Rmv_NPC_ResearchBase_Click(object sender, RoutedEventArgs e)
+        {
+            usingResearchBaseNPCs = RemoveNPC(NPCs_Using_ResearchBase, usingResearchBaseNPCs);
+            NPCs_Using_ResearchBase.ItemsSource = usingResearchBaseNPCs;
+        }
         #endregion
 
         #region Enable/Disable Add and Remove buttons based on selections
@@ -169,6 +196,16 @@ namespace MHWRoommates
         private void NPCs_Available_Personal_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Button_Add_NPC_Personal.IsEnabled = NPCs_Available_Living.SelectedItem != null;
+        }
+
+        private void NPCs_Using_ResearchBase_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Button_Rmv_NPC_ResearchBase.IsEnabled = NPCs_Using_ResearchBase.SelectedItem != null;
+        }
+
+        private void NPCs_Available_ResearchBase_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Button_Add_NPC_ResearchBase.IsEnabled = NPCs_Available_ResearchBase.SelectedItem != null;
         }
         #endregion
 
@@ -231,14 +268,24 @@ namespace MHWRoommates
 
         private void WriteNPC(BinaryWriter writer, int i)
         {
+            NPCList npcList = new NPCList();
+            XmlSerializer serializer = new XmlSerializer(typeof(NPCList));
+            using (FileStream fileStream = new FileStream("NPCList.xml", FileMode.Open))
+            {
+                npcList = (NPCList)serializer.Deserialize(fileStream);
+            }
+            npcList.setNPCIndexes();
+            int npcId = npcList.NPCs[selectedList[i].Index - 1].NpcID;
+
             writer.BaseStream.Position = OFFSET_SOBJL_NPC_START + (i * SOBJL_NPC_SIZE) + OFFSET_SOBJL_NPC_ST50X;
-            writer.Write(selectedRoom.ID);
+            byte[] bytesID = Encoding.ASCII.GetBytes(selectedRoom.ID);
+            writer.Write(bytesID);
 
             writer.BaseStream.Position = OFFSET_SOBJL_NPC_START + (i * SOBJL_NPC_SIZE) + OFFSET_SOBJL_NPC_FOLDER;
-            writer.Write(selectedList[i].Index.ToString("D3").ToArray());
+            writer.Write(npcId.ToString("D3").ToArray());
 
             writer.BaseStream.Position = OFFSET_SOBJL_NPC_START + (i * SOBJL_NPC_SIZE) + OFFSET_SOBJL_NPC_FILE;
-            writer.Write(selectedList[i].Index.ToString("D3").ToArray());
+            writer.Write(npcId.ToString("D3").ToArray());
         }
 
         private int WriteNpcCopies(BinaryWriter writer, int npcInstance, int i)
@@ -310,6 +357,7 @@ namespace MHWRoommates
                 case 0: selectedRoom = LIVING_QUARTERS; selectedList = usingLivingNPCs; break;
                 case 1: selectedRoom = PRIVATE_QUARTERS; selectedList = usingPrivateNPCs; break;
                 case 2: selectedRoom = PRIVATE_SUITE; selectedList = usingSuiteNPCs; break;
+                case 3: selectedRoom = RESEARCH_BASE; selectedList = usingResearchBaseNPCs; break;
             }
         }
     }
