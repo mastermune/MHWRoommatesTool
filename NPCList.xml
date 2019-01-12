@@ -109,6 +109,10 @@
   <NPC>
     <Name>The Huntsman</Name>
     <Animation>017</Animation>
+    <Animations>
+      <Animation>0017</Animation>
+      <Animation>1017</Animation>
+    </Animations>
     <Warning>Missing</Warning>
   </NPC>
   <NPC>
@@ -173,17 +177,17 @@
   </NPC>
   <NPC>
     <Name>Jovial Scholar (Mute)</Name>
-    <Animation>027</Animation><!--028,1028 crash-->
+    <Animation>137</Animation><!--028,1028 crash-->
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
     <Name>Upbeat Scholar (Mute)</Name>
-    <Animation>027</Animation><!--029,1029 crash-->
+    <Animation>138</Animation><!--029,1029 crash-->
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
     <Name>Lively Scholar (Mute)</Name>
-    <Animation>027</Animation><!--030,1030 crash-->
+    <Animation>139</Animation><!--030,1030 crash-->
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
@@ -237,12 +241,12 @@
   </NPC>
   <NPC>
     <Name>"Housekeeper" 1</Name>
-    <Animation>15</Animation>
+    <Animation>16</Animation>
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
     <Name>"Housekeeper" 2</Name>
-    <Animation>15</Animation>
+    <Animation>16</Animation>
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
@@ -433,33 +437,33 @@
   </NPC>
   <NPC>
     <Name>Harp Felyne on Chair?</Name>
-    <Animation>16</Animation>
+    <Animation>16</Animation><!-- 135,1135,10135 crash -->
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
     <Name>Harp Felyne on Floor?</Name>
-    <Animation>16</Animation>
+    <Animation>16</Animation><!-- 136,1136,10136 crash -->
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
     <Name>Jovial Scholar</Name>
-    <Animation>16</Animation>
-    <Warning>Animation</Warning>
+    <Animation>137</Animation>
+    <Warning></Warning>
   </NPC>
   <NPC>
     <Name>Upbeat Scholar</Name>
-    <Animation>16</Animation>
-    <Warning>Animation</Warning>
+    <Animation>138</Animation>
+    <Warning></Warning>
   </NPC>
   <NPC>
     <Name>Lively Scholar</Name>
-    <Animation>16</Animation>
-    <Warning>Animation</Warning>
+    <Animation>139</Animation>
+    <Warning></Warning>
   </NPC>
   <NPC>
-    <Name>No Idea</Name>
-    <Animation>16</Animation>
-    <Warning>Placeholder</Warning>
+    <Name>Moogle</Name>
+    <Animation>140</Animation>
+    <Warning>NoLoop</Warning>
   </NPC>
   <NPC>
     <Name>Generic Wyverian</Name>
@@ -468,7 +472,7 @@
   </NPC>
   <NPC>
     <Name>"Squad Manager"</Name>
-    <Animation>16</Animation>
+    <Animation>134</Animation>
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
@@ -483,17 +487,17 @@
   </NPC>
   <NPC>
     <Name>"Jovial Scholar"</Name>
-    <Animation>16</Animation>
+    <Animation>137</Animation>
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
     <Name>"Upbeat Scholar"</Name>
-    <Animation>16</Animation>
+    <Animation>138</Animation>
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
     <Name>"Lively Scholar" (Pot Cat)</Name>
-    <Animation>16</Animation>
+    <Animation>139</Animation>
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
@@ -682,39 +686,39 @@
     <Warning></Warning>
   </NPC>
   <NPC>
-    <Name>Blondie</Name>
-    <Animation>16</Animation>
-    <Warning>Animation</Warning>
-  </NPC>
-  <NPC>
-    <Name>Blondie</Name>
+    <Name>Blondie 0</Name>
     <Animation>16</Animation>
     <Warning>Ignore</Warning>
   </NPC>
   <NPC>
-    <Name>Blondie</Name>
+    <Name>Blondie 1</Name>
     <Animation>16</Animation>
     <Warning>Ignore</Warning>
   </NPC>
   <NPC>
-    <Name>Blondie</Name>
+    <Name>Blondie 2</Name>
     <Animation>16</Animation>
     <Warning>Ignore</Warning>
   </NPC>
   <NPC>
-    <Name>Blondie</Name>
+    <Name>Blondie 3</Name>
     <Animation>16</Animation>
     <Warning>Ignore</Warning>
   </NPC>
   <NPC>
-    <Name>Blondie</Name>
+    <Name>Blondie 4</Name>
     <Animation>16</Animation>
     <Warning>Ignore</Warning>
   </NPC>
   <NPC>
-    <Name>Blondie</Name>
+    <Name>Blondie 5</Name>
     <Animation>16</Animation>
     <Warning>Ignore</Warning>
+  </NPC>
+  <NPC>
+    <Name>Blondie 6</Name>
+    <Animation>16</Animation>
+    <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
     <Name>Hub Lass</Name>
@@ -770,6 +774,16 @@
     <Warning>?</Warning>
   </NPC>
   
+
+Missing Animations: (will crash)
+135
+136
+141-163
+1xxx,2xxx,3xxx... variations still possible
+
+Probable Missing Animations: (likely crash)
+164-200
+
 -->
 
 </NPCList>
