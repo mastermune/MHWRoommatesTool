@@ -43,16 +43,16 @@ namespace MHWRoommates
             NPCs_Using_Suite.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_ResearchBase.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
 
-            LoadSOBJL(npcList, LIVING_QUARTERS.SOBJPaths[0], usingLivingNPCs, "501");
-            LoadSOBJL(npcList, PRIVATE_QUARTERS.SOBJPaths[0], usingPrivateNPCs, "502");
-            LoadSOBJL(npcList, PRIVATE_SUITE.SOBJPaths[0], usingSuiteNPCs, "503");
-            LoadSOBJL(npcList, RESEARCH_BASE.SOBJPaths[1], usingResearchBaseNPCs, "303");
+            if (LoadSOBJL(npcList, LIVING_QUARTERS.SOBJPaths[0], usingLivingNPCs, "501")) Button_Delete_Living.IsEnabled = true;
+            if (LoadSOBJL(npcList, PRIVATE_QUARTERS.SOBJPaths[0], usingPrivateNPCs, "502")) Button_Delete_Private.IsEnabled = true;
+            if (LoadSOBJL(npcList, PRIVATE_SUITE.SOBJPaths[0], usingSuiteNPCs, "503")) Button_Delete_Suite.IsEnabled = true;
+            if (LoadSOBJL(npcList, RESEARCH_BASE.SOBJPaths[1], usingResearchBaseNPCs, "303")) Button_Delete_ResearchBase.IsEnabled = true;
 
             selectedRoom = LIVING_QUARTERS;
             selectedList = usingLivingNPCs;
         }
 
-        private void LoadSOBJL(NPCList npcList, string sobjlToLoad, ObservableCollection<NPC> usingNPCs, string roomID)
+        private bool LoadSOBJL(NPCList npcList, string sobjlToLoad, ObservableCollection<NPC> usingNPCs, string roomID)
         {
             // If there is no NPC List to load, setup a default list and return
             if (!File.Exists(sobjlToLoad))
@@ -64,7 +64,7 @@ namespace MHWRoommates
                     usingNPCs.Add(defaultNPC);
                 }
 
-                return;
+                return false;
             }
 
             using (BinaryReader reader = new BinaryReader(File.Open(sobjlToLoad, FileMode.Open)))
@@ -86,6 +86,8 @@ namespace MHWRoommates
                     if (found == false) MessageBox.Show($"Couldn't parse index {npcIndex}", "Parsing error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
+
+            return true;
         }
 
         private ObservableCollection<NPC> RemoveNPC(ListBox sourceBox, ObservableCollection<NPC> sourceList)
@@ -210,6 +212,17 @@ namespace MHWRoommates
 
             MessageBox.Show($"Saved to \"{selectedRoom.SOBJPaths[0]}*\"",
                 "NPC List Saved!", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            Button deleteButtonToEnable;
+            switch(Room_Tabs.SelectedIndex)
+            {
+                case 0: deleteButtonToEnable = Button_Delete_Living; break;
+                case 1: deleteButtonToEnable = Button_Delete_Private; break;
+                case 2: deleteButtonToEnable = Button_Delete_Suite; break;
+                case 3: deleteButtonToEnable = Button_Delete_ResearchBase; break;
+                default: deleteButtonToEnable = null; break;
+            }
+            if (deleteButtonToEnable != null) deleteButtonToEnable.IsEnabled = true;
         }
 
         private byte[] GetTemplateNpc()
@@ -331,6 +344,7 @@ namespace MHWRoommates
 
             if (result.Equals(MessageBoxResult.Yes))
             {
+                ((Button)sender).IsEnabled = false;
                 DeleteSelectedSOBJL(true);
                 ResetSelectedList();
             }

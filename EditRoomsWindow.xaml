@@ -32,7 +32,7 @@
                     <ListBox x:Name="NPCs_Using_Living" SelectionChanged="NPCs_Using_Personal_SelectionChanged" DockPanel.Dock="Top" Margin="5,0"/>
                 </DockPanel>
                 <Button x:Name="Button_Save_Living" Content="Save" Click="SaveSelectedSOBJL" Grid.ColumnSpan="3" Margin="100,10,100,3" Grid.Row="1" VerticalAlignment="Center" Height="50" FontWeight="Bold" Background="#FF78B8F7" BorderBrush="#FF1E3042"/>
-                <Button x:Name="Button_Delete_Living" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold"/>
+                <Button x:Name="Button_Delete_Living" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
         <TabItem Header="Private Quarters">
@@ -60,7 +60,7 @@
                     <ListBox x:Name="NPCs_Using_Private" DockPanel.Dock="Top" SelectionChanged="NPCs_Using_Private_SelectionChanged" Margin="5,0"/>
                 </DockPanel>
                 <Button x:Name="Button_Save_Private" Content="Save" Click="SaveSelectedSOBJL"  Grid.ColumnSpan="3" Margin="100,10,100,3" Grid.Row="1" VerticalAlignment="Center" Height="50" FontWeight="Bold" Background="#FF78B8F7" BorderBrush="#FF1E3042"/>
-                <Button x:Name="Button_Delete_Private" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold"/>
+                <Button x:Name="Button_Delete_Private" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
         <TabItem Header="Private Suite">
@@ -88,7 +88,7 @@
                     <ListBox x:Name="NPCs_Using_Suite" DockPanel.Dock="Top" SelectionChanged="NPCs_Using_Suite_SelectionChanged" Margin="5,0"/>
                 </DockPanel>
                 <Button x:Name="Button_Save_Suite" Content="Save" Click="SaveSelectedSOBJL"  Grid.ColumnSpan="3" Margin="100,10,100,3" Grid.Row="1" VerticalAlignment="Center" Height="50" FontWeight="Bold" Background="#FF78B8F7" BorderBrush="#FF1E3042"/>
-                <Button x:Name="Button_Delete_Suite" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold"/>
+                <Button x:Name="Button_Delete_Suite" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
         <TabItem Header="Research Base">
@@ -116,7 +116,7 @@
                     <ListBox x:Name="NPCs_Using_ResearchBase" DockPanel.Dock="Top" SelectionChanged="NPCs_Using_ResearchBase_SelectionChanged" Margin="5,0"/>
                 </DockPanel>
                 <Button x:Name="Button_Save_ResearchBase" Content="Save" Click="SaveSelectedSOBJL"  Grid.ColumnSpan="3" Margin="100,10,100,3" Grid.Row="1" VerticalAlignment="Center" Height="50" FontWeight="Bold" Background="#FF78B8F7" BorderBrush="#FF1E3042"/>
-                <Button x:Name="Button_Delete_ResearchBase" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold"/>
+                <Button x:Name="Button_Delete_ResearchBase" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
     </TabControl>
