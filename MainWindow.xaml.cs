@@ -148,12 +148,16 @@ namespace MHWRoommates
         {
             Room selectedRoom = (Room_Select.SelectedItem as Room);
 
-            Point3D defaultPosition = selectedRoom.DefaultPosition;
+            bool defaultExists = selectedNPC.DefaultRooms != null && selectedNPC.DefaultRooms.Contains(selectedRoom.ID);
+            // Housekeeper and Handler defaults are the RoomDefaults and not used in xml
+            defaultExists = defaultExists && (selectedNPC.NpcID != 2 && selectedNPC.NpcID != 16);
+
+            Point3D defaultPosition = (defaultExists)? selectedNPC.DefaultPosition : selectedRoom.DefaultPosition;
             X_Position.Value = defaultPosition.x;
             Y_Position.Value = defaultPosition.y;
             Z_Position.Value = defaultPosition.z;
 
-            Point3D defaultRotation = selectedRoom.DefaultRotation;
+            Point3D defaultRotation = (defaultExists)? selectedNPC.DefaultRotation : selectedRoom.DefaultRotation;
             X_Rotation.Value = defaultRotation.x;
             Y_Rotation.Value = defaultRotation.y;
             Z_Rotation.Value = defaultRotation.z;

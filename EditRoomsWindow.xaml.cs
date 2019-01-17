@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Xml.Serialization;
 using static MHWRoommates.Room;
 
 namespace MHWRoommates
@@ -44,27 +43,27 @@ namespace MHWRoommates
             NPCs_Using_Suite.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_ResearchBase.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
 
-            LoadSOBJL(npcList, LIVING_QUARTERS.SOBJPaths[0], usingLivingNPCs);
-            LoadSOBJL(npcList, PRIVATE_QUARTERS.SOBJPaths[0], usingPrivateNPCs);
-            LoadSOBJL(npcList, PRIVATE_SUITE.SOBJPaths[0], usingSuiteNPCs);
-            LoadSOBJL(npcList, RESEARCH_BASE.SOBJPaths[1], usingResearchBaseNPCs);
+            LoadSOBJL(npcList, LIVING_QUARTERS.SOBJPaths[0], usingLivingNPCs, "501");
+            LoadSOBJL(npcList, PRIVATE_QUARTERS.SOBJPaths[0], usingPrivateNPCs, "502");
+            LoadSOBJL(npcList, PRIVATE_SUITE.SOBJPaths[0], usingSuiteNPCs, "503");
+            LoadSOBJL(npcList, RESEARCH_BASE.SOBJPaths[1], usingResearchBaseNPCs, "303");
 
             selectedRoom = LIVING_QUARTERS;
             selectedList = usingLivingNPCs;
         }
 
-        private void LoadSOBJL(NPCList npcList, string sobjlToLoad, ObservableCollection<NPC> usingNPCs)
+        private void LoadSOBJL(NPCList npcList, string sobjlToLoad, ObservableCollection<NPC> usingNPCs, string roomID)
         {
             // If there is no NPC List to load, setup a default list and return
             if (!File.Exists(sobjlToLoad))
             {
-                const int HOUSEKEEPER_INDEX = 13;
-                const int ACE_CADET_INDEX = 22;
-                const int SRSHANDLER_INDEX = 23;
-                //usingNPCs.Add(npcList.NPCs[HOUSEKEEPER_INDEX]);
-                //usingNPCs.Add(npcList.NPCs[ACE_CADET_INDEX]);
-                //usingNPCs.Add(npcList.NPCs[SRSHANDLER_INDEX]);
-                
+                var defaultNPCs = npcList.NPCs.Where(x => x.DefaultRooms.Contains(roomID));
+
+                foreach (NPC defaultNPC in defaultNPCs)
+                {
+                    usingNPCs.Add(defaultNPC);
+                }
+
                 return;
             }
 

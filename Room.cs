@@ -2,7 +2,7 @@
 
 namespace MHWRoommates
 {
-    class Room
+    public class Room
     {
         public string Name { get; }
         public string ID { get; }
