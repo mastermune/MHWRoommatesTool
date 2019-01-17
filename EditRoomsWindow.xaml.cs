@@ -82,7 +82,7 @@ namespace MHWRoommates
                     bool found = false;
                     for (int j = 0; j < npcList.NPCs.Count; j++)
                     {
-                        if (npcList.NPCs[j].NpcID == npcIndex) { usingNPCs.Add(npcList.NPCs[j]); found = true; }
+                        if (npcList.NPCs[j].Index == npcIndex) { usingNPCs.Add(npcList.NPCs[j]); found = true; }
                     }
                     if (found == false) MessageBox.Show($"Couldn't parse index {npcIndex}", "Parsing error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
@@ -254,7 +254,7 @@ namespace MHWRoommates
 
         private void WriteNPC(BinaryWriter writer, int i)
         {
-            //
+            /*
             NPCList npcList = new NPCList();
             XmlSerializer serializer = new XmlSerializer(typeof(NPCList));
             using (FileStream fileStream = new FileStream("NPCList.xml", FileMode.Open))
@@ -263,20 +263,21 @@ namespace MHWRoommates
             }
             npcList.setNPCIndexes();
             int npcId = npcList.NPCs[selectedList[i].Index - 1].NpcID;
+            */
 
             writer.BaseStream.Position = RMOffsets.SOBJL_NPC_START + (i * RMOffsets.SOBJL_NPC_SIZE) + RMOffsets.SOBJL_NPC_ST50X;
             byte[] bytesID = Encoding.ASCII.GetBytes(selectedRoom.ID);
             writer.Write(bytesID);
 
-            //char[] indexChars = selectedList[i].Index.ToString("D3").ToArray();
+            char[] indexChars = selectedList[i].Index.ToString("D3").ToArray();
 
             writer.BaseStream.Position = RMOffsets.SOBJL_NPC_START + (i * RMOffsets.SOBJL_NPC_SIZE) + RMOffsets.SOBJL_NPC_FOLDER;
-            //writer.Write(indexChars);
-            writer.Write(npcId.ToString("D3").ToArray());
+            writer.Write(indexChars);
+            //writer.Write(npcId.ToString("D3").ToArray());
 
             writer.BaseStream.Position = RMOffsets.SOBJL_NPC_START + (i * RMOffsets.SOBJL_NPC_SIZE) + RMOffsets.SOBJL_NPC_FILE;
-            //writer.Write(indexChars);
-            writer.Write(npcId.ToString("D3").ToArray());
+            writer.Write(indexChars);
+            //writer.Write(npcId.ToString("D3").ToArray());
         }
 
         private int WriteNpcCopies(BinaryWriter writer, int npcInstance, int i)

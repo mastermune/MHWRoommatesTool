@@ -536,7 +536,7 @@
   </NPC>
   <NPC>
     <Name>Moogle</Name>
-    <NPCID>9991</NPCID>
+    <NPCID>140</NPCID>
     <Animation>140</Animation>
     <Warning>NoLoop</Warning>
   </NPC>

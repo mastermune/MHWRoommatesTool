@@ -3,7 +3,6 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Xml.Serialization;
 using static MHWRoommates.Room;
 
 namespace MHWRoommates
@@ -105,16 +104,6 @@ namespace MHWRoommates
 
                 Animation_Select.Items.Add(item);
             }
-        }
-
-        private void LoadNPCList()
-        {
-            XmlSerializer serializer = new XmlSerializer(typeof(NPCList));
-            using (FileStream fileStream = new FileStream(RMFiles.NPCLIST, FileMode.Open))
-            {
-                npcList = (NPCList)serializer.Deserialize(fileStream);
-            }
-            npcList.setNPCIndexes();
         }
 
         private void Select_Button_Click(object sender, RoutedEventArgs e)
@@ -314,7 +303,7 @@ namespace MHWRoommates
         {
             string npcFile = npcDirectory;
 
-            int index = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).NpcID; //.index
+            int index = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).Index; //.npcid
 
             npcFile += $"n{index:D3}_{instance:D3}.sobj";
 
@@ -327,7 +316,7 @@ namespace MHWRoommates
 
             npcDirectory = (Room_Select.SelectedItem as Room).Path;
 
-            int index = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).NpcID; //.index
+            int index = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).Index; //.npcid
 
             npcDirectory += $"n{index:D3}\\";
 
