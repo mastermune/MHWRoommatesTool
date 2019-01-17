@@ -6,6 +6,9 @@ namespace MHWRoommates
 {
     public class NPC
     {
+        [XmlElement("NPCID")]
+        public int NpcID { get; set; }
+
         [XmlElement("Animation")]
         public UInt32 Animation { get; set; }
 

@@ -33,7 +33,7 @@ namespace MHWRoommates
 
         public MainWindow()
         {
-            if (IsMonHunEXEMissing()) { Close(); return; }
+            //if (IsMonHunEXEMissing()) { Close(); return; }
             if (IsReqdFilesMissing()) { Close(); return; }
 
             InitializeComponent();
@@ -93,6 +93,7 @@ namespace MHWRoommates
             Room_Select.Items.Add(LIVING_QUARTERS);
             Room_Select.Items.Add(PRIVATE_QUARTERS);
             Room_Select.Items.Add(PRIVATE_SUITE);
+            Room_Select.Items.Add(RESEARCH_BASE);
         }
 
         private void PopulateNPCComboBox()
@@ -326,13 +327,13 @@ namespace MHWRoommates
             if (selectedNPC.Index != HOUSEKEEPER)
                 return;
 
-            char roomiD = (Room_Select.SelectedItem as Room).ID;
+            string roomID = (Room_Select.SelectedItem as Room).ID;
 
             writer.BaseStream.Position = OFFSET_FSM;
             writer.Write(fsm);
 
             writer.BaseStream.Position = OFFSET_FSM_ROOM;
-            writer.Write(roomiD);
+            writer.Write(roomID);
 
             writer.BaseStream.Position = OFFSET_FSM_FOLDER;
             writer.Write("016".ToCharArray());
@@ -341,7 +342,7 @@ namespace MHWRoommates
             writer.Write("016".ToCharArray());
 
             // Possible typo fix, overwrites "_000"
-            if (roomiD != '1')
+            if (roomID != "501")
             {
                 writer.Write("_00".ToCharArray());
                 writer.Write(fsm, 0x26, 6);
@@ -376,7 +377,7 @@ namespace MHWRoommates
         {
             string npcFile = npcDirectory;
 
-            int index = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).Index;
+            int index = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).NpcID; //.index
 
             npcFile += $"n{index:D3}_{instance:D3}.sobj";
 
@@ -389,7 +390,7 @@ namespace MHWRoommates
 
             npcDirectory = (Room_Select.SelectedItem as Room).Path;
 
-            int index = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).Index;
+            int index = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).NpcID; //.index
 
             npcDirectory += $"n{index:D3}\\";
 
