@@ -10,82 +10,17 @@ namespace MHWRoommates
 {
     public partial class MainWindow : Window
     {
-        private const int OFFSET_TRANSFORM_START = 0x2B;
-        private const int OFFSET_ID = 0xB4;
-        private const int OFFSET_ANIM = 0xB8;
-        private const int OFFSET_UNKWN = 0xBC; // Unknown value, usually matches animation or npcID
-        private const int OFFSET_COMMENT = 0x65;
-        private const int OFFSET_FSM = 0x144;
-        private const int OFFSET_FSM_ROOM = 0x157;
-        private const int OFFSET_FSM_FOLDER = 0x15A;
-        private const int OFFSET_FSM_FILE = 0x163;
-
         private NPCList npcList;
-
-        private EditRoomsWindow roomsWindow;
 
         private readonly string curDir = Directory.GetCurrentDirectory();
 
-        private const string SAMPLE_SOBJL = "st50x_snSample.sobjl";
-        private const string SAMPLE_SOBJ = "nSample.sobj";
-        private const string SAMPLE_FSM = "fsm.sobjp";
-        private const string NPCLIST_FILE = "NPCList.xml";
-
-        public MainWindow()
+        public MainWindow(NPCList list)
         {
-            //if (IsMonHunEXEMissing()) { Close(); return; }
-            if (IsReqdFilesMissing()) { Close(); return; }
-
             InitializeComponent();
             PopulateRoomComboBox();
-            LoadNPCList();
+            npcList = list;
             PopulateNPCComboBox();
             PopulateAnimationsComboBox();
-
-            roomsWindow = new EditRoomsWindow(npcList)
-            {
-                Visibility = Visibility.Visible
-            };
-        }
-
-        private bool IsMonHunEXEMissing()
-        {
-            bool monHunEXEMissing = false;
-
-            string[] parentDirFiles = Directory.GetFiles(Directory.GetParent(curDir).FullName);
-            string[] parentFileNames = parentDirFiles.Select(file => Path.GetFileName(file)).ToArray();
-
-            if (!parentFileNames.Contains("MonsterHunterWorld.exe"))
-            {
-                monHunEXEMissing = true;
-                const string errorMessage = "\"MonsterHunterWorld.exe\" not found in parent directory!";
-                MessageBox.Show(errorMessage, "MonHun EXE Missing!", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-
-            return monHunEXEMissing;
-        }
-
-        private bool IsReqdFilesMissing()
-        {
-            bool isMissingFile = false;
-
-            string missingFile = "";
-            if (!File.Exists(SAMPLE_FSM)) { missingFile = SAMPLE_FSM; }
-            else
-            if (!File.Exists(SAMPLE_SOBJ)) { missingFile = SAMPLE_SOBJ; }
-            else
-            if (!File.Exists(SAMPLE_SOBJL)) { missingFile = SAMPLE_SOBJL; }
-            else
-            if (!File.Exists(NPCLIST_FILE)) { missingFile = NPCLIST_FILE; }
-
-            if (!missingFile.Equals(""))
-            {
-                isMissingFile = true;
-                MessageBox.Show($"\"{missingFile}\" not found!", "Important File Missing!",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-
-            return isMissingFile;
         }
 
         private void PopulateRoomComboBox()
@@ -173,7 +108,7 @@ namespace MHWRoommates
         private void LoadNPCList()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(NPCList));
-            using (FileStream fileStream = new FileStream(NPCLIST_FILE, FileMode.Open))
+            using (FileStream fileStream = new FileStream(RMFiles.NPCLIST, FileMode.Open))
             {
                 npcList = (NPCList)serializer.Deserialize(fileStream);
             }
@@ -239,7 +174,7 @@ namespace MHWRoommates
         {
             using (BinaryReader reader = new BinaryReader(File.Open(npcFilePath, FileMode.Open)))
             {
-                reader.BaseStream.Position = OFFSET_TRANSFORM_START;
+                reader.BaseStream.Position = RMOffsets.TRANSFORM_START;
                 X_Position.Value = reader.ReadSingle();
                 Y_Position.Value = reader.ReadSingle();
                 Z_Position.Value = reader.ReadSingle();
@@ -248,7 +183,7 @@ namespace MHWRoommates
                 Y_Rotation.Value = reader.ReadSingle();
                 Z_Rotation.Value = reader.ReadSingle();
 
-                reader.BaseStream.Position = OFFSET_ANIM;
+                reader.BaseStream.Position = RMOffsets.ANIM;
                 uint animationToLoad = reader.ReadUInt32();
                 LoadAnimation(animationToLoad);
             }
@@ -288,7 +223,7 @@ namespace MHWRoommates
                 return new byte[] { };
 
             byte[] fsm;
-            using (BinaryReader reader = new BinaryReader(File.Open(SAMPLE_FSM, FileMode.Open)))
+            using (BinaryReader reader = new BinaryReader(File.Open(RMFiles.FSM, FileMode.Open)))
             {
                 fsm = reader.ReadBytes((int)reader.BaseStream.Length);
             }
@@ -301,7 +236,7 @@ namespace MHWRoommates
             NPC selectedNPC = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC);
             uint selectedAnimation = (((ComboBoxItem)Animation_Select.SelectedItem).Content as NPC).Animation;
 
-            writer.BaseStream.Position = OFFSET_TRANSFORM_START;
+            writer.BaseStream.Position = RMOffsets.TRANSFORM_START;
             writer.Write(X_Position.Value.Value);
             writer.Write(Y_Position.Value.Value);
             writer.Write(Z_Position.Value.Value);
@@ -310,7 +245,7 @@ namespace MHWRoommates
             writer.Write(Y_Rotation.Value.Value);
             writer.Write(Z_Rotation.Value.Value);
 
-            writer.BaseStream.Position = OFFSET_ID;
+            writer.BaseStream.Position = RMOffsets.ID;
             writer.Write(selectedNPC.Index);
 
             writer.Write(selectedAnimation);
@@ -329,16 +264,16 @@ namespace MHWRoommates
 
             string roomID = (Room_Select.SelectedItem as Room).ID;
 
-            writer.BaseStream.Position = OFFSET_FSM;
+            writer.BaseStream.Position = RMOffsets.FSM;
             writer.Write(fsm);
 
-            writer.BaseStream.Position = OFFSET_FSM_ROOM;
+            writer.BaseStream.Position = RMOffsets.FSM_ROOM;
             writer.Write(roomID);
 
-            writer.BaseStream.Position = OFFSET_FSM_FOLDER;
+            writer.BaseStream.Position = RMOffsets.FSM_FOLDER;
             writer.Write("016".ToCharArray());
 
-            writer.BaseStream.Position = OFFSET_FSM_FILE;
+            writer.BaseStream.Position = RMOffsets.FSM_FILE;
             writer.Write("016".ToCharArray());
 
             // Possible typo fix, overwrites "_000"
@@ -357,7 +292,7 @@ namespace MHWRoommates
             }
             else
             {
-                File.Copy(SAMPLE_SOBJ, npcFilePath);
+                File.Copy(RMFiles.SOBJ, npcFilePath);
             }
         }
 
@@ -492,12 +427,6 @@ namespace MHWRoommates
                 "Dark Red: Can be used to cheat, disabled by default";
 
             MessageBox.Show(colorInfo, "Color Key", MessageBoxButton.OK, MessageBoxImage.Question);
-        }
-
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            roomsWindow.Closing -= roomsWindow.Window_Closing;
-            roomsWindow.Close();
         }
     }
 }

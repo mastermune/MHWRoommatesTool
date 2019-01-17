@@ -72,6 +72,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="RMFiles.cs" />
+    <Compile Include="RMOffsets.cs" />
     <Compile Include="Room.cs" />
     <Page Include="EditRoomsWindow.xaml">
       <SubType>Designer</SubType>

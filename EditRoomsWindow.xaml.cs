@@ -17,20 +17,6 @@ namespace MHWRoommates
         private ObservableCollection<NPC> usingSuiteNPCs;
         private ObservableCollection<NPC> usingResearchBaseNPCs;
 
-        private const string SAMPLE_SOBJL = "st50x_snSample.sobjl";
-
-        #region Hex Editing constants
-
-        private const int OFFSET_SOBJL_COUNT = 0x04;
-        private const int OFFSET_SOBJL_NPC_START = 0x08;
-        private const int OFFSET_SOBJL_NPC_ST50X = 0x1D;
-        private const int OFFSET_SOBJL_NPC_FOLDER = 0x22;
-        private const int OFFSET_SOBJL_NPC_FILE = 0x27;
-        private const int OFFSET_SOBJL_NPC_INSTANCE = 0x2B;
-        private const int SOBJL_NPC_SIZE = 0x33;
-
-        #endregion
-
         private Room selectedRoom;
         private ObservableCollection<NPC> selectedList;
 
@@ -84,12 +70,12 @@ namespace MHWRoommates
 
             using (BinaryReader reader = new BinaryReader(File.Open(sobjlToLoad, FileMode.Open)))
             {
-                reader.BaseStream.Position = OFFSET_SOBJL_COUNT;
+                reader.BaseStream.Position = RMOffsets.SOBJL_COUNT;
                 uint npcCount = reader.ReadUInt32();
 
                 for (int i = 0; i < npcCount; i++)
                 {
-                    reader.BaseStream.Position = OFFSET_SOBJL_NPC_START + OFFSET_SOBJL_NPC_FILE + (i * SOBJL_NPC_SIZE);
+                    reader.BaseStream.Position = RMOffsets.SOBJL_NPC_START + RMOffsets.SOBJL_NPC_FILE + (i * RMOffsets.SOBJL_NPC_SIZE);
                     int npcIndex = int.Parse(new string(reader.ReadChars(3)));
                     //usingNPCs.Add(npcList.NPCs[npcIndex - 1]);
                     // Needs optimization, too lazy to look up the proper way
@@ -217,7 +203,7 @@ namespace MHWRoommates
 
             Directory.CreateDirectory($"{selectedRoom.Path}\\sobjl");
 
-            File.Copy(SAMPLE_SOBJL, selectedRoom.SOBJPaths[0]);
+            File.Copy(RMFiles.SOBJL, selectedRoom.SOBJPaths[0]);
 
             byte[] templateNPC = GetTemplateNpc();
             WriteBaseSOBJL(templateNPC);
@@ -229,12 +215,12 @@ namespace MHWRoommates
 
         private byte[] GetTemplateNpc()
         {
-            byte[] templateNPC = new byte[SOBJL_NPC_SIZE];
+            byte[] templateNPC = new byte[RMOffsets.SOBJL_NPC_SIZE];
 
             using (BinaryReader reader = new BinaryReader(File.Open(selectedRoom.SOBJPaths[0], FileMode.Open)))
             {
-                reader.BaseStream.Position = OFFSET_SOBJL_NPC_START;
-                templateNPC = reader.ReadBytes(SOBJL_NPC_SIZE);
+                reader.BaseStream.Position = RMOffsets.SOBJL_NPC_START;
+                templateNPC = reader.ReadBytes(RMOffsets.SOBJL_NPC_SIZE);
             }
 
             return templateNPC;
@@ -257,7 +243,7 @@ namespace MHWRoommates
 
         private void WriteTemplateNPCs(byte[] templateNPC, BinaryWriter writer)
         {
-            writer.BaseStream.Position = OFFSET_SOBJL_COUNT;
+            writer.BaseStream.Position = RMOffsets.SOBJL_COUNT;
             writer.Write(selectedList.Count);
 
             for (int i = 0; i < selectedList.Count; i++)
@@ -278,17 +264,17 @@ namespace MHWRoommates
             npcList.setNPCIndexes();
             int npcId = npcList.NPCs[selectedList[i].Index - 1].NpcID;
 
-            writer.BaseStream.Position = OFFSET_SOBJL_NPC_START + (i * SOBJL_NPC_SIZE) + OFFSET_SOBJL_NPC_ST50X;
+            writer.BaseStream.Position = RMOffsets.SOBJL_NPC_START + (i * RMOffsets.SOBJL_NPC_SIZE) + RMOffsets.SOBJL_NPC_ST50X;
             byte[] bytesID = Encoding.ASCII.GetBytes(selectedRoom.ID);
             writer.Write(bytesID);
 
             //char[] indexChars = selectedList[i].Index.ToString("D3").ToArray();
 
-            writer.BaseStream.Position = OFFSET_SOBJL_NPC_START + (i * SOBJL_NPC_SIZE) + OFFSET_SOBJL_NPC_FOLDER;
+            writer.BaseStream.Position = RMOffsets.SOBJL_NPC_START + (i * RMOffsets.SOBJL_NPC_SIZE) + RMOffsets.SOBJL_NPC_FOLDER;
             //writer.Write(indexChars);
             writer.Write(npcId.ToString("D3").ToArray());
 
-            writer.BaseStream.Position = OFFSET_SOBJL_NPC_START + (i * SOBJL_NPC_SIZE) + OFFSET_SOBJL_NPC_FILE;
+            writer.BaseStream.Position = RMOffsets.SOBJL_NPC_START + (i * RMOffsets.SOBJL_NPC_SIZE) + RMOffsets.SOBJL_NPC_FILE;
             //writer.Write(indexChars);
             writer.Write(npcId.ToString("D3").ToArray());
         }
@@ -302,7 +288,7 @@ namespace MHWRoommates
 
             npcInstance++;
 
-            writer.BaseStream.Position = OFFSET_SOBJL_NPC_START + (i * SOBJL_NPC_SIZE) + OFFSET_SOBJL_NPC_INSTANCE;
+            writer.BaseStream.Position = RMOffsets.SOBJL_NPC_START + (i * RMOffsets.SOBJL_NPC_SIZE) + RMOffsets.SOBJL_NPC_INSTANCE;
             writer.Write(npcInstance.ToString("D3").ToArray());
 
             return npcInstance;
