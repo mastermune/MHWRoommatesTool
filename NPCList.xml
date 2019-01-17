@@ -134,7 +134,7 @@
     <Name>The Tracker</Name>
     <NPCID>018</NPCID>
     <Animation>1018</Animation>
-    <Warning>Missing</Warning>
+    <Warning>Missing-Rooms</Warning>
   </NPC>
   <NPC>
     <Name>Admiral</Name>

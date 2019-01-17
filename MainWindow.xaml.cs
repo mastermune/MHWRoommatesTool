@@ -37,7 +37,7 @@ namespace MHWRoommates
             {
                 ComboBoxItem item = new ComboBoxItem();
 
-                SetWarningColor(npcList.NPCs[i], item);
+                SetWarningColour(npcList.NPCs[i], item);
 
                 if (npcList.NPCs[i].Warning != "Ignore")
                 {
@@ -47,12 +47,14 @@ namespace MHWRoommates
             }
         }
 
-        private void SetWarningColor(NPC npc, ComboBoxItem item)
+        private void SetWarningColour(NPC npc, ComboBoxItem item)
         {
             switch (npc.Warning)
             {
                 case "Crash": item.Background = Brushes.Red; item.Foreground = Brushes.White; break;
                 case "Missing": item.Background = Brushes.Gray; item.Foreground = Brushes.White; break;
+                case "Missing-Rooms": item.Background = Brushes.DarkGray; item.Foreground = Brushes.White; break;
+                case "Missing-Research": item.Background = Brushes.LightGray; break;
                 case "NoLoop": item.Background = Brushes.Purple; item.Foreground = Brushes.White; break;
                 case "Cheat": item.Background = Brushes.DarkRed; item.Foreground = Brushes.White; item.IsEnabled = false; break;
                 case "Bounds": item.Background = Brushes.Yellow; break;
@@ -414,19 +416,20 @@ namespace MHWRoommates
                 Directory.Delete(npcDirectory);
         }
 
-        private void Color_Help_Button_Click(object sender, RoutedEventArgs e)
+        private void Colour_Help_Button_Click(object sender, RoutedEventArgs e)
         {
-            string colorInfo =
+            string colourInfo =
                 "Red: Possible Crash\n\n" +
                 "Pink: NPC is likely important to story and might mess something up. Don't @ me\n\n" +
                 "Yellow: Interacting with NPC might push you out of bounds\n\n" +
-                "Gray: Possibly doesn't appear, but won't crash the game. Can use their animations on other NPCs\n\n" +
-                "Purple: Animation does not loop.\n\n" +
+                "Gray: Possibly doesn't appear, but won't crash the game. Can use their animations on other NPCs\n" +
+                "      Shades from darkest to lightest: missing in all > missing in rooms > missing in just research\n\n" + 
+                "Purple: Animation does not loop\n\n" +
                 "Blue: Animation either unkown or doesn't exist, can use animation from a different NPC\n\n" +
                 "Green: Likely a dummy NPC that won't normally appear in game. Also fits Blue\n\n" +
                 "Dark Red: Can be used to cheat, disabled by default";
 
-            MessageBox.Show(colorInfo, "Color Key", MessageBoxButton.OK, MessageBoxImage.Question);
+            MessageBox.Show(colourInfo, "Colour Key", MessageBoxButton.OK, MessageBoxImage.Question);
         }
     }
 }

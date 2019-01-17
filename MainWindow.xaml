@@ -11,7 +11,7 @@
         <DockPanel LastChildFill="True">
             <Label IsHitTestVisible="False" DockPanel.Dock="Left">NPC:</Label>
             <ComboBox x:Name="NPC_Select" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" Width="175" SelectionChanged="NPCRoom_Select_SelectionChanged" TabIndex="0"/>
-            <Button x:Name="Color_Help_Button" Content="?" Background="Yellow" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="5,0,0,0" Width="20" Click="Color_Help_Button_Click" FontWeight="Bold" BorderBrush="#FF4D4F19" TabIndex="13"/>
+            <Button x:Name="Colour_Help_Button" Content="?" Background="Yellow" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="5,0,0,0" Width="20" Click="Colour_Help_Button_Click" FontWeight="Bold" BorderBrush="#FF4D4F19" TabIndex="13"/>
             <Button x:Name="Select_Button" IsEnabled="False" Content="Select" Width="47" DockPanel.Dock="Right" Margin="0,0,5,0" VerticalAlignment="Center" Click="Select_Button_Click" Background="#FF78B8F7" BorderBrush="#FF1E3042" FontWeight="Bold" TabIndex="3"/>
             <xctk:IntegerUpDown x:Name="NPC_Instance" DockPanel.Dock="Right" VerticalAlignment="Center" FormatString="D3" Increment="1" Margin="0,0,5,0" ValueChanged="NPC_Instance_ValueChanged" Minimum="0" Maximum="999" IsEnabled="False" TabIndex="2"/>
             <Label IsHitTestVisible="False" DockPanel.Dock="Right" HorizontalAlignment="Right" VerticalAlignment="Center">Copy:</Label>
