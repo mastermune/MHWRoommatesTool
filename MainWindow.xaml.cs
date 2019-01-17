@@ -118,7 +118,7 @@ namespace MHWRoommates
             {
                 case "Crash": item.Background = Brushes.Red; item.Foreground = Brushes.White; break;
                 case "Missing": item.Background = Brushes.Gray; item.Foreground = Brushes.White; break;
-                case "?": item.Background = Brushes.Purple; item.Foreground = Brushes.White; break;
+                case "NoLoop": item.Background = Brushes.Purple; item.Foreground = Brushes.White; break;
                 case "Cheat": item.Background = Brushes.DarkRed; item.Foreground = Brushes.White; item.IsEnabled = false; break;
                 case "Bounds": item.Background = Brushes.Yellow; break;
                 case "Story": item.Background = Brushes.Pink; break;
@@ -486,6 +486,7 @@ namespace MHWRoommates
                 "Pink: NPC is likely important to story and might mess something up. Don't @ me\n\n" +
                 "Yellow: Interacting with NPC might push you out of bounds\n\n" +
                 "Gray: Possibly doesn't appear, but won't crash the game. Can use their animations on other NPCs\n\n" +
+                "Purple: Animation does not loop.\n\n" +
                 "Blue: Animation either unkown or doesn't exist, can use animation from a different NPC\n\n" +
                 "Green: Likely a dummy NPC that won't normally appear in game. Also fits Blue\n\n" +
                 "Dark Red: Can be used to cheat, disabled by default";
