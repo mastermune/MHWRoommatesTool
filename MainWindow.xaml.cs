@@ -135,7 +135,7 @@ namespace MHWRoommates
 
             X_Rotation.IsEnabled = true;
             Y_Rotation.IsEnabled = true;
-            Z_Rotation.IsEnabled = true;
+            //Z_Rotation.IsEnabled = true;
 
             Animation_Select.IsEnabled = true;
 

@@ -53,7 +53,9 @@ namespace MHWRoommates
                 "600000",
                 "800000",
                 "810000",
-                "900000" },
+                "900000",
+                "1000000",
+                "1100000" },
             new Point3D { x = 10207.8134765625f, y = 1601.39001464844f, z = 9.34542846679688f },
             new Point3D { x = 0f, y = 88.3622589111328f, z = 0f });
 
@@ -93,5 +95,14 @@ namespace MHWRoommates
                 "900000" },
             new Point3D { x = 1595.64f, y = -127.0225f, z = 675.9922f }, // Handler pos
             new Point3D { x = 0f, y = -142.4786f, z = 0f });
+
+        public static readonly Room SELIANA_SUITE = new Room(
+            "Seliana Suite",
+            "506",
+            "\\nativePC\\village\\st506\\",
+            new string[] {
+                "0000000" },
+            new Point3D { x = 938.647766113281f, y = 2853.37548828125f, z = 615.363586425781f },
+            new Point3D { x = 0f, y = -111.148902893066f, z = 0f });
     }
 }
