@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <NPCList>
   <NPC>
     <Name>Commander</Name>
@@ -762,10 +762,14 @@
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>"Housekeeper" 3</Name>
-    <NPCID>9971</NPCID>
-    <Animation>16</Animation>
-    <Warning>Animation</Warning>
+    <Name>Geralt of Rivia, Witcher</Name>
+    <NPCID>170</NPCID>
+    <Animation>1170</Animation>
+    <Animations>
+      <Animation>0170</Animation>
+      <Animation>1170</Animation>
+    </Animations>
+    <Warning>Story</Warning>
   </NPC>
   <NPC>
     <Name>(Cat)Sapphire/Valerie</Name>    
@@ -1040,43 +1044,43 @@
     <Warning></Warning>
   </NPC>
   <NPC>
+    <Name>Third Fleet Felyne (Witcher)</Name>
+    <NPCID>259</NPCID>
+    <Animation>259</Animation>
+    <Warning>Story</Warning>
+  </NPC>
+  <NPC>
+    <Name>Third Fleet Felyne Goon 1</Name>
+    <NPCID>260</NPCID>
+    <Animation>260</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Third Fleet Felyne Goon 2</Name>
+    <NPCID>261</NPCID>
+    <Animation>261</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
+    <Name>Nekker (Witcher)</Name>
+    <NPCID>262</NPCID>
+    <Animation>262</Animation>
+    <Warning></Warning>
+  </NPC>
+  <NPC>
     <Name>Blondie 0</Name>
-    <NPCID>9958</NPCID>
-    <Animation>16</Animation>
-    <Warning>Ignore</Warning>
-  </NPC>
-  <NPC>
-    <Name>Blondie 1</Name>
-    <NPCID>9957</NPCID>
-    <Animation>16</Animation>
-    <Warning>Ignore</Warning>
-  </NPC>
-  <NPC>
-    <Name>Blondie 2</Name>
-    <NPCID>9956</NPCID>
-    <Animation>16</Animation>
-    <Warning>Ignore</Warning>
-  </NPC>
-  <NPC>
-    <Name>Blondie 3</Name>
-    <NPCID>9955</NPCID>
-    <Animation>16</Animation>
-    <Warning>Ignore</Warning>
-  </NPC>
-  <NPC>
-    <Name>Blondie 4</Name>
     <NPCID>9954</NPCID>
     <Animation>16</Animation>
     <Warning>Ignore</Warning>
   </NPC>
   <NPC>
-    <Name>Blondie 5</Name>
+    <Name>Blondie 1</Name>
     <NPCID>9953</NPCID>
     <Animation>16</Animation>
     <Warning>Ignore</Warning>
   </NPC>
   <NPC>
-    <Name>Blondie 6</Name>
+    <Name>Blondie 2</Name>
     <NPCID>9952</NPCID>
     <Animation>16</Animation>
     <Warning>Placeholder</Warning>
