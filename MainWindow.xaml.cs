@@ -263,7 +263,7 @@ namespace MHWRoommates
             writer.Write(fsm);
 
             writer.BaseStream.Position = RMOffsets.FSM_ROOM;
-            writer.Write(roomID);
+            writer.Write(roomID.ToCharArray());
 
             writer.BaseStream.Position = RMOffsets.FSM_FOLDER;
             writer.Write("016".ToCharArray());
@@ -275,7 +275,7 @@ namespace MHWRoommates
             if (roomID != "501")
             {
                 writer.Write("_00".ToCharArray());
-                writer.Write(fsm, 0x26, 6);
+                writer.Write(fsm, RMOffsets.FSM_END, 6);
             }
         }
 

@@ -8,9 +8,10 @@
         public const int UNKWN = 0xC7; // Unknown value, usually matches animation or npcID
         public const int COMMENT = 0x70;
         public const int FSM = 0x165; // TODO: Verify this offset
-        public const int FSM_ROOM = 0x171;
+        public const int FSM_ROOM = 0x16F;
         public const int FSM_FOLDER = 0x174;
         public const int FSM_FILE = 0x17D;
+        public const int FSM_END = 0x1F;
 
         public const int SOBJL_COUNT = 0x08;
         public const int SOBJL_NPC_START = 0x0C;
