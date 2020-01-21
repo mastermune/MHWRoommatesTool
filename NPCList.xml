@@ -1266,73 +1266,85 @@
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?146?</Name>
-    <NPCID>9927</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>147-Grammeowster Chef?</Name>
+    <Name>Grammeowster Chef</Name>
     <NPCID>701</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Animation>100701</Animation>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>148-Seliana Stockpiler?</Name>
+    <Name>Seliana Stockpiler</Name>
     <NPCID>702</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Animation>100702</Animation>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>149-Seliana Melder?</Name>
+    <Name>Seliana Melder</Name>
     <NPCID>703</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Animation>100703</Animation>
+	<Animations>
+		<Animation>100703</Animation>
+		<Animation>110703</Animation>
+	</Animations>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>150-Seliana Sailor?</Name>
+    <Name>Seliana Sailor</Name>
     <NPCID>704</NPCID>
+    <Animation>100704</Animation>
+	<Animations>
+		<Animation>100704</Animation>
+		<Animation>110704</Animation>
+	</Animations>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>150-?</Name>
+    <NPCID>9831</NPCID>
     <Animation>307</Animation>
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>151-Seliana Armory?</Name>
+    <Name>Seliana Armory</Name>
     <NPCID>706</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Animation>100706</Animation>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>Housekeeper(SelianaSuite)?</Name>
+    <Name>Housekeeper(Seliana)</Name>
     <NPCID>707</NPCID>
-    <Animation>110016</Animation>
+    <Animation>100016</Animation>
+	<Animations>
+		<Animation>100016</Animation>
+		<Animation>110016</Animation>
+	</Animations>
     <Warning>Iceborne</Warning>
 	<Rooms>
       <Room>506</Room>
     </Rooms>
   </NPC>
   <NPC>
-    <Name>153-Pub Event Manager?</Name>
+    <Name>Pub Event Manager</Name>
     <NPCID>708</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Animation>100708</Animation>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>154-Pub Arena Manager?</Name>
+    <Name>Pub Arena Manager</Name>
     <NPCID>709</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Animation>100709</Animation>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>155-Pub Lass?</Name>
+    <Name>Pub Lass</Name>
     <NPCID>710</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Animation>100710</Animation>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>156-Pub Stockpiler?</Name>
+    <Name>Pub Stockpiler</Name>
     <NPCID>711</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Animation>100711</Animation>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
     <Name>157-Tundra Wyverian?</Name>
@@ -1341,16 +1353,20 @@
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>158-Pub Resource Manager?</Name>
+    <Name>Pub Resource Manager</Name>
     <NPCID>713</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Animation>100713</Animation>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>159-Pub Sailor?</Name>
+    <Name>Pub Sailor</Name>
     <NPCID>714</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Animation>100704</Animation>
+	<Animations>
+		<Animation>100704</Animation>
+		<Animation>110704</Animation>
+	</Animations>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
     <Name>160-Helpful Felyne?</Name>
@@ -1389,22 +1405,30 @@
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>166-Dual-blading Hunter?</Name>
-    <NPCID>754</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Name>166-Helpful Felyne?</Name>
+    <NPCID>730</NPCID>
+    <Animation>100730</Animation>
+	<Animations>
+		<Animation>100730</Animation>
+		<Animation>110730</Animation>
+	</Animations>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>167-Felyne Server?</Name>
-    <NPCID>755</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Name>167-Busybody Felyne?</Name>
+    <NPCID>731</NPCID>
+    <Animation>100731</Animation>
+	<Animations>
+		<Animation>100731</Animation>
+		<Animation>110731</Animation>
+	</Animations>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>168-Felyne Waiter?</Name>
-    <NPCID>756</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Name>168-Busybody Fiver?</Name>
+    <NPCID>732</NPCID>
+    <Animation>100732</Animation>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
     <Name>169-Bowgunner Hunter?</Name>
@@ -1449,16 +1473,21 @@
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>176-Motivated Fourth?</Name>
-    <NPCID>764</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Name>176-???????</Name>
+    <NPCID>740</NPCID>
+    <Animation>100740</Animation>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>177-Curious Fiver?</Name>
-    <NPCID>765</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Name>Ambitious Fourth</Name>
+    <NPCID>741</NPCID>
+	<Animation>100741</Animation>
+	<Animations>
+		<Animation>100741</Animation>
+		<Animation>110741</Animation>
+		<Animation>120741</Animation>
+	</Animations>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
     <Name>178-Fussy Fourth?</Name>
@@ -1467,38 +1496,782 @@
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>179-Overzealous Fifth?</Name>
+    <Name>Reliable Fiver</Name>
+    <NPCID>743</NPCID>
+	<Animation>100743</Animation>
+    <Animations>
+		<Animation>100743</Animation>
+		<Animation>110743</Animation>
+		<Animation>120743</Animation>
+	</Animations>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>180-?</Name>
+    <NPCID>9926</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>181-?</Name>
+    <NPCID>9925</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>182-?</Name>
+    <NPCID>9924</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>183-?</Name>
+    <NPCID>9923</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>184-?</Name>
+    <NPCID>9922</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>185-Studious Biologist?</Name>
+    <NPCID>749</NPCID>
+    <Animation>100749</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>186-?</Name>
+    <NPCID>9920</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>187-?</Name>
+    <NPCID>9919</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>188-?</Name>
+    <NPCID>9918</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>189-?</Name>
+    <NPCID>9917</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>Dual-blading Hunter</Name>
+    <NPCID>754</NPCID>
+    <Animation>100754</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>Felyne Server</Name>
+    <NPCID>755</NPCID>
+    <Animation>100755</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>Felyne Waiter</Name>
+    <NPCID>756</NPCID>
+    <Animation>100755</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>Bowgunner Hunter</Name>
+    <NPCID>757</NPCID>
+    <Animation>100757</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>Commission Member</Name>
+    <NPCID>758</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>Foot Soaking Fiver</Name>
+    <NPCID>759</NPCID>
+    <Animation>100759</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>Soaker Dude</Name>
+    <NPCID>760</NPCID>
+    <Animation>100760</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>Bathing Bambina</Name>
+    <NPCID>761</NPCID>
+    <Animation>100761</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>Lone Soaker</Name>
+    <NPCID>762</NPCID>
+    <Animation>100762</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>Sauna Dude</Name>
+    <NPCID>763</NPCID>
+    <Animation>100763</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>Motivated Fourth</Name>
+    <NPCID>764</NPCID>
+    <Animation>100764</Animation>
+	<Animations>
+		<Animation>100764</Animation>
+		<Animation>110764</Animation>
+		<Animation>120764</Animation>
+		<Animation>110019</Animation>
+		<Animation>110102</Animation>
+	</Animations>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>Curious Fiver</Name>
+    <NPCID>765</NPCID>
+    <Animation>100765</Animation>
+	<Animations>
+		<Animation>100765</Animation>
+		<Animation>110765</Animation>
+		<Animation>120765</Animation>
+	</Animations>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>Fussy Fourth</Name>
+    <NPCID>766</NPCID>
+    <Animation>100766</Animation>
+	<Animations>
+		<Animation>100766</Animation>
+		<Animation>110766</Animation>
+		<Animation>110103</Animation>
+		<Animation>100105</Animation>
+	</Animations>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>Overzealous Fifth</Name>
     <NPCID>767</NPCID>
+    <Animation>100767</Animation>
+	<Animations>
+		<Animation>100767</Animation>
+		<Animation>110767</Animation>
+		<Animation>100766</Animation>
+	</Animations>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>204-?</Name>
+    <NPCID>9902</NPCID>
     <Animation>307</Animation>
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>180-Young Smithy?</Name>
+    <Name>205-?</Name>
+    <NPCID>9901</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>206-?</Name>
+    <NPCID>9900</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>207-Young Smithy?</Name>
     <NPCID>781</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
+    <Animation>100781</Animation>
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>181-Vice Chief Ecologist?</Name>
+    <Name>208-Vice Chief Ecologist?</Name>
     <NPCID>782</NPCID>
+    <Animation>100782</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>209-?</Name>
+    <NPCID>9899</NPCID><!-- 783? -->
     <Animation>307</Animation>
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>182-Smithy Vendor?</Name>
+    <Name>210-???????</Name> <!-- Tech chief? -->
+    <NPCID>784</NPCID>
+    <Animation>100784</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>211-?</Name>
+    <NPCID>9898</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>212-?</Name>
+    <NPCID>9897</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>213-?</Name>
+    <NPCID>9896</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>214-?</Name>
+    <NPCID>9895</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>215-?</Name>
+    <NPCID>9894</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>216-?</Name>
+    <NPCID>9893</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>217-?</Name>
+    <NPCID>9892</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>218-Smithy Vendor?</Name>
     <NPCID>792</NPCID>
+    <Animation>100792</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>219-Third Fleet Resources?</Name>
+    <NPCID>100793</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>220-?</Name>
+    <NPCID>9891</NPCID>
     <Animation>307</Animation>
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>183-Third Fleet Resources?</Name>
-    <NPCID>793</NPCID>
+    <Name>221-?</Name>
+    <NPCID>9890</NPCID>
     <Animation>307</Animation>
     <Warning>Iceborne-Anim</Warning>
   </NPC>
+  <NPC>
+    <Name>222-?</Name>
+    <NPCID>9889</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>223-?</Name>
+    <NPCID>9888</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>224-?</Name>
+    <NPCID>9887</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>225-?</Name>
+    <NPCID>9886</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>226-?</Name>
+    <NPCID>9885</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>227-?</Name>
+    <NPCID>9884</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>228-?</Name>
+    <NPCID>9883</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>229-?</Name>
+    <NPCID>9882</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>230-?</Name>
+    <NPCID>9881</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>231-?</Name>
+    <NPCID>9880</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>232-?</Name>
+    <NPCID>9879</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>233-?</Name>
+    <NPCID>9878</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>234-?</Name>
+    <NPCID>9877</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>235-?</Name>
+    <NPCID>9876</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>236-?</Name>
+    <NPCID>9875</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>237-?</Name>
+    <NPCID>9874</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>238-?</Name>
+    <NPCID>9873</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>239-?</Name>
+    <NPCID>9872</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>240-?</Name>
+    <NPCID>9871</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>241-?</Name>
+    <NPCID>9870</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>242-?</Name>
+    <NPCID>9869</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>243-?</Name>
+    <NPCID>9868</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>244-?</Name>
+    <NPCID>9867</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>245-?</Name>
+    <NPCID>9866</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>246-?</Name>
+    <NPCID>9865</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>247-?</Name>
+    <NPCID>9864</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>248-?</Name>
+    <NPCID>9863</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>249-?</Name>
+    <NPCID>9862</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>250-?</Name>
+    <NPCID>9861</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>251-?</Name>
+    <NPCID>9860</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>252-?</Name>
+    <NPCID>9859</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>253-?</Name>
+    <NPCID>9858</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>254-?</Name>
+    <NPCID>9857</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>255-?</Name>
+    <NPCID>9856</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>256-?</Name>
+    <NPCID>9855</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>257-?</Name>
+    <NPCID>9854</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>258-?</Name>
+    <NPCID>9853</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>259-?</Name>
+    <NPCID>9852</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>260-?</Name>
+    <NPCID>9851</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>261-?</Name>
+    <NPCID>9850</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>262-?</Name>
+    <NPCID>9849</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>263-?</Name>
+    <NPCID>9848</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>264-?</Name>
+    <NPCID>9847</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>265-?</Name>
+    <NPCID>9846</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>266-?</Name>
+    <NPCID>9845</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>267-?</Name>
+    <NPCID>9844</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>268-?</Name>
+    <NPCID>9843</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>269-???????</Name>
+    <NPCID>843</NPCID>
+    <Animation>3026</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>270-?</Name>
+    <NPCID>9842</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>271-??????</Name>
+    <NPCID>845</NPCID>
+    <Animation>3025</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>272-?</Name>
+    <NPCID>9841</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>273-?</Name>
+    <NPCID>9840</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>274-?</Name>
+    <NPCID>9839</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>275-?</Name>
+    <NPCID>9838</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>276-?</Name>
+    <NPCID>9837</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>277-?</Name>
+    <NPCID>9836</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>278-?</Name>
+    <NPCID>9835</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>279-?</Name>
+    <NPCID>9834</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>280-?</Name>
+    <NPCID>9833</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>281-???????</Name>
+    <NPCID>855</NPCID>
+    <Animation>210</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>282-???????</Name>
+    <NPCID>856</NPCID>
+    <Animation>206</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>283-?</Name>
+    <NPCID>9832</NPCID>
+    <Animation>307</Animation>
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <Name>284-???????</Name>
+    <NPCID>858</NPCID>
+    <Animation>212</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
 
-  <!--  
+  <!--  Unknown Seliana NPCs
+  
+  <NPC>
+    <Name>314-???????</Name>
+    <NPCID>909</NPCID>
+    <Animation>100909</Animation>
+	<Animaitons>
+		<Animation>100909</Animation>
+		<Animation>110909</Animation>
+		<Animation>2106</Animation>
+	</Animaitons>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>315-???????</Name>
+    <NPCID>910</NPCID>
+    <Animation>100910</Animation>
+	<Animaitons>
+		<Animation>100910</Animation>
+		<Animation>110910</Animation>
+		<Animation>2255</Animation>
+	</Animaitons>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>322-???????</Name>
+    <NPCID>917</NPCID>
+    <Animation>100917</Animation>
+	<Animaitons>
+		<Animation>100917</Animation>
+		<Animation>110917</Animation>
+		<Animation>120917</Animation>
+		<Animation>130917</Animation>
+	</Animaitons>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>323-???????</Name>
+    <NPCID>918</NPCID>
+    <Animation>100918</Animation>
+	<Animaitons>
+		<Animation>100918</Animation>
+		<Animation>110918</Animation>
+		<Animation>120918</Animation>
+		<Animation>130918</Animation>
+	</Animaitons>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>324-???????</Name>
+    <NPCID>919</NPCID>
+    <Animation>100919</Animation>
+	<Animaitons>
+		<Animation>100919</Animation>
+		<Animation>110919</Animation>
+		<Animation>120919</Animation>
+	</Animaitons>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>325-???????</Name>
+    <NPCID>920</NPCID>
+    <Animation>100920</Animation>
+	<Animaitons>
+		<Animation>100920</Animation>
+		<Animation>110920</Animation>
+		<Animation>120920</Animation>
+	</Animaitons>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>329-???????</Name>
+    <NPCID>924</NPCID>
+    <Animation>100924</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>330-???????</Name>
+    <NPCID>925</NPCID>
+    <Animation>100924</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>347-???????</Name>
+    <NPCID>942</NPCID>
+    <Animation>100942</Animation>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>348-???????</Name>
+    <NPCID>943</NPCID>
+    <Animation>100942</Animation>
+	<Animaitons>
+		<Animation>100942</Animation>
+		<Animation>120919</Animation>
+	</Animaitons>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <Name>349-???????</Name>
+    <NPCID>944</NPCID>
+    <Animation>100942</Animation>
+	<Animaitons>
+		<Animation>100942</Animation>
+		<Animation>120920</Animation>
+	</Animaitons>
+    <Warning>Iceborne</Warning>
+  </NPC>
+-->
 
+
+<!--
   <NPC>
     <Name>858?id203</Name>
     <Animation>212?</Animation>
