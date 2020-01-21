@@ -60,6 +60,8 @@ namespace MHWRoommates
                 case "Story": item.Background = Brushes.Pink; break;
                 case "Placeholder": item.Background = Brushes.Green; item.Foreground = Brushes.White; break;
                 case "Animation": item.Background = Brushes.Blue; item.Foreground = Brushes.White; break;
+                case "Iceborne":
+                case "Iceborne-Anim": item.Background = Brushes.LightSkyBlue; break;
             }
         }
 
@@ -74,6 +76,7 @@ namespace MHWRoommates
                     case "Placeholder":
                     case "Animation":
                     case "Cheat":
+                    case "Iceborne-Anim":
                         break;
                     default: AddNPCAnimations(npcList.NPCs[i]); break;
                 }
@@ -420,7 +423,8 @@ namespace MHWRoommates
                 "Purple: Animation does not loop\n\n" +
                 "Blue: Animation either unkown or doesn't exist, can use animation from a different NPC\n\n" +
                 "Green: Likely a dummy NPC that won't normally appear in game. Also fits Blue\n\n" +
-                "Dark Red: Can be used to cheat, disabled by default";
+                "Dark Red: Can be used to cheat, disabled by default\n\n" +
+                "Light Blue: Something to do with Iceborne. Be careful.";
 
             MessageBox.Show(colourInfo, "Colour Key", MessageBoxButton.OK, MessageBoxImage.Question);
         }
