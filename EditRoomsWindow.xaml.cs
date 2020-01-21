@@ -15,6 +15,7 @@ namespace MHWRoommates
         private ObservableCollection<NPC> usingPrivateNPCs;
         private ObservableCollection<NPC> usingSuiteNPCs;
         private ObservableCollection<NPC> usingResearchBaseNPCs;
+        private ObservableCollection<NPC> usingSelianaSuiteNPCs;
 
         private Room selectedRoom;
         private ObservableCollection<NPC> selectedList;
@@ -27,26 +28,36 @@ namespace MHWRoommates
             usingPrivateNPCs = new ObservableCollection<NPC>();
             usingSuiteNPCs = new ObservableCollection<NPC>();
             usingResearchBaseNPCs = new ObservableCollection<NPC>();
+            usingSelianaSuiteNPCs = new ObservableCollection<NPC>();
 
             NPCs_Available_Living.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
             NPCs_Available_Private.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
             NPCs_Available_Suite.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
             NPCs_Available_ResearchBase.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
+            NPCs_Available_SelianaSuite.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
 
             NPCs_Using_Living.ItemsSource = usingLivingNPCs;
             NPCs_Using_Private.ItemsSource = usingPrivateNPCs;
             NPCs_Using_Suite.ItemsSource = usingSuiteNPCs;
             NPCs_Using_ResearchBase.ItemsSource = usingResearchBaseNPCs;
+            NPCs_Using_SelianaSuite.ItemsSource = usingSelianaSuiteNPCs;
 
             NPCs_Using_Living.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_Private.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_Suite.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_ResearchBase.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
+            NPCs_Using_SelianaSuite.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
 
-            if (LoadSOBJL(npcList, LIVING_QUARTERS.SOBJPaths[0], usingLivingNPCs, "501")) Button_Delete_Living.IsEnabled = true;
-            if (LoadSOBJL(npcList, PRIVATE_QUARTERS.SOBJPaths[0], usingPrivateNPCs, "502")) Button_Delete_Private.IsEnabled = true;
-            if (LoadSOBJL(npcList, PRIVATE_SUITE.SOBJPaths[0], usingSuiteNPCs, "503")) Button_Delete_Suite.IsEnabled = true;
-            if (LoadSOBJL(npcList, RESEARCH_BASE.SOBJPaths[1], usingResearchBaseNPCs, "303")) Button_Delete_ResearchBase.IsEnabled = true;
+            if (LoadSOBJL(npcList, LIVING_QUARTERS.SOBJPaths[0], usingLivingNPCs, "501"))
+                Button_Delete_Living.IsEnabled = true;
+            if (LoadSOBJL(npcList, PRIVATE_QUARTERS.SOBJPaths[0], usingPrivateNPCs, "502"))
+                Button_Delete_Private.IsEnabled = true;
+            if (LoadSOBJL(npcList, PRIVATE_SUITE.SOBJPaths[0], usingSuiteNPCs, "503"))
+                Button_Delete_Suite.IsEnabled = true;
+            if (LoadSOBJL(npcList, RESEARCH_BASE.SOBJPaths[1], usingResearchBaseNPCs, "303"))
+                Button_Delete_ResearchBase.IsEnabled = true;
+            if (LoadSOBJL(npcList, SELIANA_SUITE.SOBJPaths[0], usingSelianaSuiteNPCs, "506"))
+                Button_Delete_SelianaSuite.IsEnabled = true;
 
             selectedRoom = LIVING_QUARTERS;
             selectedList = usingLivingNPCs;
@@ -83,7 +94,10 @@ namespace MHWRoommates
                     {
                         if (npcList.NPCs[j].Index == npcIndex) { usingNPCs.Add(npcList.NPCs[j]); found = true; }
                     }
-                    if (found == false) MessageBox.Show($"Couldn't parse index {npcIndex}", "Parsing error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    if (found == false)
+                    {
+                        MessageBox.Show($"Couldn't parse index {npcIndex}", "Parsing error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 }
             }
 
@@ -152,6 +166,18 @@ namespace MHWRoommates
             usingResearchBaseNPCs = RemoveNPC(NPCs_Using_ResearchBase, usingResearchBaseNPCs);
             NPCs_Using_ResearchBase.ItemsSource = usingResearchBaseNPCs;
         }
+
+        private void Button_Add_NPC_SelianaSuite_Click(object sender, RoutedEventArgs e)
+        {
+            usingSelianaSuiteNPCs = AddNPC(NPCs_Available_SelianaSuite, usingSelianaSuiteNPCs);
+            NPCs_Using_SelianaSuite.ItemsSource = usingSelianaSuiteNPCs;
+        }
+
+        private void Button_Rmv_NPC_SelianaSuite_Click(object sender, RoutedEventArgs e)
+        {
+            usingSelianaSuiteNPCs = RemoveNPC(NPCs_Using_SelianaSuite, usingSelianaSuiteNPCs);
+            NPCs_Using_SelianaSuite.ItemsSource = usingSelianaSuiteNPCs;
+        }
         #endregion
 
         #region Enable/Disable Add and Remove buttons based on selections
@@ -194,6 +220,16 @@ namespace MHWRoommates
         {
             Button_Add_NPC_ResearchBase.IsEnabled = NPCs_Available_ResearchBase.SelectedItem != null;
         }
+
+        private void NPCs_Available_SelianaSuite_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Button_Add_NPC_SelianaSuite.IsEnabled = NPCs_Available_SelianaSuite.SelectedItem != null;
+        }
+
+        private void NPCs_Using_SelianaSuite_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Button_Rmv_NPC_SelianaSuite.IsEnabled = NPCs_Using_SelianaSuite.SelectedItem != null;
+        }
         #endregion
 
         private void SaveSelectedSOBJL(object sender, RoutedEventArgs e)
@@ -220,6 +256,7 @@ namespace MHWRoommates
                 case 1: deleteButtonToEnable = Button_Delete_Private; break;
                 case 2: deleteButtonToEnable = Button_Delete_Suite; break;
                 case 3: deleteButtonToEnable = Button_Delete_ResearchBase; break;
+                case 4: deleteButtonToEnable = Button_Delete_SelianaSuite; break;
                 default: deleteButtonToEnable = null; break;
             }
             if (deleteButtonToEnable != null) deleteButtonToEnable.IsEnabled = true;
@@ -363,6 +400,7 @@ namespace MHWRoommates
                 case 1: selectedRoom = PRIVATE_QUARTERS; selectedList = usingPrivateNPCs; break;
                 case 2: selectedRoom = PRIVATE_SUITE; selectedList = usingSuiteNPCs; break;
                 case 3: selectedRoom = RESEARCH_BASE; selectedList = usingResearchBaseNPCs; break;
+                case 4: selectedRoom = SELIANA_SUITE; selectedList = usingSelianaSuiteNPCs; break;
             }
         }
     }

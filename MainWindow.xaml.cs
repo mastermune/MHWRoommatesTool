@@ -28,6 +28,7 @@ namespace MHWRoommates
             Room_Select.Items.Add(PRIVATE_QUARTERS);
             Room_Select.Items.Add(PRIVATE_SUITE);
             Room_Select.Items.Add(RESEARCH_BASE);
+            Room_Select.Items.Add(SELIANA_SUITE);
         }
 
         private void PopulateNPCComboBox()
@@ -153,7 +154,7 @@ namespace MHWRoommates
 
             bool defaultExists = selectedNPC.DefaultRooms != null && selectedNPC.DefaultRooms.Contains(selectedRoom.ID);
             // Housekeeper and Handler defaults are the RoomDefaults and not used in xml
-            defaultExists = defaultExists && (selectedNPC.NpcID != 2 && selectedNPC.NpcID != 16);
+            defaultExists = defaultExists && (selectedNPC.NpcID != 2 && selectedNPC.NpcID != 16 && selectedNPC.NpcID != 707);
 
             Point3D defaultPosition = (defaultExists)? selectedNPC.DefaultPosition : selectedRoom.DefaultPosition;
             X_Position.Value = defaultPosition.x;
@@ -216,8 +217,10 @@ namespace MHWRoommates
         private byte[] GetNpcFSM()
         {
             const int HOUSEKEEPER = 14;
+            const int SELIANA_KEEPER = 152;
 
-            if ((((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC).Index != HOUSEKEEPER)
+            NPC npc = (((ComboBoxItem)NPC_Select.SelectedItem).Content as NPC);
+            if (npc.Index != HOUSEKEEPER && npc.Index != SELIANA_KEEPER)
                 return new byte[] { };
 
             byte[] fsm;
@@ -257,7 +260,8 @@ namespace MHWRoommates
         {
             // Only supporting Housekeeper's FSM
             const int HOUSEKEEPER = 14;
-            if (selectedNPC.Index != HOUSEKEEPER)
+            const int SELIANA_KEEPER = 152;
+            if (selectedNPC.Index != HOUSEKEEPER && selectedNPC.Index != SELIANA_KEEPER)
                 return;
 
             string roomID = (Room_Select.SelectedItem as Room).ID;
@@ -275,9 +279,13 @@ namespace MHWRoommates
             writer.Write("016".ToCharArray());
 
             // Possible typo fix, overwrites "_000"
-            if (roomID != "501")
+            if (roomID != "501" && roomID != "506")
             {
                 writer.Write("_00".ToCharArray());
+                writer.Write(fsm, RMOffsets.FSM_END, 6);
+            } else if (roomID == "506") // Seliana Keeper's fsm file appended with _010
+            {
+                writer.Write("_010".ToCharArray());
                 writer.Write(fsm, RMOffsets.FSM_END, 6);
             }
         }

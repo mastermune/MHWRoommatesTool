@@ -1306,6 +1306,9 @@
     <NPCID>707</NPCID>
     <Animation>110016</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+      <Room>506</Room>
+    </Rooms>
   </NPC>
   <NPC>
     <Name>153-Pub Event Manager?</Name>
