@@ -265,6 +265,7 @@ namespace MHWRoommates
                 return;
 
             string roomID = (Room_Select.SelectedItem as Room).ID;
+            string housekeeperID = (roomID=="506")? "707" : "016";
 
             writer.BaseStream.Position = RMOffsets.FSM;
             writer.Write(fsm);
@@ -273,20 +274,19 @@ namespace MHWRoommates
             writer.Write(roomID.ToCharArray());
 
             writer.BaseStream.Position = RMOffsets.FSM_FOLDER;
-            writer.Write("016".ToCharArray());
+            writer.Write(housekeeperID.ToCharArray());
 
             writer.BaseStream.Position = RMOffsets.FSM_FILE;
-            writer.Write("016".ToCharArray());
+            writer.Write(housekeeperID.ToCharArray());
 
-            // Possible typo fix, overwrites "_000"
-            if (roomID != "501" && roomID != "506")
+            if (roomID == "501") // 501 fsm file appended with _000
             {
-                writer.Write("_00".ToCharArray());
-                writer.Write(fsm, RMOffsets.FSM_END, 6);
+                writer.Write("_000".ToCharArray());
+                writer.Write(fsm, RMOffsets.FSM_END, 7);
             } else if (roomID == "506") // Seliana Keeper's fsm file appended with _010
             {
                 writer.Write("_010".ToCharArray());
-                writer.Write(fsm, RMOffsets.FSM_END, 6);
+                writer.Write(fsm, RMOffsets.FSM_END, 7);
             }
         }
 

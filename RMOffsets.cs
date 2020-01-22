@@ -11,7 +11,7 @@
         public const int FSM_ROOM = 0x16F;
         public const int FSM_FOLDER = 0x174;
         public const int FSM_FILE = 0x17D;
-        public const int FSM_END = 0x1F;
+        public const int FSM_END = 0x1E;
 
         public const int SOBJL_COUNT = 0x08;
         public const int SOBJL_NPC_START = 0x0C;
