@@ -56,8 +56,8 @@ namespace MHWRoommates
                 "900000",
                 "1000000",
                 "1100000" },
-            new Point3D { x = 10207.8134765625f, y = 1601.39001464844f, z = 9.34542846679688f },
-            new Point3D { x = 0f, y = 88.3622589111328f, z = 0f });
+            new Point3D { x = 10147.533203125f, y = 1601.39001464844f, z = -12.034893989563f },
+            new Point3D { x = 0f, y = -31.5141468048096f, z = 0f });
 
         public static readonly Room PRIVATE_QUARTERS = new Room(
             "Private Quarters",
@@ -66,8 +66,8 @@ namespace MHWRoommates
             new string[] {
                 "010000",
                 "410000" },
-            new Point3D { x = 12348.55078125f, y = 5838.5400390625f, z = -6231.52294921875f },
-            new Point3D { x = 0f, y = -148.999847412109f, z = 0f });
+            new Point3D { x = 12275.533203125f, y = 5836.35986328125f, z = -6215.0712890625f },
+            new Point3D { x = 0f, y = 74.0428695678711f, z = 0f });
 
         public static readonly Room PRIVATE_SUITE = new Room(
             "Private Suite",
@@ -76,8 +76,8 @@ namespace MHWRoommates
             new string[] {
                 "010000",
                 "900000" },
-            new Point3D { x = 17648.513671875f, y = 11554.5869140625f, z = -498.106353759766f },
-            new Point3D { x = 0f, y = -2.99981689453125f, z = 0f});
+            new Point3D { x = 17703.70703125f, y = 11554.5869140625f, z = -449.223327636719f },
+            new Point3D { x = 0f, y = -174.542831420898f, z = 0f});
 
         public static readonly Room RESEARCH_BASE = new Room(
             "Research Base",
