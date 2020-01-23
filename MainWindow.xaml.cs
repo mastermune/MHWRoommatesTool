@@ -27,9 +27,9 @@ namespace MHWRoommates
             Room_Select.Items.Add(LIVING_QUARTERS);
             Room_Select.Items.Add(PRIVATE_QUARTERS);
             Room_Select.Items.Add(PRIVATE_SUITE);
-            Room_Select.Items.Add(RESEARCH_BASE);
             Room_Select.Items.Add(SELIANA_SUITE);
             Room_Select.Items.Add(SELIANA_PUB);
+            Room_Select.Items.Add(RESEARCH_BASE);
         }
 
         private void PopulateNPCComboBox()
@@ -138,9 +138,7 @@ namespace MHWRoommates
             Y_Position.IsEnabled = true;
             Z_Position.IsEnabled = true;
 
-            //X_Rotation.IsEnabled = true;
             Y_Rotation.IsEnabled = true;
-            //Z_Rotation.IsEnabled = true;
 
             Animation_Select.IsEnabled = true;
 
@@ -154,18 +152,14 @@ namespace MHWRoommates
             Room selectedRoom = (Room_Select.SelectedItem as Room);
 
             bool defaultExists = selectedNPC.DefaultRooms != null && selectedNPC.DefaultRooms.Contains(selectedRoom.ID);
-            // Housekeeper and Handler defaults are the RoomDefaults and not used in xml
-            defaultExists = defaultExists && (selectedNPC.NpcID != 2 && selectedNPC.NpcID != 16 && selectedNPC.NpcID != 707);
+            int defaultPosID = (defaultExists) ? selectedNPC.DefaultRooms.IndexOf(selectedRoom.ID) : 0;
+            Point3D defaultPosition = (defaultExists)?
+                selectedNPC.DefaultPositions[defaultPosID] : selectedRoom.DefaultPosition;
 
-            Point3D defaultPosition = (defaultExists)? selectedNPC.DefaultPosition : selectedRoom.DefaultPosition;
             X_Position.Value = defaultPosition.x;
             Y_Position.Value = defaultPosition.y;
             Z_Position.Value = defaultPosition.z;
-
-            Point3D defaultRotation = (defaultExists)? selectedNPC.DefaultRotation : selectedRoom.DefaultRotation;
-            X_Rotation.Value = defaultRotation.x;
-            Y_Rotation.Value = defaultRotation.y;
-            Z_Rotation.Value = defaultRotation.z;
+            Y_Rotation.Value = defaultPosition.r;
 
             LoadAnimation(selectedNPC.Animation);
         }

@@ -9,15 +9,13 @@ namespace MHWRoommates
         public string Path { get; }
         public string[] SOBJPaths { get; }
         public Point3D DefaultPosition { get; }
-        public Point3D DefaultRotation { get; }
 
-        public Room(string name, string id, string path, string[] sobjs, Point3D position, Point3D rotation)
+        public Room(string name, string id, string path, string[] sobjs, Point3D position)
         {
             Name = name;
             ID = id;
             Path = Directory.GetParent(Directory.GetCurrentDirectory()) + path;
             DefaultPosition = position;
-            DefaultRotation = rotation;
 
             SOBJPaths = new string[sobjs.Length];
             for (int i = 0; i < sobjs.Length; i++)
@@ -28,7 +26,7 @@ namespace MHWRoommates
 
         public struct Point3D
         {
-            public float x, y, z;
+            public float x, y, z, r;
         }
 
         public override string ToString()
@@ -56,8 +54,12 @@ namespace MHWRoommates
                 "900000",
                 "1000000",
                 "1100000" },
-            new Point3D { x = 10147.533203125f, y = 1601.39001464844f, z = -12.034893989563f },
-            new Point3D { x = 0f, y = -31.5141468048096f, z = 0f });
+            new Point3D { // Housekeeper
+                x = 10147.533203125f,
+                y = 1601.39001464844f,
+                z = -12.034893989563f,
+                r = -31.5141468048096f
+            });
 
         public static readonly Room PRIVATE_QUARTERS = new Room(
             "Private Quarters",
@@ -66,8 +68,12 @@ namespace MHWRoommates
             new string[] {
                 "010000",
                 "410000" },
-            new Point3D { x = 12275.533203125f, y = 5836.35986328125f, z = -6215.0712890625f },
-            new Point3D { x = 0f, y = 74.0428695678711f, z = 0f });
+            new Point3D { // Housekeeper
+                x = 12275.533203125f,
+                y = 5836.35986328125f,
+                z = -6215.0712890625f,
+                r = 74.0428695678711f 
+            });
 
         public static readonly Room PRIVATE_SUITE = new Room(
             "Private Suite",
@@ -76,8 +82,12 @@ namespace MHWRoommates
             new string[] {
                 "010000",
                 "900000" },
-            new Point3D { x = 17703.70703125f, y = 11554.5869140625f, z = -449.223327636719f },
-            new Point3D { x = 0f, y = -174.542831420898f, z = 0f});
+            new Point3D { // Housekeeper
+                x = 17703.70703125f,
+                y = 11554.5869140625f,
+                z = -449.223327636719f,
+                r = -174.542831420898f
+            });
 
         public static readonly Room RESEARCH_BASE = new Room(
             "Research Base",
@@ -93,23 +103,35 @@ namespace MHWRoommates
                 "600000",
                 "800000",
                 "900000" },
-            new Point3D { x = 1595.64f, y = -127.0225f, z = 675.9922f }, // Handler pos
-            new Point3D { x = 0f, y = -142.4786f, z = 0f });
+            new Point3D { // The Handler
+                x = 1595.64f,
+                y = -127.0225f,
+                z = 675.9922f,
+                r = -142.4786f
+            });
 
         public static readonly Room SELIANA_SUITE = new Room(
             "Seliana Suite",
             "506",
             "\\nativePC\\village\\st506\\",
             new string[] { "0000000" },
-            new Point3D { x = 938.647766113281f, y = 2853.37548828125f, z = 615.363586425781f },
-            new Point3D { x = 0f, y = -111.148902893066f, z = 0f });
+            new Point3D { // Seliana Housekeeper
+                x = 938.647766113281f,
+                y = 2853.37548828125f,
+                z = 615.363586425781f,
+                r = -111.148902893066f
+            });
 
         public static readonly Room SELIANA_PUB = new Room(
             "Seliana Pub",
             "306",
             "\\nativePC\\village\\st306\\",
             new string[] { "0000000" },
-            new Point3D { x = 0, y = 0, z = 0 },
-            new Point3D { x = 0, y = 0, z = 0});
+            new Point3D { // Pub Event Manager
+                x = -5282.1474609375f,
+                y = 4552.3203125f,
+                z = -4996.09326171875f,
+                r = 87.1305770874023f
+            });
     }
 }

@@ -22,6 +22,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
+	<Position>
+		<x>1595.64</x>
+		<y>-127.0225</y>
+		<z>675.9922</z>
+		<r>-142.4786</r>
+	</Position>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Field Team Leader</Name>
@@ -107,16 +115,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-3233.86474609375</x>
       <y>3458.06127929687</y>
       <z>-923.689208984375</z>
+	  <r>141.660034179688</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>141.660034179688</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Armory</Name>
@@ -140,6 +146,26 @@
       <Room>502</Room>
       <Room>503</Room>
     </Rooms>
+	<Positions>
+	<Position><!--501-->
+		<x>10147.533203125</x>
+		<y>1601.39001464844</y>
+		<z>-12.034893989563</z>
+		<r>-31.5141468048096</r>
+	</Position>
+	<Position><!--502-->
+		<x>12275.533203125</x>
+		<y>5836.35986328125</y>
+		<z>-6215.0712890625</z>
+		<r>74.0428695678711</r>
+	</Position>
+	<Position><!--503-->
+		<x>17703.70703125</x>
+		<y>11554.5869140625</y>
+		<z>-449.223327636719</z>
+		<r>-174.542831420898</r>
+	</Position>
+	</Positions>
   </NPC>
   <NPC>
     <Name>The Huntsman</Name>
@@ -159,14 +185,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>3223.79125976562</x>
       <y>625.865295410156</y>
       <z>-227.039749145508</z>
+	  <r>72.0000076293945</r>
     </Position>
-    <Rotation>
-      <y>72.0000076293945</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Admiral</Name>
@@ -188,14 +214,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>3527</x>
       <y>650</y>
       <z>40</z>
+	  <r>-74.9999771118164</r>
     </Position>
-    <Rotation>
-      <y>-74.9999771118164</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Third Fleet Provisions</Name>
@@ -205,13 +231,15 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>80.9451446533203</x>
       <y>-402.803955078125</y>
       <z>853.917785644531</z>
+      <r>-64.1549987792969</r>
     </Position>
+	</Positions>
     <Rotation>
-      <y>-64.1549987792969</y>
     </Rotation>
   </NPC>
   <NPC>
@@ -222,14 +250,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>781.793151855469</x>
       <y>-1027.08605957031</y>
       <z>1201.67407226562</z>
+	  <r>-116.313171386719</r>
     </Position>
-    <Rotation>
-      <y>-116.313171386719</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>First Wyverian</Name>
@@ -250,14 +278,14 @@
     <Rooms>
       <Room>501</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>9797.4736328125</x>
       <y>1601.39001464844</y>
       <z>849.279602050781</z>
+	  <r>-112.766540527344</r>
     </Position>
-    <Rotation>
-      <y>-112.766540527344</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Serious Handler</Name>
@@ -272,14 +300,14 @@
     <Rooms>
       <Room>501</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>9671.2431640625</x>
       <y>1601.39001464844</y>
       <z>962.771362304687</z>
-    </Position>
-    <Rotation>
-      <y>134.999771118164</y>
-    </Rotation>
+	  <r>134.999771118164</r>
+	</Position>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Missing Scholar</Name>
@@ -573,14 +601,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>2801.138671875</x>
       <y>627.065307617187</y>
       <z>514.80810546875</z>
-    </Position>
-    <Rotation>
-      <y>87.844482421875</y>
-    </Rotation>
+      <r>87.844482421875</r>
+	</Position>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Cheerful Scholar</Name>
@@ -590,14 +618,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>2152.10668945313</x>
       <y>37.4112548828125</y>
       <z>-812.4951171875</z>
+      <r>-99.9999847412109</r>
     </Position>
-    <Rotation>
-      <y>-99.9999847412109</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Shy Scholar</Name>
@@ -607,14 +635,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>814.145324707031</x>
       <y>-1031.49926757812</y>
       <z>-755.326538085938</z>
+      <r>-127.000137329102</r>
     </Position>
-    <Rotation>
-      <y>-127.000137329102</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Squad Manager</Name>
@@ -792,14 +820,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>582.766052246094</x>
       <y>-1029.29260253906</y>
       <z>87.2334671020508</z>
+      <r>-172.000061035156</r>
     </Position>
-    <Rotation>
-      <y>-172.000061035156</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>(Cat)Rocky/Alex</Name>
@@ -809,14 +837,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>522.136474609375</x>
       <y>-1029.37561035156</y>
       <z>29.1200294494629</z>
+      <r>128.505157470703</r>
     </Position>
-    <Rotation>
-      <y>128.505157470703</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Acrobat/TrapWhiz</Name>
@@ -826,14 +854,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>549.780029296875</x>
       <y>-1029.98608398438</y>
       <z>-118.948532104492</z>
+      <r>1.99997282028198</r>
     </Position>
-    <Rotation>
-      <y>1.99997282028198</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>(Cat)Finn/Lucy</Name>
@@ -843,14 +871,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>835.312744140625</x>
       <y>-1028.92529296875</y>
       <z>146.350463867187</z>
+      <r>42.9999847412109</r>
     </Position>
-    <Rotation>
-      <y>42.9999847412109</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>(Cat)Biscuit/Roy</Name>
@@ -860,14 +888,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>966.892456054687</x>
       <y>-944.10400390625</y>
       <z>120.373779296875</z>
+      <r>-61.6949653625488</r>
     </Position>
-    <Rotation>
-      <y>-61.6949653625488</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Lead Hunter</Name>
@@ -877,14 +905,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>915.889953613281</x>
       <y>-992.948852539063</y>
       <z>253.222106933594</z>
+      <r>-119.999938964844</r>
     </Position>
-    <Rotation>
-      <y>-119.999938964844</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>(Cat)Jr/Kidd</Name>
@@ -894,14 +922,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>632.321899414062</x>
       <y>-1032.0126953125</y>
       <z>-541.124084472656</z>
+      <r>30.9999904632568</r>
     </Position>
-    <Rotation>
-      <y>30.9999904632568</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>(Cat)Araujo/David</Name>
@@ -911,14 +939,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>499.376861572266</x>
       <y>-974.294616699219</y>
       <z>-401.317230224609</z>
+      <r>93.9999847412109</r>
     </Position>
-    <Rotation>
-      <y>93.9999847412109</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Gajalaka Knight</Name>
@@ -928,14 +956,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>658.007568359375</x>
       <y>-1031.392578125</y>
       <z>-405.714294433594</z>
+      <r>67.9999694824219</r>
     </Position>
-    <Rotation>
-      <y>67.9999694824219</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>(Flailing Hands Cat)</Name>
@@ -945,14 +973,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
+	<Positions>
     <Position>
       <x>1051.50390625</x>
       <y>-1026.99108886719</y>
       <z>1026.70727539062</z>
+      <r>120</r>
     </Position>
-    <Rotation>
-      <y>120</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>(Pointing Cat)</Name>
@@ -962,14 +990,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
-    <Position>
+    <Positions>
+	<Position>
       <x>1165.61462402344</x>
       <y>-1026.96337890625</y>
       <z>953.58984375</z>
+      <r>-30</r>
     </Position>
-    <Rotation>
-      <y>-30</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>(Cat Idle)</Name>
@@ -979,14 +1007,14 @@
     <Rooms>
       <Room>303</Room>
     </Rooms>
-    <Position>
+    <Positions>
+	<Position>
       <x>1123.44201660156</x>
       <y>-1026.97644042969</y>
       <z>1132.14672851562</z>
+      <r>-169.999908447266</r>
     </Position>
-    <Rotation>
-      <y>-169.999908447266</y>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Apple Enthusiast</Name>
@@ -1324,16 +1352,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-3071.51000976562</x>
       <y>3480.10791015625</y>
       <z>-1814.28881835938</z>
+      <r>-19.9999561309814</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>-19.9999561309814</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Housekeeper(Seliana)</Name>
@@ -1347,6 +1373,14 @@
 	<Rooms>
       <Room>506</Room>
     </Rooms>
+	<Positions>
+	<Position>
+		<x>938.647766113281</x>
+		<y>2853.37548828125</y>
+		<z>615.363586425781</z>
+		<r>-111.148902893066</r>
+	</Position>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Pub Event Manager</Name>
@@ -1356,16 +1390,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-5282.1474609375</x>
       <y>4552.3203125</y>
       <z>-4996.09326171875</z>
+      <r>87.1305770874023</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>87.1305770874023</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Pub Arena Manager</Name>
@@ -1375,16 +1407,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-6226.576171875</x>
       <y>4590.6689453125</y>
       <z>-6456.060546875</z>
+      <r>58.1305465698242</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>58.1305465698242</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Pub Lass</Name>
@@ -1394,16 +1424,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-6113.82373046875</x>
       <y>4590.6689453125</y>
       <z>-6696.14501953125</z>
+      <r>73.1305389404297</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>73.1305389404297</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Pub Stockpiler</Name>
@@ -1413,16 +1441,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-5842.8310546875</x>
       <y>4493.02880859375</y>
       <z>-7978.40478515625</z>
+      <r>49.130500793457</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>49.130500793457</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>157-Tundra Wyverian?</Name>
@@ -1438,16 +1464,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-3586.54443359375</x>
       <y>4587.35986328125</y>
       <z>-5669.4931640625</z>
+      <r>-109.999984741211</r>
     </Position>
-	<Rotation>
-      <x>0</x>
-      <y>-109.999984741211</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Pub Sailor</Name>
@@ -1461,16 +1485,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-5204.076171875</x>
       <y>4494.35546875</y>
       <z>-8097.51708984375</z>
+      <r>0</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>0</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>160-Helpful Felyne?</Name>
@@ -1678,16 +1700,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-3450.41479492188</x>
       <y>3480.10791015625</y>
       <z>-1737.943359375</z>
+      <r>169.999908447266</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>169.999908447266</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Felyne Server</Name>
@@ -1697,16 +1717,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-3655.80004882812</x>
       <y>5303</y>
       <z>-6029.2001953125</z>
+      <r>-112</r>
     </Position>
-	<Rotation>
-      <x>0</x>
-      <y>-112</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Felyne Waiter</Name>
@@ -1716,16 +1734,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-3655.80004882812</x>
       <y>5303</y>
       <z>-6029.2001953125</z>
+      <r>-112</r>
     </Position>
-	<Rotation>
-      <x>0</x>
-      <y>-112</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Bowgunner Hunter</Name>
@@ -1735,16 +1751,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-2934.70776367188</x>
       <y>4538.265625</y>
       <z>-6494.92724609375</z>
+      <r>0</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>0</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Commission Member</Name>
@@ -1760,16 +1774,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-5742.5390625</x>
       <y>4490.94091796875</y>
       <z>-5441.4609375</z>
+      <r>135</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>135</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Soaker Dude</Name>
@@ -1779,16 +1791,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-8949.8037109375</x>
       <y>4300.1787109375</y>
       <z>-3294.12084960937</z>
+      <r>156.000015258789</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>156.000015258789</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Bathing Bambina</Name>
@@ -1798,16 +1808,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-9062.15234375</x>
       <y>4298.8876953125</y>
       <z>-3342.27416992188</z>
+      <r>139</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>139</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Lone Soaker</Name>
@@ -1817,16 +1825,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-9787.45703125</x>
       <y>4418.56494140625</y>
       <z>-5485.0322265625</z>
+      <r>19.9999561309814</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>19.9999561309814</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Sauna Dude</Name>
@@ -1836,16 +1842,14 @@
 	<Rooms>
 		<Room>306</Room>
 	</Rooms>
+	<Positions>
 	<Position>
       <x>-6069.32666015625</x>
       <y>4299.5205078125</y>
       <z>-2089.4208984375</z>
+      <r>149.999954223633</r>
     </Position>
-	<Rotation>
-      <x>-0</x>
-      <y>149.999954223633</y>
-      <z>0</z>
-    </Rotation>
+	</Positions>
   </NPC>
   <NPC>
     <Name>Motivated Fourth</Name>

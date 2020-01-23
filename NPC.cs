@@ -24,11 +24,9 @@ namespace MHWRoommates
         [XmlArrayItem("Animation")]
         public List<UInt32> Animations { get; set; }
 
-        [XmlElement("Position")]
-        public Room.Point3D DefaultPosition { get; set; }
-
-        [XmlElement("Rotation")]
-        public Room.Point3D DefaultRotation { get; set; }
+        [XmlArray("Positions")]
+        [XmlArrayItem("Position")]
+        public List<Room.Point3D> DefaultPositions { get; set; }
 
         [XmlArray("Rooms")]
         [XmlArrayItem("Room")]
