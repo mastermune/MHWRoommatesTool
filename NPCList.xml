@@ -101,13 +101,26 @@
   </NPC>
   <NPC>
     <Name>Second Fleet Master</Name>
-    <NPCID>12</NPCID>
+    <NPCID>012</NPCID>
     <Animation>012</Animation>
     <Warning>Bounds</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-3233.86474609375</x>
+      <y>3458.06127929687</y>
+      <z>-923.689208984375</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>141.660034179688</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Armory</Name>
-    <NPCID>14</NPCID>
+    <NPCID>014</NPCID>
     <Animation>014</Animation>
     <Warning>Bounds</Warning>
   </NPC>
@@ -1308,6 +1321,19 @@
     <NPCID>706</NPCID>
     <Animation>100706</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-3071.51000976562</x>
+      <y>3480.10791015625</y>
+      <z>-1814.28881835938</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>-19.9999561309814</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Housekeeper(Seliana)</Name>
@@ -1327,24 +1353,76 @@
     <NPCID>708</NPCID>
     <Animation>100708</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-5282.1474609375</x>
+      <y>4552.3203125</y>
+      <z>-4996.09326171875</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>87.1305770874023</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Pub Arena Manager</Name>
     <NPCID>709</NPCID>
     <Animation>100709</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-6226.576171875</x>
+      <y>4590.6689453125</y>
+      <z>-6456.060546875</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>58.1305465698242</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Pub Lass</Name>
     <NPCID>710</NPCID>
     <Animation>100710</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-6113.82373046875</x>
+      <y>4590.6689453125</y>
+      <z>-6696.14501953125</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>73.1305389404297</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Pub Stockpiler</Name>
     <NPCID>711</NPCID>
     <Animation>100711</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-5842.8310546875</x>
+      <y>4493.02880859375</y>
+      <z>-7978.40478515625</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>49.130500793457</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>157-Tundra Wyverian?</Name>
@@ -1357,6 +1435,19 @@
     <NPCID>713</NPCID>
     <Animation>100713</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-3586.54443359375</x>
+      <y>4587.35986328125</y>
+      <z>-5669.4931640625</z>
+    </Position>
+	<Rotation>
+      <x>0</x>
+      <y>-109.999984741211</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Pub Sailor</Name>
@@ -1367,6 +1458,19 @@
 		<Animation>110704</Animation>
 	</Animations>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-5204.076171875</x>
+      <y>4494.35546875</y>
+      <z>-8097.51708984375</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>0</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>160-Helpful Felyne?</Name>
@@ -1570,25 +1674,77 @@
     <Name>Dual-blading Hunter</Name>
     <NPCID>754</NPCID>
     <Animation>100754</Animation>
-    <Warning>Iceborne</Warning>
+    <Warning>Story</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-3450.41479492188</x>
+      <y>3480.10791015625</y>
+      <z>-1737.943359375</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>169.999908447266</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Felyne Server</Name>
     <NPCID>755</NPCID>
     <Animation>100755</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-3655.80004882812</x>
+      <y>5303</y>
+      <z>-6029.2001953125</z>
+    </Position>
+	<Rotation>
+      <x>0</x>
+      <y>-112</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Felyne Waiter</Name>
     <NPCID>756</NPCID>
     <Animation>100755</Animation>
     <Warning>Iceborne-Anim</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-3655.80004882812</x>
+      <y>5303</y>
+      <z>-6029.2001953125</z>
+    </Position>
+	<Rotation>
+      <x>0</x>
+      <y>-112</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Bowgunner Hunter</Name>
     <NPCID>757</NPCID>
     <Animation>100757</Animation>
-    <Warning>Iceborne</Warning>
+    <Warning>Story</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-2934.70776367188</x>
+      <y>4538.265625</y>
+      <z>-6494.92724609375</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>0</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Commission Member</Name>
@@ -1601,30 +1757,95 @@
     <NPCID>759</NPCID>
     <Animation>100759</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-5742.5390625</x>
+      <y>4490.94091796875</y>
+      <z>-5441.4609375</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>135</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Soaker Dude</Name>
     <NPCID>760</NPCID>
     <Animation>100760</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-8949.8037109375</x>
+      <y>4300.1787109375</y>
+      <z>-3294.12084960937</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>156.000015258789</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Bathing Bambina</Name>
     <NPCID>761</NPCID>
     <Animation>100761</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-9062.15234375</x>
+      <y>4298.8876953125</y>
+      <z>-3342.27416992188</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>139</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Lone Soaker</Name>
     <NPCID>762</NPCID>
     <Animation>100762</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-9787.45703125</x>
+      <y>4418.56494140625</y>
+      <z>-5485.0322265625</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>19.9999561309814</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Sauna Dude</Name>
     <NPCID>763</NPCID>
     <Animation>100763</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>306</Room>
+	</Rooms>
+	<Position>
+      <x>-6069.32666015625</x>
+      <y>4299.5205078125</y>
+      <z>-2089.4208984375</z>
+    </Position>
+	<Rotation>
+      <x>-0</x>
+      <y>149.999954223633</y>
+      <z>0</z>
+    </Rotation>
   </NPC>
   <NPC>
     <Name>Motivated Fourth</Name>

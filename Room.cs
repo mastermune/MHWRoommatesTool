@@ -100,9 +100,16 @@ namespace MHWRoommates
             "Seliana Suite",
             "506",
             "\\nativePC\\village\\st506\\",
-            new string[] {
-                "0000000" },
+            new string[] { "0000000" },
             new Point3D { x = 938.647766113281f, y = 2853.37548828125f, z = 615.363586425781f },
             new Point3D { x = 0f, y = -111.148902893066f, z = 0f });
+
+        public static readonly Room SELIANA_PUB = new Room(
+            "Seliana Pub",
+            "306",
+            "\\nativePC\\village\\st306\\",
+            new string[] { "0000000" },
+            new Point3D { x = 0, y = 0, z = 0 },
+            new Point3D { x = 0, y = 0, z = 0});
     }
 }

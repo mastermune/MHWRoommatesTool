@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MHWRoommates"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="MHW Roommates" Height="285" Width="585" MinHeight="285" MinWidth="585" MaxHeight="285">
+        Title="MHW Roommates" Height="285" Width="600" MinHeight="285" MinWidth="600" MaxHeight="285">
     <StackPanel>
         <DockPanel LastChildFill="True">
             <Label IsHitTestVisible="False" DockPanel.Dock="Left">NPC:</Label>

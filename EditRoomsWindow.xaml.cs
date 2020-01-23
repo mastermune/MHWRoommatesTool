@@ -16,6 +16,7 @@ namespace MHWRoommates
         private ObservableCollection<NPC> usingSuiteNPCs;
         private ObservableCollection<NPC> usingResearchBaseNPCs;
         private ObservableCollection<NPC> usingSelianaSuiteNPCs;
+        private ObservableCollection<NPC> usingSelianaPubNPCs;
 
         private Room selectedRoom;
         private ObservableCollection<NPC> selectedList;
@@ -29,24 +30,28 @@ namespace MHWRoommates
             usingSuiteNPCs = new ObservableCollection<NPC>();
             usingResearchBaseNPCs = new ObservableCollection<NPC>();
             usingSelianaSuiteNPCs = new ObservableCollection<NPC>();
+            usingSelianaPubNPCs = new ObservableCollection<NPC>();
 
             NPCs_Available_Living.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
             NPCs_Available_Private.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
             NPCs_Available_Suite.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
             NPCs_Available_ResearchBase.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
             NPCs_Available_SelianaSuite.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
+            NPCs_Available_SelianaPub.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
 
             NPCs_Using_Living.ItemsSource = usingLivingNPCs;
             NPCs_Using_Private.ItemsSource = usingPrivateNPCs;
             NPCs_Using_Suite.ItemsSource = usingSuiteNPCs;
             NPCs_Using_ResearchBase.ItemsSource = usingResearchBaseNPCs;
             NPCs_Using_SelianaSuite.ItemsSource = usingSelianaSuiteNPCs;
+            NPCs_Using_SelianaPub.ItemsSource = usingSelianaPubNPCs;
 
             NPCs_Using_Living.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_Private.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_Suite.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_ResearchBase.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_SelianaSuite.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
+            NPCs_Using_SelianaPub.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
 
             if (LoadSOBJL(npcList, LIVING_QUARTERS.SOBJPaths[0], usingLivingNPCs, "501"))
                 Button_Delete_Living.IsEnabled = true;
@@ -58,6 +63,8 @@ namespace MHWRoommates
                 Button_Delete_ResearchBase.IsEnabled = true;
             if (LoadSOBJL(npcList, SELIANA_SUITE.SOBJPaths[0], usingSelianaSuiteNPCs, "506"))
                 Button_Delete_SelianaSuite.IsEnabled = true;
+            if (LoadSOBJL(npcList, SELIANA_PUB.SOBJPaths[0], usingSelianaPubNPCs, "306"))
+                Button_Delete_SelianaPub.IsEnabled = true;
 
             selectedRoom = LIVING_QUARTERS;
             selectedList = usingLivingNPCs;
@@ -178,6 +185,18 @@ namespace MHWRoommates
             usingSelianaSuiteNPCs = RemoveNPC(NPCs_Using_SelianaSuite, usingSelianaSuiteNPCs);
             NPCs_Using_SelianaSuite.ItemsSource = usingSelianaSuiteNPCs;
         }
+
+        private void Button_Add_NPC_SelianaPub_Click(object sender, RoutedEventArgs e)
+        {
+            usingSelianaPubNPCs = AddNPC(NPCs_Available_SelianaPub, usingSelianaPubNPCs);
+            NPCs_Using_SelianaPub.ItemsSource = usingSelianaPubNPCs;
+        }
+
+        private void Button_Rmv_NPC_SelianaPub_Click(object sender, RoutedEventArgs e)
+        {
+            usingSelianaPubNPCs = RemoveNPC(NPCs_Using_SelianaPub, usingSelianaPubNPCs);
+            NPCs_Using_SelianaPub.ItemsSource = usingSelianaPubNPCs;
+        }
         #endregion
 
         #region Enable/Disable Add and Remove buttons based on selections
@@ -230,6 +249,16 @@ namespace MHWRoommates
         {
             Button_Rmv_NPC_SelianaSuite.IsEnabled = NPCs_Using_SelianaSuite.SelectedItem != null;
         }
+
+        private void NPCs_Available_SelianaPub_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Button_Add_NPC_SelianaPub.IsEnabled = NPCs_Available_SelianaPub.SelectedItem != null;
+        }
+
+        private void NPCs_Using_SelianaPub_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Button_Rmv_NPC_SelianaPub.IsEnabled = NPCs_Using_SelianaPub.SelectedItem != null;
+        }
         #endregion
 
         private void SaveSelectedSOBJL(object sender, RoutedEventArgs e)
@@ -255,8 +284,9 @@ namespace MHWRoommates
                 case 0: deleteButtonToEnable = Button_Delete_Living; break;
                 case 1: deleteButtonToEnable = Button_Delete_Private; break;
                 case 2: deleteButtonToEnable = Button_Delete_Suite; break;
-                case 3: deleteButtonToEnable = Button_Delete_ResearchBase; break;
-                case 4: deleteButtonToEnable = Button_Delete_SelianaSuite; break;
+                case 3: deleteButtonToEnable = Button_Delete_SelianaSuite; break;
+                case 7: deleteButtonToEnable = Button_Delete_SelianaPub; break;
+                case 8: deleteButtonToEnable = Button_Delete_ResearchBase; break;
                 default: deleteButtonToEnable = null; break;
             }
             if (deleteButtonToEnable != null) deleteButtonToEnable.IsEnabled = true;
@@ -399,8 +429,9 @@ namespace MHWRoommates
                 case 0: selectedRoom = LIVING_QUARTERS; selectedList = usingLivingNPCs; break;
                 case 1: selectedRoom = PRIVATE_QUARTERS; selectedList = usingPrivateNPCs; break;
                 case 2: selectedRoom = PRIVATE_SUITE; selectedList = usingSuiteNPCs; break;
-                case 3: selectedRoom = RESEARCH_BASE; selectedList = usingResearchBaseNPCs; break;
-                case 4: selectedRoom = SELIANA_SUITE; selectedList = usingSelianaSuiteNPCs; break;
+                case 3: selectedRoom = SELIANA_SUITE; selectedList = usingSelianaSuiteNPCs; break;
+                case 7: selectedRoom = SELIANA_PUB; selectedList = usingSelianaPubNPCs; break;
+                case 8: selectedRoom = RESEARCH_BASE; selectedList = usingResearchBaseNPCs; break;
             }
         }
     }

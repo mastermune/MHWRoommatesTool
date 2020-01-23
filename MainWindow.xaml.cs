@@ -29,6 +29,7 @@ namespace MHWRoommates
             Room_Select.Items.Add(PRIVATE_SUITE);
             Room_Select.Items.Add(RESEARCH_BASE);
             Room_Select.Items.Add(SELIANA_SUITE);
+            Room_Select.Items.Add(SELIANA_PUB);
         }
 
         private void PopulateNPCComboBox()
@@ -137,7 +138,7 @@ namespace MHWRoommates
             Y_Position.IsEnabled = true;
             Z_Position.IsEnabled = true;
 
-            X_Rotation.IsEnabled = true;
+            //X_Rotation.IsEnabled = true;
             Y_Rotation.IsEnabled = true;
             //Z_Rotation.IsEnabled = true;
 

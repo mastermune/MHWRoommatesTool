@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MHWRoommates"
         mc:Ignorable="d"
-        Title="NPC Lists" Height="450" MinHeight="450" Width="585" MinWidth="585" Closing="Window_Closing">
+        Title="NPC Lists" Height="450" MinHeight="450" Width="600" MinWidth="600" Closing="Window_Closing">
     <TabControl x:Name="Room_Tabs" ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectionChanged="Room_Tabs_SelectionChanged">
         <TabItem Header="Living Quarters">
             <Grid Background="#FFE5E5E5">
@@ -91,34 +91,6 @@
                 <Button x:Name="Button_Delete_Suite" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
-        <TabItem Header="Research Base">
-            <Grid Background="#FFE5E5E5">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="10*"/>
-                    <RowDefinition Height="63"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="3*"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="3*"/>
-                </Grid.ColumnDefinitions>
-                <DockPanel LastChildFill="True">
-                    <Label DockPanel.Dock="Top" HorizontalContentAlignment="Center">Available NPCs</Label>
-                    <ListBox x:Name="NPCs_Available_ResearchBase" SelectionChanged="NPCs_Available_ResearchBase_SelectionChanged" Margin="5,0" DockPanel.Dock="Top"/>
-                </DockPanel>
-                <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Button x:Name="Button_Add_NPC_ResearchBase" Content="Add" Margin="0,0,0,5" Click="Button_Add_NPC_ResearchBase_Click" IsEnabled="False"/>
-                    <Button x:Name="Button_Rmv_NPC_ResearchBase" Content="  Remove  " Click="Button_Rmv_NPC_ResearchBase_Click" IsEnabled="False"/>
-                </StackPanel>
-                <DockPanel LastChildFill="True" Grid.Column="2">
-                    <Label DockPanel.Dock="Top" HorizontalContentAlignment="Center">Enabled NPCs</Label>
-                    <ListBox x:Name="NPCs_Using_ResearchBase" DockPanel.Dock="Top" SelectionChanged="NPCs_Using_ResearchBase_SelectionChanged" Margin="5,0"/>
-                </DockPanel>
-                <Button x:Name="Button_Save_ResearchBase" Content="Save" Click="SaveSelectedSOBJL"  Grid.ColumnSpan="3" Margin="100,10,100,3" Grid.Row="1" VerticalAlignment="Center" Height="50" FontWeight="Bold" Background="#FF78B8F7" BorderBrush="#FF1E3042"/>
-                <Button x:Name="Button_Delete_ResearchBase" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
-            </Grid>
-        </TabItem>
         <TabItem Header="Seliana Suite">
             <Grid Background="#FFE5E5E5">
                 <Grid.RowDefinitions>
@@ -145,6 +117,65 @@
                 </DockPanel>
                 <Button x:Name="Button_Save_SelianaSuite" Content="Save" Click="SaveSelectedSOBJL"  Grid.ColumnSpan="3" Margin="100,10,100,3" Grid.Row="1" VerticalAlignment="Center" Height="50" FontWeight="Bold" Background="#FF78B8F7" BorderBrush="#FF1E3042"/>
                 <Button x:Name="Button_Delete_SelianaSuite" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Astera Town" IsEnabled="False"></TabItem>
+        <TabItem Header="Astera Hub" IsEnabled="False"></TabItem>
+        <TabItem Header="Seliana Town" IsEnabled="False"></TabItem>
+        <TabItem Header="Seliana Pub">
+            <Grid Background="#FFE5E5E5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="63"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <DockPanel LastChildFill="True">
+                    <Label DockPanel.Dock="Top" HorizontalContentAlignment="Center">Available NPCs</Label>
+                    <ListBox x:Name="NPCs_Available_SelianaPub" SelectionChanged="NPCs_Available_SelianaPub_SelectionChanged" Margin="5,0" DockPanel.Dock="Top"/>
+                </DockPanel>
+                <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="Button_Add_NPC_SelianaPub" Content="Add" Margin="0,0,0,5" Click="Button_Add_NPC_SelianaPub_Click" IsEnabled="False"/>
+                    <Button x:Name="Button_Rmv_NPC_SelianaPub" Content="  Remove  " Click="Button_Rmv_NPC_SelianaPub_Click" IsEnabled="False"/>
+                </StackPanel>
+                <DockPanel LastChildFill="True" Grid.Column="2">
+                    <Label DockPanel.Dock="Top" HorizontalContentAlignment="Center">Enabled NPCs</Label>
+                    <ListBox x:Name="NPCs_Using_SelianaPub" DockPanel.Dock="Top" SelectionChanged="NPCs_Using_SelianaPub_SelectionChanged" Margin="5,0"/>
+                </DockPanel>
+                <Button x:Name="Button_Save_SelianaPub" Content="Save" Click="SaveSelectedSOBJL"  Grid.ColumnSpan="3" Margin="100,10,100,3" Grid.Row="1" VerticalAlignment="Center" Height="50" FontWeight="Bold" Background="#FF78B8F7" BorderBrush="#FF1E3042"/>
+                <Button x:Name="Button_Delete_SelianaPub" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Research Base">
+            <Grid Background="#FFE5E5E5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="63"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <DockPanel LastChildFill="True">
+                    <Label DockPanel.Dock="Top" HorizontalContentAlignment="Center">Available NPCs</Label>
+                    <ListBox x:Name="NPCs_Available_ResearchBase" SelectionChanged="NPCs_Available_ResearchBase_SelectionChanged" Margin="5,0" DockPanel.Dock="Top"/>
+                </DockPanel>
+                <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="Button_Add_NPC_ResearchBase" Content="Add" Margin="0,0,0,5" Click="Button_Add_NPC_ResearchBase_Click" IsEnabled="False"/>
+                    <Button x:Name="Button_Rmv_NPC_ResearchBase" Content="  Remove  " Click="Button_Rmv_NPC_ResearchBase_Click" IsEnabled="False"/>
+                </StackPanel>
+                <DockPanel LastChildFill="True" Grid.Column="2">
+                    <Label DockPanel.Dock="Top" HorizontalContentAlignment="Center">Enabled NPCs</Label>
+                    <ListBox x:Name="NPCs_Using_ResearchBase" DockPanel.Dock="Top" SelectionChanged="NPCs_Using_ResearchBase_SelectionChanged" Margin="5,0"/>
+                </DockPanel>
+                <Button x:Name="Button_Save_ResearchBase" Content="Save" Click="SaveSelectedSOBJL"  Grid.ColumnSpan="3" Margin="100,10,100,3" Grid.Row="1" VerticalAlignment="Center" Height="50" FontWeight="Bold" Background="#FF78B8F7" BorderBrush="#FF1E3042"/>
+                <Button x:Name="Button_Delete_ResearchBase" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
     </TabControl>
