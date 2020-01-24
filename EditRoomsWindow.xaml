@@ -119,7 +119,34 @@
                 <Button x:Name="Button_Delete_SelianaSuite" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
-        <TabItem Header="Astera Town" IsEnabled="False"></TabItem>
+        <TabItem Header="Astera">
+            <Grid Background="#FFE5E5E5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="63"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <DockPanel LastChildFill="True">
+                    <Label DockPanel.Dock="Top" HorizontalContentAlignment="Center">Available NPCs</Label>
+                    <ListBox x:Name="NPCs_Available_Astera" SelectionChanged="NPCs_Available_Astera_SelectionChanged" Margin="5,0" DockPanel.Dock="Top"/>
+                </DockPanel>
+                <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="Button_Add_NPC_Astera" Content="Add" Margin="0,0,0,5" Click="Button_Add_NPC_Astera_Click" IsEnabled="False"/>
+                    <Button x:Name="Button_Rmv_NPC_Astera" Content="  Remove  " Click="Button_Rmv_NPC_Astera_Click" IsEnabled="False"/>
+                </StackPanel>
+                <DockPanel LastChildFill="True" Grid.Column="2">
+                    <Label DockPanel.Dock="Top" HorizontalContentAlignment="Center">Enabled NPCs</Label>
+                    <ListBox x:Name="NPCs_Using_Astera" DockPanel.Dock="Top" SelectionChanged="NPCs_Using_Astera_SelectionChanged" Margin="5,0"/>
+                </DockPanel>
+                <Button x:Name="Button_Save_Astera" Content="Save" Click="SaveSelectedSOBJL"  Grid.ColumnSpan="3" Margin="100,10,100,3" Grid.Row="1" VerticalAlignment="Center" Height="50" FontWeight="Bold" Background="#FF78B8F7" BorderBrush="#FF1E3042"/>
+                <Button x:Name="Button_Delete_Astera" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
+            </Grid>
+        </TabItem>
         <TabItem Header="Astera Hub" IsEnabled="False"></TabItem>
         <TabItem Header="Seliana">
             <Grid Background="#FFE5E5E5">

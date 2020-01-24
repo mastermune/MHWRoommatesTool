@@ -18,6 +18,7 @@ namespace MHWRoommates
         private ObservableCollection<NPC> usingSelianaSuiteNPCs;
         private ObservableCollection<NPC> usingSelianaPubNPCs;
         private ObservableCollection<NPC> usingSelianaNPCs;
+        private ObservableCollection<NPC> usingAsteraNPCs;
 
         private Room selectedRoom;
         private ObservableCollection<NPC> selectedList;
@@ -33,6 +34,7 @@ namespace MHWRoommates
             usingSelianaSuiteNPCs = new ObservableCollection<NPC>();
             usingSelianaPubNPCs = new ObservableCollection<NPC>();
             usingSelianaNPCs = new ObservableCollection<NPC>();
+            usingAsteraNPCs = new ObservableCollection<NPC>();
 
             NPCs_Available_Living.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
             NPCs_Available_Private.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
@@ -41,6 +43,7 @@ namespace MHWRoommates
             NPCs_Available_SelianaSuite.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
             NPCs_Available_SelianaPub.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
             NPCs_Available_Seliana.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
+            NPCs_Available_Astera.ItemsSource = npcList.NPCs.Where(x => !x.Warning.Equals("Ignore"));
 
             NPCs_Using_Living.ItemsSource = usingLivingNPCs;
             NPCs_Using_Private.ItemsSource = usingPrivateNPCs;
@@ -49,6 +52,7 @@ namespace MHWRoommates
             NPCs_Using_SelianaSuite.ItemsSource = usingSelianaSuiteNPCs;
             NPCs_Using_SelianaPub.ItemsSource = usingSelianaPubNPCs;
             NPCs_Using_Seliana.ItemsSource = usingSelianaNPCs;
+            NPCs_Using_Astera.ItemsSource = usingAsteraNPCs;
 
             NPCs_Using_Living.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_Private.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
@@ -57,6 +61,7 @@ namespace MHWRoommates
             NPCs_Using_SelianaSuite.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_SelianaPub.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
             NPCs_Using_Seliana.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
+            NPCs_Using_Astera.Items.SortDescriptions.Add(new SortDescription("Index", ListSortDirection.Ascending));
 
             if (LoadSOBJL(npcList, LIVING_QUARTERS.SOBJPaths[0], usingLivingNPCs, "501"))
                 Button_Delete_Living.IsEnabled = true;
@@ -72,6 +77,8 @@ namespace MHWRoommates
                 Button_Delete_SelianaPub.IsEnabled = true;
             if (LoadSOBJL(npcList, SELIANA.SOBJPaths[0], usingSelianaNPCs, "305"))
                 Button_Delete_Seliana.IsEnabled = true;
+            if (LoadSOBJL(npcList, ASTERA.SOBJPaths[0], usingAsteraNPCs, "301"))
+                Button_Delete_Astera.IsEnabled = true;
 
             selectedRoom = LIVING_QUARTERS;
             selectedList = usingLivingNPCs;
@@ -216,6 +223,18 @@ namespace MHWRoommates
             usingSelianaNPCs = RemoveNPC(NPCs_Using_Seliana, usingSelianaNPCs);
             NPCs_Using_Seliana.ItemsSource = usingSelianaNPCs;
         }
+
+        private void Button_Add_NPC_Astera_Click(object sender, RoutedEventArgs e)
+        {
+            usingAsteraNPCs = AddNPC(NPCs_Available_Astera, usingAsteraNPCs);
+            NPCs_Using_Astera.ItemsSource = usingAsteraNPCs;
+        }
+
+        private void Button_Rmv_NPC_Astera_Click(object sender, RoutedEventArgs e)
+        {
+            usingAsteraNPCs = RemoveNPC(NPCs_Using_Astera, usingAsteraNPCs);
+            NPCs_Using_Astera.ItemsSource = usingAsteraNPCs;
+        }
         #endregion
 
         #region Enable/Disable Add and Remove buttons based on selections
@@ -288,6 +307,16 @@ namespace MHWRoommates
         {
             Button_Rmv_NPC_Seliana.IsEnabled = NPCs_Using_Seliana.SelectedItem != null;
         }
+
+        private void NPCs_Available_Astera_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Button_Add_NPC_Astera.IsEnabled = NPCs_Available_Astera.SelectedItem != null;
+        }
+
+        private void NPCs_Using_Astera_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Button_Rmv_NPC_Astera.IsEnabled = NPCs_Using_Astera.SelectedItem != null;
+        }
         #endregion
 
         private void SaveSelectedSOBJL(object sender, RoutedEventArgs e)
@@ -314,6 +343,7 @@ namespace MHWRoommates
                 case 1: deleteButtonToEnable = Button_Delete_Private; break;
                 case 2: deleteButtonToEnable = Button_Delete_Suite; break;
                 case 3: deleteButtonToEnable = Button_Delete_SelianaSuite; break;
+                case 4: deleteButtonToEnable = Button_Delete_Astera; break;
                 case 6: deleteButtonToEnable = Button_Delete_Seliana; break;
                 case 7: deleteButtonToEnable = Button_Delete_SelianaPub; break;
                 case 8: deleteButtonToEnable = Button_Delete_ResearchBase; break;
@@ -460,6 +490,7 @@ namespace MHWRoommates
                 case 1: selectedRoom = PRIVATE_QUARTERS; selectedList = usingPrivateNPCs; break;
                 case 2: selectedRoom = PRIVATE_SUITE; selectedList = usingSuiteNPCs; break;
                 case 3: selectedRoom = SELIANA_SUITE; selectedList = usingSelianaSuiteNPCs; break;
+                case 4: selectedRoom = ASTERA; selectedList = usingAsteraNPCs; break;
                 case 6: selectedRoom = SELIANA; selectedList = usingSelianaNPCs; break;
                 case 7: selectedRoom = SELIANA_PUB; selectedList = usingSelianaPubNPCs; break;
                 case 8: selectedRoom = RESEARCH_BASE; selectedList = usingResearchBaseNPCs; break;

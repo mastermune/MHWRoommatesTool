@@ -28,6 +28,7 @@ namespace MHWRoommates
             Room_Select.Items.Add(PRIVATE_QUARTERS);
             Room_Select.Items.Add(PRIVATE_SUITE);
             Room_Select.Items.Add(SELIANA_SUITE);
+            Room_Select.Items.Add(ASTERA);
             Room_Select.Items.Add(SELIANA);
             Room_Select.Items.Add(SELIANA_PUB);
             Room_Select.Items.Add(RESEARCH_BASE);
