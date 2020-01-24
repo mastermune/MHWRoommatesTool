@@ -3,7 +3,9 @@
     public static class RMOffsets
     {
         public const int TRANSFORM_START = 0x32;
+        public const int TRANSFORM_START_Q = 0x30;
         public const int ID = 0xBF;
+        public const int Q_ID = 0xBD;
         public const int ANIM = 0xC3;
         public const int UNKWN = 0xC7; // Unknown value, usually matches animation or npcID
         public const int COMMENT = 0x70;

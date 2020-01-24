@@ -5,6 +5,7 @@
     <Name>Commander</Name>
     <Rooms>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -12,6 +13,12 @@
         <y>3663.4084</y>
         <z>-7201.4653</z>
         <r>3.0002508</r>
+      </Position>
+      <Position>
+        <x>8029.4097</x>
+        <y>1950.5189</y>
+        <z>1265.7336</z>
+        <r>-176.99992</r>
       </Position>
     </Positions>
     <Animation>1</Animation>
@@ -27,6 +34,7 @@
     <Rooms>
       <Room>303</Room>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -41,6 +49,12 @@
         <z>-3784</z>
         <r>-122</r>
       </Position>
+      <Position>
+        <x>9271.16</x>
+        <y>5604.434</y>
+        <z>-5147.7812</z>
+        <r>-63.99991</r>
+      </Position>
     </Positions>
     <Animation>2</Animation>
     <Animations>
@@ -54,6 +68,7 @@
     <Name>Field Team Leader</Name>
     <Rooms>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -61,6 +76,12 @@
         <y>3664.7397</y>
         <z>-7088.9897</z>
         <r>-26.999937</r>
+      </Position>
+      <Position>
+        <x>7729.5903</x>
+        <y>1950.3488</y>
+        <z>1095.837</z>
+        <r>91.98999</r>
       </Position>
     </Positions>
     <Animation>3</Animation>
@@ -76,6 +97,7 @@
     <Name>Provisions Manager</Name>
     <Rooms>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -83,6 +105,12 @@
         <y>3401.4136</y>
         <z>-2289.9148</z>
         <r>-62.714607</r>
+      </Position>
+      <Position>
+        <x>6067.02</x>
+        <y>1858.0619</y>
+        <z>-2708.55</z>
+        <r>36.999996</r>
       </Position>
     </Positions>
     <Animation>4</Animation>
@@ -96,8 +124,17 @@
   <NPC>
     <NPCID>5</NPCID>
     <Name>Analytics Director</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>6337.445</x>
+        <y>1855.4059</y>
+        <z>-2584</z>
+        <r>-99.999985</r>
+      </Position>
+    </Positions>
     <Animation>5</Animation>
     <Animations>
       <Animation>5</Animation>
@@ -111,6 +148,7 @@
     <Name>Tech Chief</Name>
     <Rooms>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -118,6 +156,12 @@
         <y>4198.252</y>
         <z>-4237.091</z>
         <r>30</r>
+      </Position>
+      <Position>
+        <x>6233</x>
+        <y>1863</y>
+        <z>-2725.2</z>
+        <r>-30</r>
       </Position>
     </Positions>
     <Animation>6</Animation>
@@ -131,8 +175,17 @@
   <NPC>
     <NPCID>7</NPCID>
     <Name>Provisions Stockpile</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>6588.302</x>
+        <y>2120.8901</y>
+        <z>-1209.5137</z>
+        <r>-106.029976</r>
+      </Position>
+    </Positions>
     <Animation>7</Animation>
     <Animations />
     <Warning />
@@ -142,6 +195,7 @@
     <Name>Chief Ecologist</Name>
     <Rooms>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -149,6 +203,12 @@
         <y>3446.31</y>
         <z>-5337.6636</z>
         <r>35.666756</r>
+      </Position>
+      <Position>
+        <x>6218.3745</x>
+        <y>2246.1855</y>
+        <z>-4939.0933</z>
+        <r>-16.999992</r>
       </Position>
     </Positions>
     <Animation>9</Animation>
@@ -158,8 +218,17 @@
   <NPC>
     <NPCID>10</NPCID>
     <Name>Chief Botanist</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>7243.8696</x>
+        <y>2141.97</y>
+        <z>-3841.27</z>
+        <r>-99.999985</r>
+      </Position>
+    </Positions>
     <Animation>10</Animation>
     <Animations>
       <Animation>10</Animation>
@@ -170,8 +239,17 @@
   <NPC>
     <NPCID>11</NPCID>
     <Name>Elder Melder</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>7820.72</x>
+        <y>2084.3447</y>
+        <z>-2708.4548</z>
+        <r>0</r>
+      </Position>
+    </Positions>
     <Animation>11</Animation>
     <Animations>
       <Animation>11</Animation>
@@ -185,6 +263,7 @@
     <Rooms>
       <Room>306</Room>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -199,6 +278,12 @@
         <z>-923.6892</z>
         <r>141.66003</r>
       </Position>
+      <Position>
+        <x>13683.067</x>
+        <y>4697.546</y>
+        <z>14.742</z>
+        <r>-127.09797</r>
+      </Position>
     </Positions>
     <Animation>12</Animation>
     <Animations />
@@ -207,8 +292,17 @@
   <NPC>
     <NPCID>14</NPCID>
     <Name>Armory</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>13566.699</x>
+        <y>4721.7256</y>
+        <z>-817.2924</z>
+        <r>7.000002</r>
+      </Position>
+    </Positions>
     <Animation>14</Animation>
     <Animations />
     <Warning>Bounds</Warning>
@@ -216,8 +310,17 @@
   <NPC>
     <NPCID>15</NPCID>
     <Name>Meowscular Chef</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>9891.221</x>
+        <y>5680.153</y>
+        <z>-6168.167</z>
+        <r>-31.999998</r>
+      </Position>
+    </Positions>
     <Animation>15</Animation>
     <Animations />
     <Warning />
@@ -259,6 +362,7 @@
     <Name>The Huntsman</Name>
     <Rooms>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -266,6 +370,12 @@
         <y>3663.4084</y>
         <z>-6708.367</z>
         <r>-116.98134</r>
+      </Position>
+      <Position>
+        <x>8701.607</x>
+        <y>1950.3788</y>
+        <z>707.7607</z>
+        <r>-70.89999</r>
       </Position>
     </Positions>
     <Animation>17</Animation>
@@ -281,6 +391,7 @@
     <Rooms>
       <Room>303</Room>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -295,6 +406,12 @@
         <z>-3982</z>
         <r>57</r>
       </Position>
+      <Position>
+        <x>7905.68</x>
+        <y>1950.4609</y>
+        <z>1618.937</z>
+        <r>-144</r>
+      </Position>
     </Positions>
     <Animation>1018</Animation>
     <Animations />
@@ -305,6 +422,7 @@
     <Name>Admiral</Name>
     <Rooms>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -312,6 +430,12 @@
         <y>3451.0505</y>
         <z>-5519.684</z>
         <r>2.9985597</r>
+      </Position>
+      <Position>
+        <x>19182.605</x>
+        <y>8256.696</y>
+        <z>-556.207</z>
+        <r>0.24434693</r>
       </Position>
     </Positions>
     <Animation>19</Animation>
@@ -323,6 +447,7 @@
     <Name>The Seeker</Name>
     <Rooms>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -330,6 +455,12 @@
         <y>3342.4102</y>
         <z>-5124.6284</z>
         <r>8.502295</r>
+      </Position>
+      <Position>
+        <x>6360.3135</x>
+        <y>2141.9802</y>
+        <z>-4557.2603</z>
+        <r>-25.999811</r>
       </Position>
     </Positions>
     <Animation>1020</Animation>
@@ -342,6 +473,7 @@
     <Rooms>
       <Room>303</Room>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -355,6 +487,12 @@
         <y>3670.527</y>
         <z>-7092.423</z>
         <r>56.999886</r>
+      </Position>
+      <Position>
+        <x>7736.6113</x>
+        <y>1950.481</y>
+        <z>1545.3743</z>
+        <r>115.000015</r>
       </Position>
     </Positions>
     <Animation>21</Animation>
@@ -400,8 +538,17 @@
   <NPC>
     <NPCID>24</NPCID>
     <Name>First Wyverian</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-1995.99</x>
+        <y>2316.406</y>
+        <z>-1698.1783</z>
+        <r>60</r>
+      </Position>
+    </Positions>
     <Animation>24</Animation>
     <Animations />
     <Warning>Story</Warning>
@@ -412,6 +559,7 @@
     <Rooms>
       <Room>501</Room>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -425,6 +573,12 @@
         <y>3663.4084</y>
         <z>-6928.3037</z>
         <r>-60.915573</r>
+      </Position>
+      <Position>
+        <x>5178.6357</x>
+        <y>1791.1669</y>
+        <z>-3230.3308</z>
+        <r>84.99984</r>
       </Position>
     </Positions>
     <Animation>25</Animation>
@@ -441,6 +595,7 @@
     <Rooms>
       <Room>501</Room>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -454,6 +609,12 @@
         <y>3665</y>
         <z>-6752</z>
         <r>-164.98999</r>
+      </Position>
+      <Position>
+        <x>5682.285</x>
+        <y>1788.8999</y>
+        <z>-2804.571</z>
+        <r>-148.19293</r>
       </Position>
     </Positions>
     <Animation>26</Animation>
@@ -503,8 +664,17 @@
   <NPC>
     <NPCID>32</NPCID>
     <Name>Captain</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>7452.443</x>
+        <y>1805.5961</y>
+        <z>-1414.4823</z>
+        <r>-161.99983</r>
+      </Position>
+    </Positions>
     <Animation>32</Animation>
     <Animations>
       <Animation>32</Animation>
@@ -515,8 +685,17 @@
   <NPC>
     <NPCID>33</NPCID>
     <Name>Housekeeper Alt 1</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>11852.291</x>
+        <y>4733.4854</y>
+        <z>-3394.8406</z>
+        <r>-45.96531</r>
+      </Position>
+    </Positions>
     <Animation>16</Animation>
     <Animations />
     <Warning>Placeholder</Warning>
@@ -524,8 +703,17 @@
   <NPC>
     <NPCID>34</NPCID>
     <Name>Housekeeper Alt 2</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>14943.258</x>
+        <y>7138.9175</y>
+        <z>-3329.245</z>
+        <r>-39.00007</r>
+      </Position>
+    </Positions>
     <Animation>16</Animation>
     <Animations />
     <Warning>Placeholder</Warning>
@@ -571,6 +759,7 @@
     <Name>Lynian Researcher</Name>
     <Rooms>
       <Room>305</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -578,6 +767,12 @@
         <y>3662.675</y>
         <z>-6406.399</z>
         <r>-5.261353</r>
+      </Position>
+      <Position>
+        <x>5681.928</x>
+        <y>2141.991</y>
+        <z>-4452.86</z>
+        <r>19.738644</r>
       </Position>
     </Positions>
     <Animation>39</Animation>
@@ -614,8 +809,17 @@
   <NPC>
     <NPCID>102</NPCID>
     <Name>Feisty Fiver</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>13814.32</x>
+        <y>4819.0693</y>
+        <z>4872.3926</z>
+        <r>39.000164</r>
+      </Position>
+    </Positions>
     <Animation>102</Animation>
     <Animations>
       <Animation>102</Animation>
@@ -626,8 +830,17 @@
   <NPC>
     <NPCID>103</NPCID>
     <Name>Gentle Fourth</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-3338.6453</x>
+        <y>2308.6694</y>
+        <z>-2000.5629</z>
+        <r>44.999985</r>
+      </Position>
+    </Positions>
     <Animation>103</Animation>
     <Animations>
       <Animation>103</Animation>
@@ -638,8 +851,17 @@
   <NPC>
     <NPCID>104</NPCID>
     <Name>Eager Fourth</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>8586.189</x>
+        <y>1950.4264</y>
+        <z>1077.2212</z>
+        <r>-149.99982</r>
+      </Position>
+    </Positions>
     <Animation>104</Animation>
     <Animations>
       <Animation>104</Animation>
@@ -651,8 +873,17 @@
   <NPC>
     <NPCID>105</NPCID>
     <Name>Cool Fiver</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>13992.569</x>
+        <y>4445.908</y>
+        <z>-6502.2856</z>
+        <r>101.00012</r>
+      </Position>
+    </Positions>
     <Animation>105</Animation>
     <Animations>
       <Animation>105</Animation>
@@ -663,8 +894,17 @@
   <NPC>
     <NPCID>106</NPCID>
     <Name>Fun Fourth</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>6526.0327</x>
+        <y>1790.1663</y>
+        <z>-2040.3923</z>
+        <r>-83</r>
+      </Position>
+    </Positions>
     <Animation>106</Animation>
     <Animations>
       <Animation>106</Animation>
@@ -676,8 +916,17 @@
   <NPC>
     <NPCID>107</NPCID>
     <Name>Forceful Fiver</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>6496.483</x>
+        <y>1790.0161</y>
+        <z>-2171.3518</z>
+        <r>115.000015</r>
+      </Position>
+    </Positions>
     <Animation>107</Animation>
     <Animations>
       <Animation>107</Animation>
@@ -688,8 +937,17 @@
   <NPC>
     <NPCID>108</NPCID>
     <Name>Timid Fiver</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>9868.442</x>
+        <y>2026.2737</y>
+        <z>-1609.6129</z>
+        <r>1.5346563</r>
+      </Position>
+    </Positions>
     <Animation>108</Animation>
     <Animations>
       <Animation>108</Animation>
@@ -701,8 +959,17 @@
   <NPC>
     <NPCID>109</NPCID>
     <Name>Sisterly Fourth</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>8505.949</x>
+        <y>5379.2954</y>
+        <z>-4653.304</z>
+        <r>42.99992</r>
+      </Position>
+    </Positions>
     <Animation>109</Animation>
     <Animations>
       <Animation>109</Animation>
@@ -714,8 +981,17 @@
   <NPC>
     <NPCID>111</NPCID>
     <Name>Research Hunter</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>6508.858</x>
+        <y>2141.9097</y>
+        <z>-4210.7993</z>
+        <r>69.99994</r>
+      </Position>
+    </Positions>
     <Animation>111</Animation>
     <Animations>
       <Animation>111</Animation>
@@ -726,8 +1002,17 @@
   <NPC>
     <NPCID>112</NPCID>
     <Name>Smart Biologist</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>5439.5234</x>
+        <y>2140.6497</y>
+        <z>-4367.766</z>
+        <r>-174.9999</r>
+      </Position>
+    </Positions>
     <Animation>112</Animation>
     <Animations>
       <Animation>112</Animation>
@@ -738,8 +1023,17 @@
   <NPC>
     <NPCID>113</NPCID>
     <Name>Impatient Biologist</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>6652.771</x>
+        <y>2141.83</y>
+        <z>-4290.6753</z>
+        <r>-37.400875</r>
+      </Position>
+    </Positions>
     <Animation>113</Animation>
     <Animations>
       <Animation>113</Animation>
@@ -750,8 +1044,17 @@
   <NPC>
     <NPCID>114</NPCID>
     <Name>Laid-back Botanist</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>7147.3228</x>
+        <y>2141.218</y>
+        <z>-4611.997</z>
+        <r>-138.9394</r>
+      </Position>
+    </Positions>
     <Animation>114</Animation>
     <Animations>
       <Animation>114</Animation>
@@ -771,8 +1074,17 @@
   <NPC>
     <NPCID>116</NPCID>
     <Name>Fiver Bro</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>8708.46</x>
+        <y>5604.5093</y>
+        <z>-5615.7485</z>
+        <r>40.999992</r>
+      </Position>
+    </Positions>
     <Animation>116</Animation>
     <Animations>
       <Animation>116</Animation>
@@ -783,8 +1095,17 @@
   <NPC>
     <NPCID>117</NPCID>
     <Name>Soup Felyne</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>10457.155</x>
+        <y>5779.647</y>
+        <z>-5630.46</z>
+        <r>43.999992</r>
+      </Position>
+    </Positions>
     <Animation>117</Animation>
     <Animations />
     <Warning />
@@ -792,8 +1113,17 @@
   <NPC>
     <NPCID>118</NPCID>
     <Name>Oven Felyne</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>9230.54</x>
+        <y>5696.18</y>
+        <z>-6522.975</z>
+        <r>147.99994</r>
+      </Position>
+    </Positions>
     <Animation>118</Animation>
     <Animations />
     <Warning />
@@ -838,6 +1168,7 @@
     <Name>Airship Engineer</Name>
     <Rooms>
       <Room>303</Room>
+      <Room>301</Room>
     </Rooms>
     <Positions>
       <Position>
@@ -845,6 +1176,12 @@
         <y>627.0653</y>
         <z>514.8081</z>
         <r>87.84448</r>
+      </Position>
+      <Position>
+        <x>13423.687</x>
+        <y>4723.539</y>
+        <z>-1937.9586</z>
+        <r>127.98998</r>
       </Position>
     </Positions>
     <Animation>125</Animation>
@@ -894,8 +1231,17 @@
   <NPC>
     <NPCID>134</NPCID>
     <Name>Squad Manager</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>10570.509</x>
+        <y>2103.5686</y>
+        <z>-1991.8789</z>
+        <r>-64.99994</r>
+      </Position>
+    </Positions>
     <Animation>134</Animation>
     <Animations />
     <Warning />
@@ -921,8 +1267,17 @@
   <NPC>
     <NPCID>9994</NPCID>
     <Name>Jovial Scholar</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>5439.699</x>
+        <y>1791.1669</y>
+        <z>-3181.018</z>
+        <r>-160.98997</r>
+      </Position>
+    </Positions>
     <Animation>137</Animation>
     <Animations />
     <Warning />
@@ -930,8 +1285,17 @@
   <NPC>
     <NPCID>9993</NPCID>
     <Name>Upbeat Scholar</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>5295.2188</x>
+        <y>1791.5486</y>
+        <z>-3246.185</z>
+        <r>89</r>
+      </Position>
+    </Positions>
     <Animation>138</Animation>
     <Animations />
     <Warning />
@@ -939,8 +1303,17 @@
   <NPC>
     <NPCID>9992</NPCID>
     <Name>Lively Scholar</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>5447.0317</x>
+        <y>1791.1669</y>
+        <z>-3328.4565</z>
+        <r>-46.00099</r>
+      </Position>
+    </Positions>
     <Animation>139</Animation>
     <Animations />
     <Warning />
@@ -1356,8 +1729,17 @@
   <NPC>
     <NPCID>251</NPCID>
     <Name>Apple Enthusiast</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>8223.852</x>
+        <y>1812.4298</y>
+        <z>-1772.1503</z>
+        <r>-60</r>
+      </Position>
+    </Positions>
     <Animation>251</Animation>
     <Animations>
       <Animation>251</Animation>
@@ -1368,8 +1750,17 @@
   <NPC>
     <NPCID>252</NPCID>
     <Name>Engaged Fiver</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>7506.0107</x>
+        <y>1803.4213</y>
+        <z>-1665.7214</z>
+        <r>28</r>
+      </Position>
+    </Positions>
     <Animation>1252</Animation>
     <Animations>
       <Animation>1252</Animation>
@@ -1380,8 +1771,17 @@
   <NPC>
     <NPCID>253</NPCID>
     <Name>Fish Aficionado</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>6352.64</x>
+        <y>1783</y>
+        <z>-1871.65</z>
+        <r>78.00001</r>
+      </Position>
+    </Positions>
     <Animation>1253</Animation>
     <Animations />
     <Warning />
@@ -1389,8 +1789,17 @@
   <NPC>
     <NPCID>254</NPCID>
     <Name>Hide Expert</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>8409.417</x>
+        <y>1803.1617</y>
+        <z>-2577.4768</z>
+        <r>69.99998</r>
+      </Position>
+    </Positions>
     <Animation>1254</Animation>
     <Animations>
       <Animation>1254</Animation>
@@ -1401,8 +1810,17 @@
   <NPC>
     <NPCID>255</NPCID>
     <Name>Occupied Fiver</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>8468.656</x>
+        <y>1810.5978</y>
+        <z>-2292.1895</z>
+        <r>-21</r>
+      </Position>
+    </Positions>
     <Animation>1255</Animation>
     <Animations>
       <Animation>1255</Animation>
@@ -1413,8 +1831,17 @@
   <NPC>
     <NPCID>256</NPCID>
     <Name>Busy Fiver</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>7098.569</x>
+        <y>1863.1874</y>
+        <z>-2480.771</z>
+        <r>-24.000002</r>
+      </Position>
+    </Positions>
     <Animation>1256</Animation>
     <Animations>
       <Animation>1256</Animation>
@@ -1425,8 +1852,17 @@
   <NPC>
     <NPCID>257</NPCID>
     <Name>Commision Member 1</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>7150.84</x>
+        <y>1803.3031</y>
+        <z>-1526.26</z>
+        <r>-119.22002</r>
+      </Position>
+    </Positions>
     <Animation>257</Animation>
     <Animations />
     <Warning />
@@ -1434,8 +1870,17 @@
   <NPC>
     <NPCID>258</NPCID>
     <Name>Commision Member 2</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>7170.04</x>
+        <y>1803.3033</y>
+        <z>-1634.516</z>
+        <r>-106.99986</r>
+      </Position>
+    </Positions>
     <Animation>258</Animation>
     <Animations />
     <Warning />
@@ -1443,8 +1888,17 @@
   <NPC>
     <NPCID>259</NPCID>
     <Name>Third Fleet Felyne (Witcher)</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>5794.7466</x>
+        <y>1776.902</y>
+        <z>-1393.0645</z>
+        <r>91.99999</r>
+      </Position>
+    </Positions>
     <Animation>259</Animation>
     <Animations />
     <Warning>Story</Warning>
@@ -1452,8 +1906,17 @@
   <NPC>
     <NPCID>260</NPCID>
     <Name>Third Fleet Felyne Goon 1</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>5881.1553</x>
+        <y>1776.5366</y>
+        <z>-1460.8741</z>
+        <r>-15.999856</r>
+      </Position>
+    </Positions>
     <Animation>260</Animation>
     <Animations />
     <Warning />
@@ -1461,8 +1924,17 @@
   <NPC>
     <NPCID>261</NPCID>
     <Name>Third Fleet Felyne Goon 2</Name>
-    <Rooms />
-    <Positions />
+    <Rooms>
+      <Room>301</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>5903.3794</x>
+        <y>1787.167</y>
+        <z>-1333.7468</z>
+        <r>-122.999886</r>
+      </Position>
+    </Positions>
     <Animation>261</Animation>
     <Animations />
     <Warning />
@@ -3417,7 +3889,7 @@
     <Warning>Iceborne</Warning>
   </NPC>
   
-    <!--  Unknown Seliana NPCs
+<!--  Unknown Seliana NPCs
   
   <NPC>
     <Name>314-???????</Name>
@@ -3553,4 +4025,5 @@ Missing Animations: (will crash)
 Probable Missing Animations: (likely crash)
 164-200
 -->
+
 </NPCList>
