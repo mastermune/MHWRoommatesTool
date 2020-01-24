@@ -1983,16 +1983,38 @@
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>218-Smithy Vendor?</Name>
+    <Name>Smithy Vendor</Name>
     <NPCID>792</NPCID>
     <Animation>100792</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>303</Room>
+	</Rooms>
+	<Positions>
+	<Position>
+		<x>-336.1404</x>
+		<y>-634.0219</y>
+		<z>-457.2874</z>
+		<r>13</r>
+	</Position>
+	</Positions>
   </NPC>
   <NPC>
-    <Name>219-Third Fleet Resources?</Name>
-    <NPCID>100793</NPCID>
-    <Animation>307</Animation>
+    <Name>Third Fleet Resources</Name>
+    <NPCID>793</NPCID>
+    <Animation>100793</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+		<Room>303</Room>
+	</Rooms>
+	<Positions>
+	<Position>
+		<x>1560.265</x>
+		<y>-130.0677</y>
+		<z>1073.139</z>
+		<r>-146.9999</r>
+	</Position>
+	</Positions>
   </NPC>
   <NPC>
     <Name>220-?</Name>
@@ -2365,12 +2387,34 @@
     <NPCID>855</NPCID>
     <Animation>210</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+	<Room>303</Room>
+	</Rooms>
+	<Positions>
+	<Position>
+		<x>1033.089</x>
+		<y>-1027.038</y>
+		<z>1073.334</z>
+		<r>120.9999</r>
+	</Position>
+	</Positions>
   </NPC>
   <NPC>
     <Name>282-???????</Name>
     <NPCID>856</NPCID>
     <Animation>206</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+	<Room>303</Room>
+	</Rooms>
+	<Positions>
+	<Position>
+		<x>1128.136</x>
+		<y>-1027.003</y>
+		<z>976.1337</z>
+		<r>-15</r>
+	</Position>
+	</Positions>
   </NPC>
   <NPC>
     <Name>283-?</Name>
@@ -2383,6 +2427,17 @@
     <NPCID>858</NPCID>
     <Animation>212</Animation>
     <Warning>Iceborne</Warning>
+	<Rooms>
+	<Room>303</Room>
+	</Rooms>
+	<Positions>
+	<Position>
+		<x>1133.287</x>
+		<y>-1027.036</y>
+		<z>1073.418</z>
+		<r>-159.9998</r>
+	</Position>
+	</Positions>
   </NPC>
 
   <!--  Unknown Seliana NPCs
