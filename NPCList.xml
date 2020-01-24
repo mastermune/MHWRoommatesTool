@@ -1,2446 +1,3423 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<NPCList>
+<?xml version="1.0"?>
+<NPCList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <NPC>
+    <NPCID>1</NPCID>
     <Name>Commander</Name>
-    <NPCID>001</NPCID>
-    <Animation>001</Animation>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1176.8927</x>
+        <y>3663.4084</y>
+        <z>-7201.4653</z>
+        <r>3.0002508</r>
+      </Position>
+    </Positions>
+    <Animation>1</Animation>
     <Animations>
-      <Animation>0001</Animation>
+      <Animation>1</Animation>
       <Animation>1001</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>2</NPCID>
     <Name>The Handler</Name>
-    <NPCID>002</NPCID>
-    <Animation>002</Animation>
-    <Animations>
-      <Animation>0002</Animation>
-      <Animation>12002</Animation>
-    </Animations>
-    <Warning></Warning>
     <Rooms>
       <Room>303</Room>
+      <Room>305</Room>
     </Rooms>
-	<Positions>
-	<Position>
-		<x>1595.64</x>
-		<y>-127.0225</y>
-		<z>675.9922</z>
-		<r>-142.4786</r>
-	</Position>
-	</Positions>
+    <Positions>
+      <Position>
+        <x>1595.64</x>
+        <y>-127.0225</y>
+        <z>675.9922</z>
+        <r>-142.4786</r>
+      </Position>
+      <Position>
+        <x>-393.5</x>
+        <y>3105</y>
+        <z>-3784</z>
+        <r>-122</r>
+      </Position>
+    </Positions>
+    <Animation>2</Animation>
+    <Animations>
+      <Animation>2</Animation>
+      <Animation>12002</Animation>
+    </Animations>
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>3</NPCID>
     <Name>Field Team Leader</Name>
-    <NPCID>003</NPCID>
-    <Animation>003</Animation>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1308.2725</x>
+        <y>3664.7397</y>
+        <z>-7088.9897</z>
+        <r>-26.999937</r>
+      </Position>
+    </Positions>
+    <Animation>3</Animation>
     <Animations>
-      <Animation>0003</Animation>
+      <Animation>3</Animation>
       <Animation>1003</Animation>
       <Animation>2003</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>4</NPCID>
     <Name>Provisions Manager</Name>
-    <NPCID>004</NPCID>
-    <Animation>004</Animation>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>2558.5623</x>
+        <y>3401.4136</y>
+        <z>-2289.9148</z>
+        <r>-62.714607</r>
+      </Position>
+    </Positions>
+    <Animation>4</Animation>
     <Animations>
-      <Animation>0004</Animation>
+      <Animation>4</Animation>
       <Animation>1004</Animation>
       <Animation>2004</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>5</NPCID>
     <Name>Analytics Director</Name>
-    <NPCID>005</NPCID>
-    <Animation>005</Animation>
+    <Rooms />
+    <Positions />
+    <Animation>5</Animation>
     <Animations>
-      <Animation>0005</Animation>
+      <Animation>5</Animation>
       <Animation>1005</Animation>
       <Animation>2005</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>6</NPCID>
     <Name>Tech Chief</Name>
-    <NPCID>006</NPCID>
-    <Animation>006</Animation>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-2550.673</x>
+        <y>4198.252</y>
+        <z>-4237.091</z>
+        <r>30</r>
+      </Position>
+    </Positions>
+    <Animation>6</Animation>
     <Animations>
-      <Animation>0006</Animation>
+      <Animation>6</Animation>
       <Animation>1006</Animation>
       <Animation>2006</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>7</NPCID>
     <Name>Provisions Stockpile</Name>
-    <NPCID>007</NPCID>
-    <Animation>007</Animation>
-    <Warning></Warning>
+    <Rooms />
+    <Positions />
+    <Animation>7</Animation>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>9</NPCID>
     <Name>Chief Ecologist</Name>
-    <NPCID>009</NPCID>
-    <Animation>009</Animation>
-    <Warning></Warning>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>2096.0083</x>
+        <y>3446.31</y>
+        <z>-5337.6636</z>
+        <r>35.666756</r>
+      </Position>
+    </Positions>
+    <Animation>9</Animation>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>10</NPCID>
     <Name>Chief Botanist</Name>
-    <NPCID>010</NPCID>
-    <Animation>010</Animation>
+    <Rooms />
+    <Positions />
+    <Animation>10</Animation>
     <Animations>
-      <Animation>0010</Animation>
+      <Animation>10</Animation>
       <Animation>1010</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Elder Melder</Name>
     <NPCID>11</NPCID>
-    <Animation>011</Animation>
+    <Name>Elder Melder</Name>
+    <Rooms />
+    <Positions />
+    <Animation>11</Animation>
     <Animations>
-      <Animation>0011</Animation>
+      <Animation>11</Animation>
       <Animation>1011</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>12</NPCID>
     <Name>Second Fleet Master</Name>
-    <NPCID>012</NPCID>
-    <Animation>012</Animation>
+    <Rooms>
+      <Room>306</Room>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-3233.8647</x>
+        <y>3458.0613</y>
+        <z>-923.6892</z>
+        <r>141.66003</r>
+      </Position>
+      <Position>
+        <x>-3233.8647</x>
+        <y>3458.0613</y>
+        <z>-923.6892</z>
+        <r>141.66003</r>
+      </Position>
+    </Positions>
+    <Animation>12</Animation>
+    <Animations />
     <Warning>Bounds</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-3233.86474609375</x>
-      <y>3458.06127929687</y>
-      <z>-923.689208984375</z>
-	  <r>141.660034179688</r>
-    </Position>
-	</Positions>
   </NPC>
   <NPC>
+    <NPCID>14</NPCID>
     <Name>Armory</Name>
-    <NPCID>014</NPCID>
-    <Animation>014</Animation>
+    <Rooms />
+    <Positions />
+    <Animation>14</Animation>
+    <Animations />
     <Warning>Bounds</Warning>
   </NPC>
   <NPC>
+    <NPCID>15</NPCID>
     <Name>Meowscular Chef</Name>
-    <NPCID>015</NPCID>
-    <Animation>015</Animation>
-    <Warning></Warning>
+    <Rooms />
+    <Positions />
+    <Animation>15</Animation>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>16</NPCID>
     <Name>Housekeeper</Name>
-    <NPCID>016</NPCID>
-    <Animation>016</Animation>
-    <Warning></Warning>
     <Rooms>
       <Room>501</Room>
       <Room>502</Room>
       <Room>503</Room>
     </Rooms>
-	<Positions>
-	<Position><!--501-->
-		<x>10147.533203125</x>
-		<y>1601.39001464844</y>
-		<z>-12.034893989563</z>
-		<r>-31.5141468048096</r>
-	</Position>
-	<Position><!--502-->
-		<x>12275.533203125</x>
-		<y>5836.35986328125</y>
-		<z>-6215.0712890625</z>
-		<r>74.0428695678711</r>
-	</Position>
-	<Position><!--503-->
-		<x>17703.70703125</x>
-		<y>11554.5869140625</y>
-		<z>-449.223327636719</z>
-		<r>-174.542831420898</r>
-	</Position>
-	</Positions>
+    <Positions>
+      <Position>
+        <x>10147.533</x>
+        <y>1601.39</y>
+        <z>-12.034894</z>
+        <r>-31.514147</r>
+      </Position>
+      <Position>
+        <x>12275.533</x>
+        <y>5836.36</y>
+        <z>-6215.0713</z>
+        <r>74.04287</r>
+      </Position>
+      <Position>
+        <x>17703.707</x>
+        <y>11554.587</y>
+        <z>-449.22333</z>
+        <r>-174.54283</r>
+      </Position>
+    </Positions>
+    <Animation>16</Animation>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>17</NPCID>
     <Name>The Huntsman</Name>
-    <NPCID>017</NPCID>
-    <Animation>017</Animation>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1607.3455</x>
+        <y>3663.4084</y>
+        <z>-6708.367</z>
+        <r>-116.98134</r>
+      </Position>
+    </Positions>
+    <Animation>17</Animation>
     <Animations>
-      <Animation>0017</Animation>
+      <Animation>17</Animation>
       <Animation>1017</Animation>
     </Animations>
     <Warning>Missing</Warning>
   </NPC>
   <NPC>
+    <NPCID>18</NPCID>
     <Name>The Tracker</Name>
-    <NPCID>018</NPCID>
+    <Rooms>
+      <Room>303</Room>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>3223.7913</x>
+        <y>625.8653</y>
+        <z>-227.03975</z>
+        <r>72.00001</r>
+      </Position>
+      <Position>
+        <x>-503</x>
+        <y>3105.5</y>
+        <z>-3982</z>
+        <r>57</r>
+      </Position>
+    </Positions>
     <Animation>1018</Animation>
+    <Animations />
     <Warning>Missing-Rooms</Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>3223.79125976562</x>
-      <y>625.865295410156</y>
-      <z>-227.039749145508</z>
-	  <r>72.0000076293945</r>
-    </Position>
-	</Positions>
   </NPC>
   <NPC>
+    <NPCID>19</NPCID>
     <Name>Admiral</Name>
-    <NPCID>019</NPCID>
-    <Animation>019</Animation>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>326.63672</x>
+        <y>3451.0505</y>
+        <z>-5519.684</z>
+        <r>2.9985597</r>
+      </Position>
+    </Positions>
+    <Animation>19</Animation>
+    <Animations />
     <Warning>Missing</Warning>
   </NPC>
   <NPC>
+    <NPCID>20</NPCID>
     <Name>The Seeker</Name>
-    <NPCID>020</NPCID>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1454.8029</x>
+        <y>3342.4102</y>
+        <z>-5124.6284</z>
+        <r>8.502295</r>
+      </Position>
+    </Positions>
     <Animation>1020</Animation>
+    <Animations />
     <Warning>Missing</Warning>
   </NPC>
   <NPC>
+    <NPCID>21</NPCID>
     <Name>Third Fleet Master</Name>
-    <NPCID>021</NPCID>
-    <Animation>021</Animation>
-    <Warning></Warning>
     <Rooms>
       <Room>303</Room>
+      <Room>305</Room>
     </Rooms>
-	<Positions>
-    <Position>
-      <x>3527</x>
-      <y>650</y>
-      <z>40</z>
-	  <r>-74.9999771118164</r>
-    </Position>
-	</Positions>
+    <Positions>
+      <Position>
+        <x>3527</x>
+        <y>650</y>
+        <z>40</z>
+        <r>-74.99998</r>
+      </Position>
+      <Position>
+        <x>913.8626</x>
+        <y>3670.527</y>
+        <z>-7092.423</z>
+        <r>56.999886</r>
+      </Position>
+    </Positions>
+    <Animation>21</Animation>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>22</NPCID>
     <Name>Third Fleet Provisions</Name>
-    <NPCID>022</NPCID>
-    <Animation>022</Animation>
-    <Warning></Warning>
     <Rooms>
       <Room>303</Room>
     </Rooms>
-	<Positions>
-    <Position>
-      <x>80.9451446533203</x>
-      <y>-402.803955078125</y>
-      <z>853.917785644531</z>
-      <r>-64.1549987792969</r>
-    </Position>
-	</Positions>
-    <Rotation>
-    </Rotation>
+    <Positions>
+      <Position>
+        <x>80.945145</x>
+        <y>-402.80396</y>
+        <z>853.9178</z>
+        <r>-64.155</r>
+      </Position>
+    </Positions>
+    <Animation>22</Animation>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>23</NPCID>
     <Name>Lynian Expert</Name>
-    <NPCID>023</NPCID>
-    <Animation>023</Animation>
-    <Warning>Bounds</Warning>
     <Rooms>
       <Room>303</Room>
     </Rooms>
-	<Positions>
-    <Position>
-      <x>781.793151855469</x>
-      <y>-1027.08605957031</y>
-      <z>1201.67407226562</z>
-	  <r>-116.313171386719</r>
-    </Position>
-	</Positions>
+    <Positions>
+      <Position>
+        <x>781.79315</x>
+        <y>-1027.086</y>
+        <z>1201.6741</z>
+        <r>-116.31317</r>
+      </Position>
+    </Positions>
+    <Animation>23</Animation>
+    <Animations />
+    <Warning>Bounds</Warning>
   </NPC>
   <NPC>
+    <NPCID>24</NPCID>
     <Name>First Wyverian</Name>
-    <NPCID>024</NPCID>
-    <Animation>024</Animation>
+    <Rooms />
+    <Positions />
+    <Animation>24</Animation>
+    <Animations />
     <Warning>Story</Warning>
   </NPC>
   <NPC>
+    <NPCID>25</NPCID>
     <Name>Excitable A-Lister</Name>
-    <NPCID>025</NPCID>
-    <Warning></Warning>
-    <Animation>025</Animation>
+    <Rooms>
+      <Room>501</Room>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>9797.474</x>
+        <y>1601.39</y>
+        <z>849.2796</z>
+        <r>-112.76654</r>
+      </Position>
+      <Position>
+        <x>1475.2537</x>
+        <y>3663.4084</y>
+        <z>-6928.3037</z>
+        <r>-60.915573</r>
+      </Position>
+    </Positions>
+    <Animation>25</Animation>
     <Animations>
-      <Animation>0025</Animation>
+      <Animation>25</Animation>
       <Animation>1025</Animation>
       <Animation>2025</Animation>
     </Animations>
-    <Rooms>
-      <Room>501</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>9797.4736328125</x>
-      <y>1601.39001464844</y>
-      <z>849.279602050781</z>
-	  <r>-112.766540527344</r>
-    </Position>
-	</Positions>
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>26</NPCID>
     <Name>Serious Handler</Name>
-    <NPCID>026</NPCID>
-    <Animation>026</Animation>
+    <Rooms>
+      <Room>501</Room>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>9671.243</x>
+        <y>1601.39</y>
+        <z>962.77136</z>
+        <r>134.99977</r>
+      </Position>
+      <Position>
+        <x>1414</x>
+        <y>3665</y>
+        <z>-6752</z>
+        <r>-164.98999</r>
+      </Position>
+    </Positions>
+    <Animation>26</Animation>
     <Animations>
-      <Animation>0026</Animation>
+      <Animation>26</Animation>
       <Animation>1026</Animation>
       <Animation>2026</Animation>
     </Animations>
-    <Warning></Warning>
-    <Rooms>
-      <Room>501</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>9671.2431640625</x>
-      <y>1601.39001464844</y>
-      <z>962.771362304687</z>
-	  <r>134.999771118164</r>
-	</Position>
-	</Positions>
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>27</NPCID>
     <Name>Missing Scholar</Name>
-    <NPCID>027</NPCID>
-    <Animation>027</Animation>
+    <Rooms />
+    <Positions />
+    <Animation>27</Animation>
+    <Animations />
     <Warning>Story</Warning>
   </NPC>
   <NPC>
+    <NPCID>28</NPCID>
     <Name>Jovial Scholar (Mute)</Name>
-    <NPCID>028</NPCID>
+    <Rooms />
+    <Positions />
     <Animation>137</Animation>
-    <!--028,1028 crash-->
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
+    <NPCID>29</NPCID>
     <Name>Upbeat Scholar (Mute)</Name>
-    <NPCID>029</NPCID>
+    <Rooms />
+    <Positions />
     <Animation>138</Animation>
-    <!--029,1029 crash-->
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
+    <NPCID>30</NPCID>
     <Name>Lively Scholar (Mute)</Name>
-    <NPCID>030</NPCID>
+    <Rooms />
+    <Positions />
     <Animation>139</Animation>
-    <!--030,1030 crash-->
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
+    <NPCID>32</NPCID>
     <Name>Captain</Name>
-    <NPCID>032</NPCID>
-    <Animation>032</Animation>
+    <Rooms />
+    <Positions />
+    <Animation>32</Animation>
     <Animations>
-      <Animation>0032</Animation>
+      <Animation>32</Animation>
       <Animation>1032</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>33</NPCID>
     <Name>Housekeeper Alt 1</Name>
-    <NPCID>033</NPCID>
-    <Animation>016</Animation>
+    <Rooms />
+    <Positions />
+    <Animation>16</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
+    <NPCID>34</NPCID>
     <Name>Housekeeper Alt 2</Name>
-    <NPCID>034</NPCID>
-    <Animation>016</Animation>
+    <Rooms />
+    <Positions />
+    <Animation>16</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
+    <NPCID>35</NPCID>
     <Name>Housekeeper Alt 3</Name>
-    <NPCID>035</NPCID>
-    <Animation>016</Animation>
+    <Rooms />
+    <Positions />
+    <Animation>16</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
+    <NPCID>36</NPCID>
     <Name>First Wyverian 1</Name>
-    <NPCID>036</NPCID>
-    <Animation>024</Animation>
-    <!--034 crash-->
+    <Rooms />
+    <Positions />
+    <Animation>24</Animation>
+    <Animations />
     <Warning>Cheat</Warning>
   </NPC>
   <NPC>
+    <NPCID>37</NPCID>
     <Name>Piscine Researcher</Name>
-    <NPCID>037</NPCID>
-    <Animation>037</Animation>
-    <Warning></Warning>
+    <Rooms />
+    <Positions />
+    <Animation>37</Animation>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>38</NPCID>
     <Name>Endemic Life Researcher</Name>
-    <NPCID>038</NPCID>
-    <Animation>038</Animation>
-    <Warning></Warning>
+    <Rooms />
+    <Positions />
+    <Animation>38</Animation>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>39</NPCID>
     <Name>Lynian Researcher</Name>
-    <NPCID>039</NPCID>
-    <Animation>039</Animation>
-    <Warning></Warning>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>580.86</x>
+        <y>3662.675</y>
+        <z>-6406.399</z>
+        <r>-5.261353</r>
+      </Position>
+    </Positions>
+    <Animation>39</Animation>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
+    <NPCID>40</NPCID>
     <Name>First Wyverian 2</Name>
-    <NPCID>040</NPCID>
-    <Animation>024</Animation>
-    <!--0040 crash-->
+    <Rooms />
+    <Positions />
+    <Animation>24</Animation>
+    <Animations />
     <Warning>Cheat</Warning>
   </NPC>
   <NPC>
-    <Name>"Housekeeper" 1</Name>
     <NPCID>9999</NPCID>
+    <Name>"Housekeeper" 1</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>"Housekeeper" 2</Name>
     <NPCID>9998</NPCID>
+    <Name>"Housekeeper" 2</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>Feisty Fiver</Name>
     <NPCID>102</NPCID>
+    <Name>Feisty Fiver</Name>
+    <Rooms />
+    <Positions />
     <Animation>102</Animation>
     <Animations>
-      <Animation>0102</Animation>
+      <Animation>102</Animation>
       <Animation>1102</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Gentle Fourth</Name>
     <NPCID>103</NPCID>
+    <Name>Gentle Fourth</Name>
+    <Rooms />
+    <Positions />
     <Animation>103</Animation>
     <Animations>
-      <Animation>0103</Animation>
+      <Animation>103</Animation>
       <Animation>1103</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Eager Fourth</Name>
     <NPCID>104</NPCID>
+    <Name>Eager Fourth</Name>
+    <Rooms />
+    <Positions />
     <Animation>104</Animation>
     <Animations>
-      <Animation>0104</Animation>
+      <Animation>104</Animation>
       <Animation>1104</Animation>
       <Animation>2104</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Cool Fiver</Name>
     <NPCID>105</NPCID>
+    <Name>Cool Fiver</Name>
+    <Rooms />
+    <Positions />
     <Animation>105</Animation>
     <Animations>
-      <Animation>0105</Animation>
+      <Animation>105</Animation>
       <Animation>1105</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Fun Fourth</Name>
     <NPCID>106</NPCID>
+    <Name>Fun Fourth</Name>
+    <Rooms />
+    <Positions />
     <Animation>106</Animation>
     <Animations>
-      <Animation>0106</Animation>
+      <Animation>106</Animation>
       <Animation>1106</Animation>
       <Animation>2106</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Forceful Fiver</Name>
     <NPCID>107</NPCID>
+    <Name>Forceful Fiver</Name>
+    <Rooms />
+    <Positions />
     <Animation>107</Animation>
     <Animations>
-      <Animation>0107</Animation>
+      <Animation>107</Animation>
       <Animation>1107</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Timid Fiver</Name>
     <NPCID>108</NPCID>
+    <Name>Timid Fiver</Name>
+    <Rooms />
+    <Positions />
     <Animation>108</Animation>
     <Animations>
-      <Animation>0108</Animation>
+      <Animation>108</Animation>
       <Animation>1108</Animation>
       <Animation>2108</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Sisterly Fourth</Name>
     <NPCID>109</NPCID>
+    <Name>Sisterly Fourth</Name>
+    <Rooms />
+    <Positions />
     <Animation>109</Animation>
     <Animations>
-      <Animation>0109</Animation>
+      <Animation>109</Animation>
       <Animation>1109</Animation>
       <Animation>2109</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Research Hunter</Name>
     <NPCID>111</NPCID>
+    <Name>Research Hunter</Name>
+    <Rooms />
+    <Positions />
     <Animation>111</Animation>
     <Animations>
-      <Animation>0111</Animation>
+      <Animation>111</Animation>
       <Animation>1111</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Smart Biologist</Name>
     <NPCID>112</NPCID>
+    <Name>Smart Biologist</Name>
+    <Rooms />
+    <Positions />
     <Animation>112</Animation>
     <Animations>
-      <Animation>0112</Animation>
+      <Animation>112</Animation>
       <Animation>1112</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Impatient Biologist</Name>
     <NPCID>113</NPCID>
+    <Name>Impatient Biologist</Name>
+    <Rooms />
+    <Positions />
     <Animation>113</Animation>
     <Animations>
-      <Animation>0113</Animation>
+      <Animation>113</Animation>
       <Animation>1113</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Laid-back Botanist</Name>
     <NPCID>114</NPCID>
+    <Name>Laid-back Botanist</Name>
+    <Rooms />
+    <Positions />
     <Animation>114</Animation>
     <Animations>
-      <Animation>0114</Animation>
+      <Animation>114</Animation>
       <Animation>1114</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Kettle Wyverian</Name>
     <NPCID>9997</NPCID>
+    <Name>Kettle Wyverian</Name>
+    <Rooms />
+    <Positions />
     <Animation>1114</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>Fiver Bro</Name>
     <NPCID>116</NPCID>
+    <Name>Fiver Bro</Name>
+    <Rooms />
+    <Positions />
     <Animation>116</Animation>
     <Animations>
-      <Animation>0116</Animation>
+      <Animation>116</Animation>
       <Animation>1116</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Soup Felyne</Name>
     <NPCID>117</NPCID>
+    <Name>Soup Felyne</Name>
+    <Rooms />
+    <Positions />
     <Animation>117</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Oven Felyne</Name>
     <NPCID>118</NPCID>
+    <Name>Oven Felyne</Name>
+    <Rooms />
+    <Positions />
     <Animation>118</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Softspoken Fourth</Name>
     <NPCID>121</NPCID>
+    <Name>Softspoken Fourth</Name>
+    <Rooms />
+    <Positions />
     <Animation>123</Animation>
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>Hotblooded Fourth</Name>
     <NPCID>123</NPCID>
+    <Name>Hotblooded Fourth</Name>
+    <Rooms />
+    <Positions />
     <Animation>123</Animation>
     <Animations>
-      <Animation>0123</Animation>
+      <Animation>123</Animation>
       <Animation>1123</Animation>
       <Animation>2123</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Easygoing Fiver</Name>
     <NPCID>124</NPCID>
+    <Name>Easygoing Fiver</Name>
+    <Rooms />
+    <Positions />
     <Animation>124</Animation>
     <Animations>
-      <Animation>0124</Animation>
+      <Animation>124</Animation>
       <Animation>1124</Animation>
       <Animation>2124</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Airship Engineer</Name>
     <NPCID>125</NPCID>
+    <Name>Airship Engineer</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>2801.1387</x>
+        <y>627.0653</y>
+        <z>514.8081</z>
+        <r>87.84448</r>
+      </Position>
+    </Positions>
     <Animation>125</Animation>
     <Animations>
-      <Animation>0125</Animation>
+      <Animation>125</Animation>
       <Animation>1125</Animation>
       <Animation>2125</Animation>
     </Animations>
-    <Warning></Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>2801.138671875</x>
-      <y>627.065307617187</y>
-      <z>514.80810546875</z>
-      <r>87.844482421875</r>
-	</Position>
-	</Positions>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Cheerful Scholar</Name>
     <NPCID>130</NPCID>
+    <Name>Cheerful Scholar</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>2152.1067</x>
+        <y>37.411255</y>
+        <z>-812.4951</z>
+        <r>-99.999985</r>
+      </Position>
+    </Positions>
     <Animation>130</Animation>
-    <Warning></Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>2152.10668945313</x>
-      <y>37.4112548828125</y>
-      <z>-812.4951171875</z>
-      <r>-99.9999847412109</r>
-    </Position>
-	</Positions>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Shy Scholar</Name>
     <NPCID>131</NPCID>
-    <Animation>131</Animation>
-    <Warning></Warning>
+    <Name>Shy Scholar</Name>
     <Rooms>
       <Room>303</Room>
     </Rooms>
-	<Positions>
-    <Position>
-      <x>814.145324707031</x>
-      <y>-1031.49926757812</y>
-      <z>-755.326538085938</z>
-      <r>-127.000137329102</r>
-    </Position>
-	</Positions>
+    <Positions>
+      <Position>
+        <x>814.1453</x>
+        <y>-1031.4993</y>
+        <z>-755.32654</z>
+        <r>-127.00014</r>
+      </Position>
+    </Positions>
+    <Animation>131</Animation>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Squad Manager</Name>
     <NPCID>134</NPCID>
+    <Name>Squad Manager</Name>
+    <Rooms />
+    <Positions />
     <Animation>134</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Harp Felyne on Chair?</Name>
     <NPCID>9996</NPCID>
+    <Name>Harp Felyne on Chair?</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
-    <!-- 135,1135,10135 crash -->
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>Harp Felyne on Floor?</Name>
     <NPCID>9995</NPCID>
+    <Name>Harp Felyne on Floor?</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
-    <!-- 136,1136,10136 crash -->
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>Jovial Scholar</Name>
     <NPCID>9994</NPCID>
+    <Name>Jovial Scholar</Name>
+    <Rooms />
+    <Positions />
     <Animation>137</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Upbeat Scholar</Name>
     <NPCID>9993</NPCID>
+    <Name>Upbeat Scholar</Name>
+    <Rooms />
+    <Positions />
     <Animation>138</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Lively Scholar</Name>
     <NPCID>9992</NPCID>
+    <Name>Lively Scholar</Name>
+    <Rooms />
+    <Positions />
     <Animation>139</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Moogle</Name>
     <NPCID>140</NPCID>
+    <Name>Moogle</Name>
+    <Rooms />
+    <Positions />
     <Animation>140</Animation>
+    <Animations />
     <Warning>NoLoop</Warning>
   </NPC>
   <NPC>
-    <Name>Generic Wyverian</Name>
     <NPCID>9990</NPCID>
+    <Name>Generic Wyverian</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>"Squad Manager"</Name>
     <NPCID>9989</NPCID>
+    <Name>"Squad Manager"</Name>
+    <Rooms />
+    <Positions />
     <Animation>134</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>Smithy Bro 1</Name>
     <NPCID>9988</NPCID>
+    <Name>Smithy Bro 1</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>Smithy Bro 2</Name>
     <NPCID>9987</NPCID>
+    <Name>Smithy Bro 2</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>"Jovial Scholar"</Name>
     <NPCID>9986</NPCID>
+    <Name>"Jovial Scholar"</Name>
+    <Rooms />
+    <Positions />
     <Animation>137</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>"Upbeat Scholar"</Name>
     <NPCID>9985</NPCID>
+    <Name>"Upbeat Scholar"</Name>
+    <Rooms />
+    <Positions />
     <Animation>138</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>"Lively Scholar" (Pot Cat)</Name>
     <NPCID>9984</NPCID>
+    <Name>"Lively Scholar" (Pot Cat)</Name>
+    <Rooms />
+    <Positions />
     <Animation>139</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>"Unavailable" (Banana Cat)</Name>
     <NPCID>9983</NPCID>
+    <Name>"Unavailable" (Banana Cat)</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>A Dude</Name>
     <NPCID>9982</NPCID>
+    <Name>A Dude</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>A Dudette</Name>
     <NPCID>9981</NPCID>
+    <Name>A Dudette</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>Dude with Knife</Name>
     <NPCID>9980</NPCID>
+    <Name>Dude with Knife</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>Dudette with Book</Name>
     <NPCID>9979</NPCID>
+    <Name>Dudette with Book</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>Banana Cat</Name>
     <NPCID>9978</NPCID>
+    <Name>Banana Cat</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>Armored Dude</Name>
     <NPCID>9977</NPCID>
+    <Name>Armored Dude</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>Armored Baldy</Name>
     <NPCID>9976</NPCID>
+    <Name>Armored Baldy</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>Shirtless Bandana</Name>
     <NPCID>9975</NPCID>
+    <Name>Shirtless Bandana</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>Basket Girl</Name>
     <NPCID>9974</NPCID>
+    <Name>Basket Girl</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>Armored Cat</Name>
     <NPCID>9973</NPCID>
+    <Name>Armored Cat</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>Box Cat</Name>
     <NPCID>9972</NPCID>
+    <Name>Box Cat</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Animation</Warning>
   </NPC>
   <NPC>
-    <Name>Geralt of Rivia, Witcher</Name>
     <NPCID>170</NPCID>
+    <Name>Geralt of Rivia, Witcher</Name>
+    <Rooms />
+    <Positions />
     <Animation>1170</Animation>
     <Animations>
-      <Animation>0170</Animation>
+      <Animation>170</Animation>
       <Animation>1170</Animation>
     </Animations>
     <Warning>Story</Warning>
   </NPC>
   <NPC>
-    <Name>(Cat)Sapphire/Valerie</Name>    
     <NPCID>201</NPCID>
+    <Name>(Cat)Sapphire/Valerie</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>582.76605</x>
+        <y>-1029.2926</y>
+        <z>87.23347</z>
+        <r>-172.00006</r>
+      </Position>
+    </Positions>
     <Animation>201</Animation>
-    <Warning></Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>582.766052246094</x>
-      <y>-1029.29260253906</y>
-      <z>87.2334671020508</z>
-      <r>-172.000061035156</r>
-    </Position>
-	</Positions>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>(Cat)Rocky/Alex</Name>
     <NPCID>202</NPCID>
+    <Name>(Cat)Rocky/Alex</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>522.1365</x>
+        <y>-1029.3756</y>
+        <z>29.12003</z>
+        <r>128.50516</r>
+      </Position>
+    </Positions>
     <Animation>202</Animation>
-    <Warning></Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>522.136474609375</x>
-      <y>-1029.37561035156</y>
-      <z>29.1200294494629</z>
-      <r>128.505157470703</r>
-    </Position>
-	</Positions>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Acrobat/TrapWhiz</Name>
     <NPCID>203</NPCID>
+    <Name>Acrobat/TrapWhiz</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>549.78</x>
+        <y>-1029.9861</y>
+        <z>-118.94853</z>
+        <r>1.9999728</r>
+      </Position>
+    </Positions>
     <Animation>203</Animation>
+    <Animations />
     <Warning>Story</Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>549.780029296875</x>
-      <y>-1029.98608398438</y>
-      <z>-118.948532104492</z>
-      <r>1.99997282028198</r>
-    </Position>
-	</Positions>
   </NPC>
   <NPC>
-    <Name>(Cat)Finn/Lucy</Name>
     <NPCID>204</NPCID>
+    <Name>(Cat)Finn/Lucy</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>835.31274</x>
+        <y>-1028.9253</y>
+        <z>146.35046</z>
+        <r>42.999985</r>
+      </Position>
+    </Positions>
     <Animation>204</Animation>
-    <Warning></Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>835.312744140625</x>
-      <y>-1028.92529296875</y>
-      <z>146.350463867187</z>
-      <r>42.9999847412109</r>
-    </Position>
-	</Positions>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>(Cat)Biscuit/Roy</Name>
     <NPCID>205</NPCID>
+    <Name>(Cat)Biscuit/Roy</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>966.89246</x>
+        <y>-944.104</y>
+        <z>120.37378</z>
+        <r>-61.694965</r>
+      </Position>
+    </Positions>
     <Animation>205</Animation>
-    <Warning></Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>966.892456054687</x>
-      <y>-944.10400390625</y>
-      <z>120.373779296875</z>
-      <r>-61.6949653625488</r>
-    </Position>
-	</Positions>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Lead Hunter</Name>
     <NPCID>206</NPCID>
+    <Name>Lead Hunter</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>915.88995</x>
+        <y>-992.94885</y>
+        <z>253.2221</z>
+        <r>-119.99994</r>
+      </Position>
+    </Positions>
     <Animation>206</Animation>
+    <Animations />
     <Warning>Story</Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>915.889953613281</x>
-      <y>-992.948852539063</y>
-      <z>253.222106933594</z>
-      <r>-119.999938964844</r>
-    </Position>
-	</Positions>
   </NPC>
   <NPC>
-    <Name>(Cat)Jr/Kidd</Name>
     <NPCID>207</NPCID>
+    <Name>(Cat)Jr/Kidd</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>632.3219</x>
+        <y>-1032.0127</y>
+        <z>-541.1241</z>
+        <r>30.99999</r>
+      </Position>
+    </Positions>
     <Animation>207</Animation>
-    <Warning></Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>632.321899414062</x>
-      <y>-1032.0126953125</y>
-      <z>-541.124084472656</z>
-      <r>30.9999904632568</r>
-    </Position>
-	</Positions>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>(Cat)Araujo/David</Name>
     <NPCID>208</NPCID>
+    <Name>(Cat)Araujo/David</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>499.37686</x>
+        <y>-974.2946</y>
+        <z>-401.31723</z>
+        <r>93.999985</r>
+      </Position>
+    </Positions>
     <Animation>208</Animation>
-    <Warning></Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>499.376861572266</x>
-      <y>-974.294616699219</y>
-      <z>-401.317230224609</z>
-      <r>93.9999847412109</r>
-    </Position>
-	</Positions>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Gajalaka Knight</Name>
     <NPCID>209</NPCID>
+    <Name>Gajalaka Knight</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>658.00757</x>
+        <y>-1031.3926</y>
+        <z>-405.7143</z>
+        <r>67.99997</r>
+      </Position>
+    </Positions>
     <Animation>209</Animation>
+    <Animations />
     <Warning>Story</Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>658.007568359375</x>
-      <y>-1031.392578125</y>
-      <z>-405.714294433594</z>
-      <r>67.9999694824219</r>
-    </Position>
-	</Positions>
   </NPC>
   <NPC>
-    <Name>(Flailing Hands Cat)</Name>
     <NPCID>210</NPCID>
+    <Name>(Flailing Hands Cat)</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1051.5039</x>
+        <y>-1026.9911</y>
+        <z>1026.7073</z>
+        <r>120</r>
+      </Position>
+    </Positions>
     <Animation>210</Animation>
+    <Animations />
     <Warning>Missing-Rooms</Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-	<Positions>
-    <Position>
-      <x>1051.50390625</x>
-      <y>-1026.99108886719</y>
-      <z>1026.70727539062</z>
-      <r>120</r>
-    </Position>
-	</Positions>
   </NPC>
   <NPC>
-    <Name>(Pointing Cat)</Name>
     <NPCID>211</NPCID>
+    <Name>(Pointing Cat)</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1165.6146</x>
+        <y>-1026.9634</y>
+        <z>953.58984</z>
+        <r>-30</r>
+      </Position>
+    </Positions>
     <Animation>211</Animation>
+    <Animations />
     <Warning>Missing-Rooms</Warning>
-    <Rooms>
-      <Room>303</Room>
-    </Rooms>
-    <Positions>
-	<Position>
-      <x>1165.61462402344</x>
-      <y>-1026.96337890625</y>
-      <z>953.58984375</z>
-      <r>-30</r>
-    </Position>
-	</Positions>
   </NPC>
   <NPC>
-    <Name>(Cat Idle)</Name>
     <NPCID>212</NPCID>
-    <Animation>212</Animation>
-    <Warning>Missing-Rooms</Warning>
+    <Name>(Cat Idle)</Name>
     <Rooms>
       <Room>303</Room>
     </Rooms>
     <Positions>
-	<Position>
-      <x>1123.44201660156</x>
-      <y>-1026.97644042969</y>
-      <z>1132.14672851562</z>
-      <r>-169.999908447266</r>
-    </Position>
-	</Positions>
+      <Position>
+        <x>1123.442</x>
+        <y>-1026.9764</y>
+        <z>1132.1467</z>
+        <r>-169.99991</r>
+      </Position>
+    </Positions>
+    <Animation>212</Animation>
+    <Animations />
+    <Warning>Missing-Rooms</Warning>
   </NPC>
   <NPC>
-    <Name>Apple Enthusiast</Name>
     <NPCID>251</NPCID>
+    <Name>Apple Enthusiast</Name>
+    <Rooms />
+    <Positions />
     <Animation>251</Animation>
     <Animations>
-      <Animation>0251</Animation>
+      <Animation>251</Animation>
       <Animation>1251</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Engaged Fiver</Name>
     <NPCID>252</NPCID>
+    <Name>Engaged Fiver</Name>
+    <Rooms />
+    <Positions />
     <Animation>1252</Animation>
     <Animations>
       <Animation>1252</Animation>
       <Animation>2252</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Fish Aficionado</Name>
     <NPCID>253</NPCID>
+    <Name>Fish Aficionado</Name>
+    <Rooms />
+    <Positions />
     <Animation>1253</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Hide Expert</Name>
     <NPCID>254</NPCID>
+    <Name>Hide Expert</Name>
+    <Rooms />
+    <Positions />
     <Animation>1254</Animation>
     <Animations>
       <Animation>1254</Animation>
       <Animation>2254</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Occupied Fiver</Name>
     <NPCID>255</NPCID>
+    <Name>Occupied Fiver</Name>
+    <Rooms />
+    <Positions />
     <Animation>1255</Animation>
     <Animations>
       <Animation>1255</Animation>
       <Animation>2255</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Busy Fiver</Name>
     <NPCID>256</NPCID>
+    <Name>Busy Fiver</Name>
+    <Rooms />
+    <Positions />
     <Animation>1256</Animation>
     <Animations>
       <Animation>1256</Animation>
       <Animation>2256</Animation>
     </Animations>
-    <Warning></Warning>
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Commision Member 1</Name>
     <NPCID>257</NPCID>
+    <Name>Commision Member 1</Name>
+    <Rooms />
+    <Positions />
     <Animation>257</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Commision Member 2</Name>
     <NPCID>258</NPCID>
+    <Name>Commision Member 2</Name>
+    <Rooms />
+    <Positions />
     <Animation>258</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Third Fleet Felyne (Witcher)</Name>
     <NPCID>259</NPCID>
+    <Name>Third Fleet Felyne (Witcher)</Name>
+    <Rooms />
+    <Positions />
     <Animation>259</Animation>
+    <Animations />
     <Warning>Story</Warning>
   </NPC>
   <NPC>
-    <Name>Third Fleet Felyne Goon 1</Name>
     <NPCID>260</NPCID>
+    <Name>Third Fleet Felyne Goon 1</Name>
+    <Rooms />
+    <Positions />
     <Animation>260</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Third Fleet Felyne Goon 2</Name>
     <NPCID>261</NPCID>
+    <Name>Third Fleet Felyne Goon 2</Name>
+    <Rooms />
+    <Positions />
     <Animation>261</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Nekker (Witcher)</Name>
     <NPCID>262</NPCID>
+    <Name>Nekker (Witcher)</Name>
+    <Rooms />
+    <Positions />
     <Animation>262</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Blondie 0</Name>
     <NPCID>9954</NPCID>
+    <Name>Blondie 0</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Ignore</Warning>
   </NPC>
   <NPC>
-    <Name>Blondie 1</Name>
     <NPCID>9953</NPCID>
+    <Name>Blondie 1</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Ignore</Warning>
   </NPC>
   <NPC>
-    <Name>Blondie 2</Name>
     <NPCID>9952</NPCID>
+    <Name>Blondie 2</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>Hub Lass</Name>
     <NPCID>301</NPCID>
+    <Name>Hub Lass</Name>
+    <Rooms />
+    <Positions />
     <Animation>301</Animation>
+    <Animations />
     <Warning>Bounds</Warning>
   </NPC>
   <NPC>
-    <Name>Arena Lass</Name>
     <NPCID>302</NPCID>
+    <Name>Arena Lass</Name>
+    <Rooms />
+    <Positions />
     <Animation>302</Animation>
+    <Animations />
     <Warning>Bounds</Warning>
   </NPC>
   <NPC>
-    <Name>Hub Provisions</Name>
     <NPCID>303</NPCID>
+    <Name>Hub Provisions</Name>
+    <Rooms />
+    <Positions />
     <Animation>303</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
     <NPCID>304</NPCID>
     <Name>Event Manager</Name>
+    <Rooms />
+    <Positions />
     <Animation>304</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Hopeful Felyne</Name>
     <NPCID>305</NPCID>
+    <Name>Hopeful Felyne</Name>
+    <Rooms />
+    <Positions />
     <Animation>305</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>Headless Man</Name>
     <NPCID>9951</NPCID>
+    <Name>Headless Man</Name>
+    <Rooms />
+    <Positions />
     <Animation>16</Animation>
+    <Animations />
     <Warning>Placeholder</Warning>
   </NPC>
   <NPC>
-    <Name>Feeder Felyne</Name>
     <NPCID>307</NPCID>
+    <Name>Feeder Felyne</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
-    <Warning></Warning>
+    <Animations />
+    <Warning />
   </NPC>
   <NPC>
-    <Name>?123?</Name>
     <NPCID>9950</NPCID>
+    <Name>?123?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?124?</Name>
     <NPCID>9949</NPCID>
+    <Name>?124?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?125?</Name>
     <NPCID>9948</NPCID>
+    <Name>?125?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?126?</Name>
     <NPCID>9947</NPCID>
+    <Name>?126?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?127?</Name>
     <NPCID>9946</NPCID>
+    <Name>?127?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?128?</Name>
     <NPCID>9945</NPCID>
+    <Name>?128?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?129?</Name>
     <NPCID>9944</NPCID>
+    <Name>?129?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?130?</Name>
     <NPCID>9943</NPCID>
+    <Name>?130?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?131?</Name>
     <NPCID>9942</NPCID>
+    <Name>?131?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?132?</Name>
     <NPCID>9941</NPCID>
+    <Name>?132?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?133?</Name>
     <NPCID>9940</NPCID>
+    <Name>?133?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?134?</Name>
     <NPCID>9939</NPCID>
+    <Name>?134?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?135?</Name>
     <NPCID>9938</NPCID>
+    <Name>?135?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?136?</Name>
     <NPCID>9937</NPCID>
+    <Name>?136?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?137?</Name>
     <NPCID>9936</NPCID>
+    <Name>?137?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?138?</Name>
     <NPCID>9935</NPCID>
+    <Name>?138?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?139?</Name>
     <NPCID>9934</NPCID>
+    <Name>?139?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?140?</Name>
     <NPCID>9933</NPCID>
+    <Name>?140?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?141?</Name>
     <NPCID>9932</NPCID>
+    <Name>?141?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?142?</Name>
     <NPCID>9931</NPCID>
+    <Name>?142?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?143?</Name>
     <NPCID>9930</NPCID>
+    <Name>?143?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?144?</Name>
     <NPCID>9929</NPCID>
+    <Name>?144?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>?145?</Name>
     <NPCID>9928</NPCID>
+    <Name>?145?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>Grammeowster Chef</Name>
     <NPCID>701</NPCID>
-    <Animation>100701</Animation>
-    <Warning>Iceborne</Warning>
-  </NPC>
-  <NPC>
-    <Name>Seliana Stockpiler</Name>
-    <NPCID>702</NPCID>
-    <Animation>100702</Animation>
-    <Warning>Iceborne</Warning>
-  </NPC>
-  <NPC>
-    <Name>Seliana Melder</Name>
-    <NPCID>703</NPCID>
-    <Animation>100703</Animation>
-	<Animations>
-		<Animation>100703</Animation>
-		<Animation>110703</Animation>
-	</Animations>
-    <Warning>Iceborne</Warning>
-  </NPC>
-  <NPC>
-    <Name>Seliana Sailor</Name>
-    <NPCID>704</NPCID>
-    <Animation>100704</Animation>
-	<Animations>
-		<Animation>100704</Animation>
-		<Animation>110704</Animation>
-	</Animations>
-    <Warning>Iceborne</Warning>
-  </NPC>
-  <NPC>
-    <Name>150-?</Name>
-    <NPCID>9831</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>Seliana Armory</Name>
-    <NPCID>706</NPCID>
-    <Animation>100706</Animation>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-3071.51000976562</x>
-      <y>3480.10791015625</y>
-      <z>-1814.28881835938</z>
-      <r>-19.9999561309814</r>
-    </Position>
-	</Positions>
-  </NPC>
-  <NPC>
-    <Name>Housekeeper(Seliana)</Name>
-    <NPCID>707</NPCID>
-    <Animation>100016</Animation>
-	<Animations>
-		<Animation>100016</Animation>
-		<Animation>110016</Animation>
-	</Animations>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-      <Room>506</Room>
+    <Name>Grammeowster Chef</Name>
+    <Rooms>
+      <Room>305</Room>
     </Rooms>
-	<Positions>
-	<Position>
-		<x>938.647766113281</x>
-		<y>2853.37548828125</y>
-		<z>615.363586425781</z>
-		<r>-111.148902893066</r>
-	</Position>
-	</Positions>
-  </NPC>
-  <NPC>
-    <Name>Pub Event Manager</Name>
-    <NPCID>708</NPCID>
-    <Animation>100708</Animation>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-5282.1474609375</x>
-      <y>4552.3203125</y>
-      <z>-4996.09326171875</z>
-      <r>87.1305770874023</r>
-    </Position>
-	</Positions>
-  </NPC>
-  <NPC>
-    <Name>Pub Arena Manager</Name>
-    <NPCID>709</NPCID>
-    <Animation>100709</Animation>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-6226.576171875</x>
-      <y>4590.6689453125</y>
-      <z>-6456.060546875</z>
-      <r>58.1305465698242</r>
-    </Position>
-	</Positions>
-  </NPC>
-  <NPC>
-    <Name>Pub Lass</Name>
-    <NPCID>710</NPCID>
-    <Animation>100710</Animation>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-6113.82373046875</x>
-      <y>4590.6689453125</y>
-      <z>-6696.14501953125</z>
-      <r>73.1305389404297</r>
-    </Position>
-	</Positions>
-  </NPC>
-  <NPC>
-    <Name>Pub Stockpiler</Name>
-    <NPCID>711</NPCID>
-    <Animation>100711</Animation>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-5842.8310546875</x>
-      <y>4493.02880859375</y>
-      <z>-7978.40478515625</z>
-      <r>49.130500793457</r>
-    </Position>
-	</Positions>
-  </NPC>
-  <NPC>
-    <Name>157-Tundra Wyverian?</Name>
-    <NPCID>712</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>Pub Resource Manager</Name>
-    <NPCID>713</NPCID>
-    <Animation>100713</Animation>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-3586.54443359375</x>
-      <y>4587.35986328125</y>
-      <z>-5669.4931640625</z>
-      <r>-109.999984741211</r>
-    </Position>
-	</Positions>
-  </NPC>
-  <NPC>
-    <Name>Pub Sailor</Name>
-    <NPCID>714</NPCID>
-    <Animation>100704</Animation>
-	<Animations>
-		<Animation>100704</Animation>
-		<Animation>110704</Animation>
-	</Animations>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-5204.076171875</x>
-      <y>4494.35546875</y>
-      <z>-8097.51708984375</z>
-      <r>0</r>
-    </Position>
-	</Positions>
-  </NPC>
-  <NPC>
-    <Name>160-Helpful Felyne?</Name>
-    <NPCID>730</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>161-Busybody Felyne?</Name>
-    <NPCID>731</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>162-Busybody Fiver?</Name>
-    <NPCID>732</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>163-Ambitious Fourth?</Name>
-    <NPCID>741</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>164-Reliable Fiver?</Name>
-    <NPCID>743</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>165-Studious Biologist?</Name>
-    <NPCID>749</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>166-Helpful Felyne?</Name>
-    <NPCID>730</NPCID>
-    <Animation>100730</Animation>
-	<Animations>
-		<Animation>100730</Animation>
-		<Animation>110730</Animation>
-	</Animations>
+    <Positions>
+      <Position>
+        <x>-463</x>
+        <y>2980</y>
+        <z>-3122</z>
+        <r>37.498997</r>
+      </Position>
+    </Positions>
+    <Animation>100701</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>167-Busybody Felyne?</Name>
-    <NPCID>731</NPCID>
-    <Animation>100731</Animation>
-	<Animations>
-		<Animation>100731</Animation>
-		<Animation>110731</Animation>
-	</Animations>
+    <NPCID>702</NPCID>
+    <Name>Seliana Stockpiler</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1592.4385</x>
+        <y>3114.009</y>
+        <z>-2082.5344</z>
+        <r>-0.71435684</r>
+      </Position>
+    </Positions>
+    <Animation>100702</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>168-Busybody Fiver?</Name>
-    <NPCID>732</NPCID>
-    <Animation>100732</Animation>
-    <Warning>Iceborne</Warning>
-  </NPC>
-  <NPC>
-    <Name>169-Bowgunner Hunter?</Name>
-    <NPCID>757</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>170-Commission Member?</Name>
-    <NPCID>758</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>171-Foot Soaking Fiver?</Name>
-    <NPCID>759</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>172-Soaker Dude?</Name>
-    <NPCID>760</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>173-Bathing Bambina?</Name>
-    <NPCID>761</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>174-Lone Soaker?</Name>
-    <NPCID>762</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>175-Sauna Dude?</Name>
-    <NPCID>763</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>176-???????</Name>
-    <NPCID>740</NPCID>
-    <Animation>100740</Animation>
-    <Warning>Iceborne</Warning>
-  </NPC>
-  <NPC>
-    <Name>Ambitious Fourth</Name>
-    <NPCID>741</NPCID>
-	<Animation>100741</Animation>
-	<Animations>
-		<Animation>100741</Animation>
-		<Animation>110741</Animation>
-		<Animation>120741</Animation>
-	</Animations>
-    <Warning>Iceborne</Warning>
-  </NPC>
-  <NPC>
-    <Name>178-Fussy Fourth?</Name>
-    <NPCID>766</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>Reliable Fiver</Name>
-    <NPCID>743</NPCID>
-	<Animation>100743</Animation>
+    <NPCID>703</NPCID>
+    <Name>Seliana Melder</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>310.6249</x>
+        <y>3135.7085</y>
+        <z>668.1373</z>
+        <r>138.48114</r>
+      </Position>
+    </Positions>
+    <Animation>100703</Animation>
     <Animations>
-		<Animation>100743</Animation>
-		<Animation>110743</Animation>
-		<Animation>120743</Animation>
-	</Animations>
+      <Animation>100703</Animation>
+      <Animation>110703</Animation>
+    </Animations>
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>180-?</Name>
-    <NPCID>9926</NPCID>
+    <NPCID>704</NPCID>
+    <Name>Seliana Sailor</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>821.94324</x>
+        <y>2985.9038</y>
+        <z>-484.1395</z>
+        <r>74.999916</r>
+      </Position>
+    </Positions>
+    <Animation>100704</Animation>
+    <Animations>
+      <Animation>100704</Animation>
+      <Animation>110704</Animation>
+    </Animations>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>9831</NPCID>
+    <Name>150-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>181-?</Name>
-    <NPCID>9925</NPCID>
+    <NPCID>706</NPCID>
+    <Name>Seliana Armory</Name>
+    <Rooms>
+      <Room>306</Room>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-3071.51</x>
+        <y>3480.108</y>
+        <z>-1814.2888</z>
+        <r>-19.999956</r>
+      </Position>
+      <Position>
+        <x>-3071.51</x>
+        <y>3480.108</y>
+        <z>-1814.2888</z>
+        <r>-19.999956</r>
+      </Position>
+    </Positions>
+    <Animation>100706</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>707</NPCID>
+    <Name>Housekeeper(Seliana)</Name>
+    <Rooms>
+      <Room>506</Room>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>938.64777</x>
+        <y>2853.3755</y>
+        <z>615.3636</z>
+        <r>-111.1489</r>
+      </Position>
+      <Position>
+        <x>4338.4624</x>
+        <y>3349.8506</y>
+        <z>-3388.4358</z>
+        <r>-64.99999</r>
+      </Position>
+    </Positions>
+    <Animation>100016</Animation>
+    <Animations>
+      <Animation>100016</Animation>
+      <Animation>110016</Animation>
+    </Animations>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>708</NPCID>
+    <Name>Pub Event Manager</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-5282.1475</x>
+        <y>4552.3203</y>
+        <z>-4996.0933</z>
+        <r>87.13058</r>
+      </Position>
+    </Positions>
+    <Animation>100708</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>709</NPCID>
+    <Name>Pub Arena Manager</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-6226.576</x>
+        <y>4590.669</y>
+        <z>-6456.0605</z>
+        <r>58.130547</r>
+      </Position>
+    </Positions>
+    <Animation>100709</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>710</NPCID>
+    <Name>Pub Lass</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-6113.8237</x>
+        <y>4590.669</y>
+        <z>-6696.145</z>
+        <r>73.13054</r>
+      </Position>
+    </Positions>
+    <Animation>100710</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>711</NPCID>
+    <Name>Pub Stockpiler</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-5842.831</x>
+        <y>4493.029</y>
+        <z>-7978.405</z>
+        <r>49.1305</r>
+      </Position>
+    </Positions>
+    <Animation>100711</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>712</NPCID>
+    <Name>157-Tundra Wyverian?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>182-?</Name>
-    <NPCID>9924</NPCID>
+    <NPCID>713</NPCID>
+    <Name>Pub Resource Manager</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-3586.5444</x>
+        <y>4587.36</y>
+        <z>-5669.493</z>
+        <r>-109.999985</r>
+      </Position>
+    </Positions>
+    <Animation>100713</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>714</NPCID>
+    <Name>Pub Sailor</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-5204.076</x>
+        <y>4494.3555</y>
+        <z>-8097.517</z>
+        <r>0</r>
+      </Position>
+    </Positions>
+    <Animation>100704</Animation>
+    <Animations>
+      <Animation>100704</Animation>
+      <Animation>110704</Animation>
+    </Animations>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>730</NPCID>
+    <Name>160-Helpful Felyne?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>183-?</Name>
-    <NPCID>9923</NPCID>
+    <NPCID>731</NPCID>
+    <Name>161-Busybody Felyne?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>184-?</Name>
-    <NPCID>9922</NPCID>
+    <NPCID>732</NPCID>
+    <Name>162-Busybody Fiver?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>185-Studious Biologist?</Name>
+    <NPCID>741</NPCID>
+    <Name>163-Ambitious Fourth?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>743</NPCID>
+    <Name>164-Reliable Fiver?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
     <NPCID>749</NPCID>
-    <Animation>100749</Animation>
+    <Name>165-Studious Biologist?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>730</NPCID>
+    <Name>166-Helpful Felyne?</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1993.7136</x>
+        <y>2931.3657</y>
+        <z>-1487.7286</z>
+        <r>-174.0002</r>
+      </Position>
+    </Positions>
+    <Animation>100730</Animation>
+    <Animations>
+      <Animation>100730</Animation>
+      <Animation>110730</Animation>
+    </Animations>
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>186-?</Name>
-    <NPCID>9920</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>187-?</Name>
-    <NPCID>9919</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>188-?</Name>
-    <NPCID>9918</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>189-?</Name>
-    <NPCID>9917</NPCID>
-    <Animation>307</Animation>
-    <Warning>Iceborne-Anim</Warning>
-  </NPC>
-  <NPC>
-    <Name>Dual-blading Hunter</Name>
-    <NPCID>754</NPCID>
-    <Animation>100754</Animation>
-    <Warning>Story</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-3450.41479492188</x>
-      <y>3480.10791015625</y>
-      <z>-1737.943359375</z>
-      <r>169.999908447266</r>
-    </Position>
-	</Positions>
-  </NPC>
-  <NPC>
-    <Name>Felyne Server</Name>
-    <NPCID>755</NPCID>
-    <Animation>100755</Animation>
+    <NPCID>731</NPCID>
+    <Name>167-Busybody Felyne?</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-247.15442</x>
+        <y>3268.2205</y>
+        <z>-1594.0294</z>
+        <r>20.999937</r>
+      </Position>
+    </Positions>
+    <Animation>100731</Animation>
+    <Animations>
+      <Animation>100731</Animation>
+      <Animation>110731</Animation>
+    </Animations>
     <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-3655.80004882812</x>
-      <y>5303</y>
-      <z>-6029.2001953125</z>
-      <r>-112</r>
-    </Position>
-	</Positions>
   </NPC>
   <NPC>
-    <Name>Felyne Waiter</Name>
-    <NPCID>756</NPCID>
-    <Animation>100755</Animation>
-    <Warning>Iceborne-Anim</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-3655.80004882812</x>
-      <y>5303</y>
-      <z>-6029.2001953125</z>
-      <r>-112</r>
-    </Position>
-	</Positions>
+    <NPCID>732</NPCID>
+    <Name>168-Busybody Fiver?</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>3916.5925</x>
+        <y>3088.0884</y>
+        <z>514.3129</z>
+        <r>-152.00023</r>
+      </Position>
+    </Positions>
+    <Animation>100732</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>Bowgunner Hunter</Name>
     <NPCID>757</NPCID>
-    <Animation>100757</Animation>
-    <Warning>Story</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-2934.70776367188</x>
-      <y>4538.265625</y>
-      <z>-6494.92724609375</z>
-      <r>0</r>
-    </Position>
-	</Positions>
+    <Name>169-Bowgunner Hunter?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>Commission Member</Name>
     <NPCID>758</NPCID>
+    <Name>170-Commission Member?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>Foot Soaking Fiver</Name>
     <NPCID>759</NPCID>
-    <Animation>100759</Animation>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-5742.5390625</x>
-      <y>4490.94091796875</y>
-      <z>-5441.4609375</z>
-      <r>135</r>
-    </Position>
-	</Positions>
+    <Name>171-Foot Soaking Fiver?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>Soaker Dude</Name>
     <NPCID>760</NPCID>
-    <Animation>100760</Animation>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-8949.8037109375</x>
-      <y>4300.1787109375</y>
-      <z>-3294.12084960937</z>
-      <r>156.000015258789</r>
-    </Position>
-	</Positions>
+    <Name>172-Soaker Dude?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>Bathing Bambina</Name>
     <NPCID>761</NPCID>
-    <Animation>100761</Animation>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-9062.15234375</x>
-      <y>4298.8876953125</y>
-      <z>-3342.27416992188</z>
-      <r>139</r>
-    </Position>
-	</Positions>
+    <Name>173-Bathing Bambina?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>Lone Soaker</Name>
     <NPCID>762</NPCID>
-    <Animation>100762</Animation>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-9787.45703125</x>
-      <y>4418.56494140625</y>
-      <z>-5485.0322265625</z>
-      <r>19.9999561309814</r>
-    </Position>
-	</Positions>
+    <Name>174-Lone Soaker?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>Sauna Dude</Name>
     <NPCID>763</NPCID>
-    <Animation>100763</Animation>
-    <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>306</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-      <x>-6069.32666015625</x>
-      <y>4299.5205078125</y>
-      <z>-2089.4208984375</z>
-      <r>149.999954223633</r>
-    </Position>
-	</Positions>
+    <Name>175-Sauna Dude?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>Motivated Fourth</Name>
-    <NPCID>764</NPCID>
-    <Animation>100764</Animation>
-	<Animations>
-		<Animation>100764</Animation>
-		<Animation>110764</Animation>
-		<Animation>120764</Animation>
-		<Animation>110019</Animation>
-		<Animation>110102</Animation>
-	</Animations>
+    <NPCID>740</NPCID>
+    <Name>176-???????</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>4640.633</x>
+        <y>3076.674</y>
+        <z>384.193</z>
+        <r>-63.999996</r>
+      </Position>
+    </Positions>
+    <Animation>100740</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>Curious Fiver</Name>
-    <NPCID>765</NPCID>
-    <Animation>100765</Animation>
-	<Animations>
-		<Animation>100765</Animation>
-		<Animation>110765</Animation>
-		<Animation>120765</Animation>
-	</Animations>
+    <NPCID>741</NPCID>
+    <Name>Ambitious Fourth</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>2204.095</x>
+        <y>2938.8718</y>
+        <z>-1315.5657</z>
+        <r>0</r>
+      </Position>
+    </Positions>
+    <Animation>100741</Animation>
+    <Animations>
+      <Animation>100741</Animation>
+      <Animation>110741</Animation>
+      <Animation>120741</Animation>
+    </Animations>
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>Fussy Fourth</Name>
     <NPCID>766</NPCID>
+    <Name>178-Fussy Fourth?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>743</NPCID>
+    <Name>Reliable Fiver</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>3413.384</x>
+        <y>2964.1138</y>
+        <z>-404.84015</z>
+        <r>30</r>
+      </Position>
+    </Positions>
+    <Animation>100743</Animation>
+    <Animations>
+      <Animation>100743</Animation>
+      <Animation>110743</Animation>
+      <Animation>120743</Animation>
+    </Animations>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>9926</NPCID>
+    <Name>180-?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>9925</NPCID>
+    <Name>181-?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>9924</NPCID>
+    <Name>182-?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>9923</NPCID>
+    <Name>183-?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>9922</NPCID>
+    <Name>184-?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>749</NPCID>
+    <Name>185-Studious Biologist?</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1780.1104</x>
+        <y>3349.065</y>
+        <z>-5155.3877</z>
+        <r>146.00002</r>
+      </Position>
+    </Positions>
+    <Animation>100749</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>9920</NPCID>
+    <Name>186-?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>9919</NPCID>
+    <Name>187-?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>9918</NPCID>
+    <Name>188-?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>9917</NPCID>
+    <Name>189-?</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>754</NPCID>
+    <Name>Dual-blading Hunter</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-3450.4148</x>
+        <y>3480.108</y>
+        <z>-1737.9434</z>
+        <r>169.99991</r>
+      </Position>
+    </Positions>
+    <Animation>100754</Animation>
+    <Animations />
+    <Warning>Story</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>755</NPCID>
+    <Name>Felyne Server</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-3655.8</x>
+        <y>5303</y>
+        <z>-6029.2</z>
+        <r>-112</r>
+      </Position>
+    </Positions>
+    <Animation>100755</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>756</NPCID>
+    <Name>Felyne Waiter</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-3655.8</x>
+        <y>5303</y>
+        <z>-6029.2</z>
+        <r>-112</r>
+      </Position>
+    </Positions>
+    <Animation>100755</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>757</NPCID>
+    <Name>Bowgunner Hunter</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-2934.7078</x>
+        <y>4538.2656</y>
+        <z>-6494.9272</z>
+        <r>0</r>
+      </Position>
+    </Positions>
+    <Animation>100757</Animation>
+    <Animations />
+    <Warning>Story</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>758</NPCID>
+    <Name>Commission Member</Name>
+    <Rooms />
+    <Positions />
+    <Animation>307</Animation>
+    <Animations />
+    <Warning>Iceborne-Anim</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>759</NPCID>
+    <Name>Foot Soaking Fiver</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-5742.539</x>
+        <y>4490.941</y>
+        <z>-5441.461</z>
+        <r>135</r>
+      </Position>
+    </Positions>
+    <Animation>100759</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>760</NPCID>
+    <Name>Soaker Dude</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-8949.804</x>
+        <y>4300.1787</y>
+        <z>-3294.1208</z>
+        <r>156.00002</r>
+      </Position>
+    </Positions>
+    <Animation>100760</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>761</NPCID>
+    <Name>Bathing Bambina</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-9062.152</x>
+        <y>4298.8877</y>
+        <z>-3342.2742</z>
+        <r>139</r>
+      </Position>
+    </Positions>
+    <Animation>100761</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>762</NPCID>
+    <Name>Lone Soaker</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-9787.457</x>
+        <y>4418.565</y>
+        <z>-5485.032</z>
+        <r>19.999956</r>
+      </Position>
+    </Positions>
+    <Animation>100762</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>763</NPCID>
+    <Name>Sauna Dude</Name>
+    <Rooms>
+      <Room>306</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-6069.3267</x>
+        <y>4299.5205</y>
+        <z>-2089.421</z>
+        <r>149.99995</r>
+      </Position>
+    </Positions>
+    <Animation>100763</Animation>
+    <Animations />
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>764</NPCID>
+    <Name>Motivated Fourth</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>868.0425</x>
+        <y>3664</y>
+        <z>-6805.1484</z>
+        <r>143.70883</r>
+      </Position>
+    </Positions>
+    <Animation>100764</Animation>
+    <Animations>
+      <Animation>100764</Animation>
+      <Animation>110764</Animation>
+      <Animation>120764</Animation>
+      <Animation>110019</Animation>
+      <Animation>110102</Animation>
+    </Animations>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>765</NPCID>
+    <Name>Curious Fiver</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1237.5177</x>
+        <y>3323.7761</y>
+        <z>-2704.4082</z>
+        <r>-38.000122</r>
+      </Position>
+    </Positions>
+    <Animation>100765</Animation>
+    <Animations>
+      <Animation>100765</Animation>
+      <Animation>110765</Animation>
+      <Animation>120765</Animation>
+    </Animations>
+    <Warning>Iceborne</Warning>
+  </NPC>
+  <NPC>
+    <NPCID>766</NPCID>
+    <Name>Fussy Fourth</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>932.90247</x>
+        <y>2971.6616</y>
+        <z>-213.24913</z>
+        <r>-116.742615</r>
+      </Position>
+    </Positions>
     <Animation>100766</Animation>
-	<Animations>
-		<Animation>100766</Animation>
-		<Animation>110766</Animation>
-		<Animation>110103</Animation>
-		<Animation>100105</Animation>
-	</Animations>
+    <Animations>
+      <Animation>100766</Animation>
+      <Animation>110766</Animation>
+      <Animation>110103</Animation>
+      <Animation>100105</Animation>
+    </Animations>
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>Overzealous Fifth</Name>
     <NPCID>767</NPCID>
+    <Name>Overzealous Fifth</Name>
+    <Rooms>
+      <Room>305</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-2104.9297</x>
+        <y>3930.5083</y>
+        <z>-4348.0684</z>
+        <r>-116.742615</r>
+      </Position>
+    </Positions>
     <Animation>100767</Animation>
-	<Animations>
-		<Animation>100767</Animation>
-		<Animation>110767</Animation>
-		<Animation>100766</Animation>
-	</Animations>
+    <Animations>
+      <Animation>100767</Animation>
+      <Animation>110767</Animation>
+      <Animation>100766</Animation>
+    </Animations>
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>204-?</Name>
     <NPCID>9902</NPCID>
+    <Name>204-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>205-?</Name>
     <NPCID>9901</NPCID>
+    <Name>205-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>206-?</Name>
     <NPCID>9900</NPCID>
+    <Name>206-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>207-Young Smithy?</Name>
     <NPCID>781</NPCID>
+    <Name>207-Young Smithy?</Name>
+    <Rooms />
+    <Positions />
     <Animation>100781</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>208-Vice Chief Ecologist?</Name>
     <NPCID>782</NPCID>
+    <Name>208-Vice Chief Ecologist?</Name>
+    <Rooms />
+    <Positions />
     <Animation>100782</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
+    <NPCID>9899</NPCID>
     <Name>209-?</Name>
-    <NPCID>9899</NPCID><!-- 783? -->
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>210-???????</Name> <!-- Tech chief? -->
     <NPCID>784</NPCID>
+    <Name>210-???????</Name>
+    <Rooms />
+    <Positions />
     <Animation>100784</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>211-?</Name>
     <NPCID>9898</NPCID>
+    <Name>211-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>212-?</Name>
     <NPCID>9897</NPCID>
+    <Name>212-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>213-?</Name>
     <NPCID>9896</NPCID>
+    <Name>213-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>214-?</Name>
     <NPCID>9895</NPCID>
+    <Name>214-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>215-?</Name>
     <NPCID>9894</NPCID>
+    <Name>215-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>216-?</Name>
     <NPCID>9893</NPCID>
+    <Name>216-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>217-?</Name>
     <NPCID>9892</NPCID>
+    <Name>217-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>Smithy Vendor</Name>
     <NPCID>792</NPCID>
+    <Name>Smithy Vendor</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>-336.1404</x>
+        <y>-634.0219</y>
+        <z>-457.2874</z>
+        <r>13</r>
+      </Position>
+    </Positions>
     <Animation>100792</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>303</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-		<x>-336.1404</x>
-		<y>-634.0219</y>
-		<z>-457.2874</z>
-		<r>13</r>
-	</Position>
-	</Positions>
   </NPC>
   <NPC>
-    <Name>Third Fleet Resources</Name>
     <NPCID>793</NPCID>
+    <Name>Third Fleet Resources</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1560.265</x>
+        <y>-130.0677</y>
+        <z>1073.139</z>
+        <r>-146.9999</r>
+      </Position>
+    </Positions>
     <Animation>100793</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
-	<Rooms>
-		<Room>303</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-		<x>1560.265</x>
-		<y>-130.0677</y>
-		<z>1073.139</z>
-		<r>-146.9999</r>
-	</Position>
-	</Positions>
   </NPC>
   <NPC>
-    <Name>220-?</Name>
     <NPCID>9891</NPCID>
+    <Name>220-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>221-?</Name>
     <NPCID>9890</NPCID>
+    <Name>221-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>222-?</Name>
     <NPCID>9889</NPCID>
+    <Name>222-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>223-?</Name>
     <NPCID>9888</NPCID>
+    <Name>223-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>224-?</Name>
     <NPCID>9887</NPCID>
+    <Name>224-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>225-?</Name>
     <NPCID>9886</NPCID>
+    <Name>225-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>226-?</Name>
     <NPCID>9885</NPCID>
+    <Name>226-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>227-?</Name>
     <NPCID>9884</NPCID>
+    <Name>227-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>228-?</Name>
     <NPCID>9883</NPCID>
+    <Name>228-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>229-?</Name>
     <NPCID>9882</NPCID>
+    <Name>229-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>230-?</Name>
     <NPCID>9881</NPCID>
+    <Name>230-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>231-?</Name>
     <NPCID>9880</NPCID>
+    <Name>231-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>232-?</Name>
     <NPCID>9879</NPCID>
+    <Name>232-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>233-?</Name>
     <NPCID>9878</NPCID>
+    <Name>233-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>234-?</Name>
     <NPCID>9877</NPCID>
+    <Name>234-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>235-?</Name>
     <NPCID>9876</NPCID>
+    <Name>235-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>236-?</Name>
     <NPCID>9875</NPCID>
+    <Name>236-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>237-?</Name>
     <NPCID>9874</NPCID>
+    <Name>237-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>238-?</Name>
     <NPCID>9873</NPCID>
+    <Name>238-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>239-?</Name>
     <NPCID>9872</NPCID>
+    <Name>239-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>240-?</Name>
     <NPCID>9871</NPCID>
+    <Name>240-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>241-?</Name>
     <NPCID>9870</NPCID>
+    <Name>241-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>242-?</Name>
     <NPCID>9869</NPCID>
+    <Name>242-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>243-?</Name>
     <NPCID>9868</NPCID>
+    <Name>243-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>244-?</Name>
     <NPCID>9867</NPCID>
+    <Name>244-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>245-?</Name>
     <NPCID>9866</NPCID>
+    <Name>245-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>246-?</Name>
     <NPCID>9865</NPCID>
+    <Name>246-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>247-?</Name>
     <NPCID>9864</NPCID>
+    <Name>247-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>248-?</Name>
     <NPCID>9863</NPCID>
+    <Name>248-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>249-?</Name>
     <NPCID>9862</NPCID>
+    <Name>249-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>250-?</Name>
     <NPCID>9861</NPCID>
+    <Name>250-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>251-?</Name>
     <NPCID>9860</NPCID>
+    <Name>251-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>252-?</Name>
     <NPCID>9859</NPCID>
+    <Name>252-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>253-?</Name>
     <NPCID>9858</NPCID>
+    <Name>253-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>254-?</Name>
     <NPCID>9857</NPCID>
+    <Name>254-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>255-?</Name>
     <NPCID>9856</NPCID>
+    <Name>255-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>256-?</Name>
     <NPCID>9855</NPCID>
+    <Name>256-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>257-?</Name>
     <NPCID>9854</NPCID>
+    <Name>257-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>258-?</Name>
     <NPCID>9853</NPCID>
+    <Name>258-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>259-?</Name>
     <NPCID>9852</NPCID>
+    <Name>259-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>260-?</Name>
     <NPCID>9851</NPCID>
+    <Name>260-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>261-?</Name>
     <NPCID>9850</NPCID>
+    <Name>261-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>262-?</Name>
     <NPCID>9849</NPCID>
+    <Name>262-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>263-?</Name>
     <NPCID>9848</NPCID>
+    <Name>263-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>264-?</Name>
     <NPCID>9847</NPCID>
+    <Name>264-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>265-?</Name>
     <NPCID>9846</NPCID>
+    <Name>265-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>266-?</Name>
     <NPCID>9845</NPCID>
+    <Name>266-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>267-?</Name>
     <NPCID>9844</NPCID>
+    <Name>267-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>268-?</Name>
     <NPCID>9843</NPCID>
+    <Name>268-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>269-???????</Name>
     <NPCID>843</NPCID>
+    <Name>269-???????</Name>
+    <Rooms />
+    <Positions />
     <Animation>3026</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>270-?</Name>
     <NPCID>9842</NPCID>
+    <Name>270-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>271-??????</Name>
     <NPCID>845</NPCID>
+    <Name>271-??????</Name>
+    <Rooms />
+    <Positions />
     <Animation>3025</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
   </NPC>
   <NPC>
-    <Name>272-?</Name>
     <NPCID>9841</NPCID>
+    <Name>272-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>273-?</Name>
     <NPCID>9840</NPCID>
+    <Name>273-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>274-?</Name>
     <NPCID>9839</NPCID>
+    <Name>274-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>275-?</Name>
     <NPCID>9838</NPCID>
+    <Name>275-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>276-?</Name>
     <NPCID>9837</NPCID>
+    <Name>276-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>277-?</Name>
     <NPCID>9836</NPCID>
+    <Name>277-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>278-?</Name>
     <NPCID>9835</NPCID>
+    <Name>278-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>279-?</Name>
     <NPCID>9834</NPCID>
+    <Name>279-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>280-?</Name>
     <NPCID>9833</NPCID>
+    <Name>280-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>281-???????</Name>
     <NPCID>855</NPCID>
+    <Name>281-???????</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1033.089</x>
+        <y>-1027.038</y>
+        <z>1073.334</z>
+        <r>120.9999</r>
+      </Position>
+    </Positions>
     <Animation>210</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
-	<Rooms>
-	<Room>303</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-		<x>1033.089</x>
-		<y>-1027.038</y>
-		<z>1073.334</z>
-		<r>120.9999</r>
-	</Position>
-	</Positions>
   </NPC>
   <NPC>
-    <Name>282-???????</Name>
     <NPCID>856</NPCID>
+    <Name>282-???????</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1128.136</x>
+        <y>-1027.003</y>
+        <z>976.1337</z>
+        <r>-15</r>
+      </Position>
+    </Positions>
     <Animation>206</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
-	<Rooms>
-	<Room>303</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-		<x>1128.136</x>
-		<y>-1027.003</y>
-		<z>976.1337</z>
-		<r>-15</r>
-	</Position>
-	</Positions>
   </NPC>
   <NPC>
-    <Name>283-?</Name>
     <NPCID>9832</NPCID>
+    <Name>283-?</Name>
+    <Rooms />
+    <Positions />
     <Animation>307</Animation>
+    <Animations />
     <Warning>Iceborne-Anim</Warning>
   </NPC>
   <NPC>
-    <Name>284-???????</Name>
     <NPCID>858</NPCID>
+    <Name>284-???????</Name>
+    <Rooms>
+      <Room>303</Room>
+    </Rooms>
+    <Positions>
+      <Position>
+        <x>1133.287</x>
+        <y>-1027.036</y>
+        <z>1073.418</z>
+        <r>-159.9998</r>
+      </Position>
+    </Positions>
     <Animation>212</Animation>
+    <Animations />
     <Warning>Iceborne</Warning>
-	<Rooms>
-	<Room>303</Room>
-	</Rooms>
-	<Positions>
-	<Position>
-		<x>1133.287</x>
-		<y>-1027.036</y>
-		<z>1073.418</z>
-		<r>-159.9998</r>
-	</Position>
-	</Positions>
   </NPC>
-
-  <!--  Unknown Seliana NPCs
+  
+    <!--  Unknown Seliana NPCs
   
   <NPC>
     <Name>314-???????</Name>
@@ -2568,16 +3545,12 @@
     <Warning>?</Warning>
   </NPC>
   
-
 Missing Animations: (will crash)
 135
 136
 141-163
 1xxx,2xxx,3xxx... variations still possible
-
 Probable Missing Animations: (likely crash)
 164-200
-
 -->
-
 </NPCList>
