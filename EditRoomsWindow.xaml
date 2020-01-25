@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MHWRoommates"
         mc:Ignorable="d"
-        Title="NPC Lists" Height="450" MinHeight="450" Width="600" MinWidth="600" Closing="Window_Closing">
-    <TabControl x:Name="Room_Tabs" ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectionChanged="Room_Tabs_SelectionChanged">
-        <TabItem Header="Living Quarters">
+        Title="NPC Lists" Height="490" MinHeight="490" Width="625" MinWidth="625" Closing="Window_Closing">
+    <TabControl x:Name="Room_Tabs" ScrollViewer.VerticalScrollBarVisibility="Disabled" 
+                SelectionChanged="Room_Tabs_SelectionChanged" TabStripPlacement="Left" HorizontalContentAlignment="Left">
+        <TabItem Width="125" Height="45">
+            <TabItem.Header>
+                <TextBlock Text="Living Quarters" FontSize="14" FontWeight="Bold"/>
+            </TabItem.Header>
             <Grid Background="#FFE5E5E5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10*"/>
@@ -35,7 +39,10 @@
                 <Button x:Name="Button_Delete_Living" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
-        <TabItem Header="Private Quarters">
+        <TabItem Height="45">
+            <TabItem.Header>
+                <TextBlock Text="Private Quarters" FontSize="14" FontWeight="Bold"/>
+            </TabItem.Header>
             <Grid Background="#FFE5E5E5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10*"/>
@@ -63,7 +70,10 @@
                 <Button x:Name="Button_Delete_Private" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
-        <TabItem Header="Private Suite">
+        <TabItem Height="45">
+            <TabItem.Header>
+                <TextBlock Text="Private Suite" FontSize="14" FontWeight="Bold"/>
+            </TabItem.Header>
             <Grid Background="#FFE5E5E5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10*"/>
@@ -91,7 +101,10 @@
                 <Button x:Name="Button_Delete_Suite" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
-        <TabItem Header="Seliana Suite">
+        <TabItem Height="45">
+            <TabItem.Header>
+                <TextBlock Text="Seliana Suite" FontSize="14" FontWeight="Bold"/>
+            </TabItem.Header>
             <Grid Background="#FFE5E5E5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10*"/>
@@ -119,7 +132,10 @@
                 <Button x:Name="Button_Delete_SelianaSuite" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
-        <TabItem Header="Astera">
+        <TabItem Height="45">
+            <TabItem.Header>
+                <TextBlock Text="Astera" FontSize="14" FontWeight="Bold"/>
+            </TabItem.Header>
             <Grid Background="#FFE5E5E5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10*"/>
@@ -147,8 +163,15 @@
                 <Button x:Name="Button_Delete_Astera" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
-        <TabItem Header="Astera Hub" IsEnabled="False"></TabItem>
-        <TabItem Header="Seliana">
+        <TabItem Height="45" IsEnabled="False">
+            <TabItem.Header>
+                <TextBlock Text="Astera Hub" FontSize="14"/>
+            </TabItem.Header>
+        </TabItem>
+        <TabItem Height="45">
+            <TabItem.Header>
+                <TextBlock Text="Seliana" FontSize="14" FontWeight="Bold"/>
+            </TabItem.Header>
             <Grid Background="#FFE5E5E5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10*"/>
@@ -176,7 +199,10 @@
                 <Button x:Name="Button_Delete_Seliana" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
-        <TabItem Header="Seliana Pub">
+        <TabItem Height="45">
+            <TabItem.Header>
+                <TextBlock Text="Seliana Pub" FontSize="14" FontWeight="Bold"/>
+            </TabItem.Header>
             <Grid Background="#FFE5E5E5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10*"/>
@@ -204,7 +230,10 @@
                 <Button x:Name="Button_Delete_SelianaPub" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
         </TabItem>
-        <TabItem Header="Research Base">
+        <TabItem Height="45">
+            <TabItem.Header>
+                <TextBlock Text="Research Base" FontSize="14" FontWeight="Bold"/>
+            </TabItem.Header>
             <Grid Background="#FFE5E5E5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10*"/>
@@ -231,6 +260,11 @@
                 <Button x:Name="Button_Save_ResearchBase" Content="Save" Click="SaveSelectedSOBJL"  Grid.ColumnSpan="3" Margin="100,10,100,3" Grid.Row="1" VerticalAlignment="Center" Height="50" FontWeight="Bold" Background="#FF78B8F7" BorderBrush="#FF1E3042"/>
                 <Button x:Name="Button_Delete_ResearchBase" Content="Delete" Click="Button_Delete_Click" Grid.ColumnSpan="3" Margin="160,3,160,5" Grid.Row="2" VerticalAlignment="Center" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold" IsEnabled="False"/>
             </Grid>
+        </TabItem>
+        <TabItem Height="45" IsEnabled="False">
+            <TabItem.Header>
+                <TextBlock Text="Training Camp" FontSize="14"/>
+            </TabItem.Header>
         </TabItem>
     </TabControl>
 </Window>

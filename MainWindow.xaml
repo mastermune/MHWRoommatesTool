@@ -6,16 +6,16 @@
         xmlns:local="clr-namespace:MHWRoommates"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="MHW Roommates" Height="285" Width="600" MinHeight="285" MinWidth="600" MaxHeight="285">
+        Title="MHW Roommates" Height="285" Width="625" MinHeight="285" MinWidth="625" MaxHeight="285">
     <StackPanel>
         <DockPanel LastChildFill="True">
             <Label IsHitTestVisible="False" DockPanel.Dock="Left">NPC:</Label>
-            <ComboBox x:Name="NPC_Select" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" Width="175" SelectionChanged="NPCRoom_Select_SelectionChanged" TabIndex="0"/>
+            <ComboBox x:Name="NPC_Select" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" Width="225" SelectionChanged="NPCRoom_Select_SelectionChanged" TabIndex="0"/>
             <Button x:Name="Colour_Help_Button" Content="?" Background="Yellow" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="5,0,0,0" Width="20" Click="Colour_Help_Button_Click" FontWeight="Bold" BorderBrush="#FF4D4F19" TabIndex="13"/>
             <Button x:Name="Select_Button" IsEnabled="False" Content="Select" Width="47" DockPanel.Dock="Right" Margin="0,0,5,0" VerticalAlignment="Center" Click="Select_Button_Click" Background="#FF78B8F7" BorderBrush="#FF1E3042" FontWeight="Bold" TabIndex="3"/>
             <xctk:IntegerUpDown x:Name="NPC_Instance" DockPanel.Dock="Right" VerticalAlignment="Center" FormatString="D3" Increment="1" Margin="0,0,5,0" ValueChanged="NPC_Instance_ValueChanged" Minimum="0" Maximum="999" IsEnabled="False" TabIndex="2"/>
             <Label IsHitTestVisible="False" DockPanel.Dock="Right" HorizontalAlignment="Right" VerticalAlignment="Center">Copy:</Label>
-            <ComboBox x:Name="Room_Select" HorizontalAlignment="Right" VerticalAlignment="Center" Width="125" DockPanel.Dock="Right" HorizontalContentAlignment="Right" Margin="0,0,5,0" SelectionChanged="NPCRoom_Select_SelectionChanged" TabIndex="1"/>
+            <ComboBox x:Name="Room_Select" HorizontalAlignment="Right" VerticalAlignment="Center" Width="140" DockPanel.Dock="Right" HorizontalContentAlignment="Right" Margin="0,0,5,0" SelectionChanged="NPCRoom_Select_SelectionChanged" TabIndex="1"/>
             <Label IsHitTestVisible="False" DockPanel.Dock="Right" HorizontalAlignment="Right" HorizontalContentAlignment="Right">Room:</Label>
         </DockPanel>
         <GroupBox Header="Position">
@@ -62,9 +62,14 @@
         </GroupBox>
         <DockPanel LastChildFill="True">
             <Label IsHitTestVisible="False" DockPanel.Dock="Left">Animation:</Label>
-            <ComboBox IsEnabled="False" x:Name="Animation_Select" DockPanel.Dock="Left" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" Margin="0,0,5,0" TabIndex="10"/>
+            <ComboBox IsEnabled="False" x:Name="Animation_Select" DockPanel.Dock="Left" VerticalAlignment="Center"
+                      HorizontalContentAlignment="Stretch" Margin="0,0,5,0" TabIndex="10" Width="250"/>
+            <ComboBox IsEnabled="False" x:Name="Behavior_Select" DockPanel.Dock="Right" VerticalAlignment="Center"
+                      HorizontalContentAlignment="Stretch" Margin="0,0,5,0" TabIndex="11" Width="200"/>
+            <Label IsHitTestVisible="False" DockPanel.Dock="Right" IsEnabled="False" 
+                   HorizontalAlignment="Right" HorizontalContentAlignment="Right">Behavior:</Label>
         </DockPanel>
-        <Button x:Name="Save_Button" Margin="100,10,100,3" TabIndex="11" IsEnabled="False" Click="SaveButton_Click" Background="#FF78B8F7" BorderBrush="#FF1E3042" Height="50" FontWeight="Bold">Save</Button>
-        <Button x:Name="Delete_Button" Margin="160,3,160,5" TabIndex="12" IsEnabled="False" Content="Delete" Click="Delete_Button_Click" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold"/>
+        <Button x:Name="Save_Button" Margin="100,10,100,3" TabIndex="12" IsEnabled="False" Click="SaveButton_Click" Background="#FF78B8F7" BorderBrush="#FF1E3042" Height="50" FontWeight="Bold">Save</Button>
+        <Button x:Name="Delete_Button" Margin="160,3,160,5" TabIndex="13" IsEnabled="False" Content="Delete" Click="Delete_Button_Click" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold"/>
     </StackPanel>
 </Window>
