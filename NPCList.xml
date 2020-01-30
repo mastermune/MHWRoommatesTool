@@ -734,12 +734,12 @@
   </NPC>
   <NPC>
     <NPCID>35</NPCID>
-    <Name>Housekeeper Alt 3</Name>
+    <Name>Housekeeper(Training)</Name>
     <Rooms />
     <Positions />
     <Animation>16</Animation>
     <Animations />
-    <Warning>Placeholder</Warning>
+    <Warning>Animation</Warning>
   </NPC>
   <NPC>
     <NPCID>36</NPCID>
