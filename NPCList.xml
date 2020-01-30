@@ -25,6 +25,8 @@
     <Animations>
       <Animation>1</Animation>
       <Animation>1001</Animation>
+      <Animation>100001</Animation>
+      <Animation>120001</Animation>
     </Animations>
     <Warning />
   </NPC>
@@ -59,7 +61,9 @@
     <Animation>2</Animation>
     <Animations>
       <Animation>2</Animation>
+      <Animation>2002</Animation>
       <Animation>12002</Animation>
+      <Animation>120002</Animation>
     </Animations>
     <Warning />
   </NPC>
@@ -96,6 +100,11 @@
       <Animation>3</Animation>
       <Animation>1003</Animation>
       <Animation>2003</Animation>
+      <Animation>100003</Animation>
+      <Animation>110003</Animation>
+      <Animation>130003</Animation>
+      <Animation>140003</Animation>
+      <Animation>150003</Animation>
     </Animations>
     <Warning />
   </NPC>
@@ -125,6 +134,8 @@
       <Animation>4</Animation>
       <Animation>1004</Animation>
       <Animation>2004</Animation>
+      <Animation>100004</Animation>
+      <Animation>110004</Animation>
     </Animations>
     <Warning />
   </NPC>
@@ -176,6 +187,8 @@
       <Animation>6</Animation>
       <Animation>1006</Animation>
       <Animation>2006</Animation>
+      <Animation>100006</Animation>
+      <Animation>110004</Animation>
     </Animations>
     <Warning />
   </NPC>
@@ -396,6 +409,8 @@
     <Animations>
       <Animation>17</Animation>
       <Animation>1017</Animation>
+      <Animation>100017</Animation>
+      <Animation>110017</Animation>
     </Animations>
     <Warning>Missing</Warning>
   </NPC>
