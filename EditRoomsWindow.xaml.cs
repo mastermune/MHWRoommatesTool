@@ -11,6 +11,8 @@ namespace MHWRoommates
 {
     public partial class EditRoomsWindow : Window
     {
+        public bool MoveBothWindows;
+
         private ObservableCollection<NPC> usingLivingNPCs;
         private ObservableCollection<NPC> usingPrivateNPCs;
         private ObservableCollection<NPC> usingSuiteNPCs;
@@ -26,6 +28,7 @@ namespace MHWRoommates
         public EditRoomsWindow(NPCList npcList)
         {
             InitializeComponent();
+            MoveBothWindows = true;
 
             usingLivingNPCs = new ObservableCollection<NPC>();
             usingPrivateNPCs = new ObservableCollection<NPC>();
@@ -477,11 +480,6 @@ namespace MHWRoommates
             }
         }
 
-        public void Window_Closing(object sender, CancelEventArgs e)
-        {
-            e.Cancel = true;
-        }
-
         private void Room_Tabs_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             switch(Room_Tabs.SelectedIndex)
@@ -495,6 +493,22 @@ namespace MHWRoommates
                 case 7: selectedRoom = SELIANA_PUB; selectedList = usingSelianaPubNPCs; break;
                 case 8: selectedRoom = RESEARCH_BASE; selectedList = usingResearchBaseNPCs; break;
             }
+        }
+
+        public void Window_Closing(object sender, CancelEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
+        private void Window_LocationChanged(object sender, System.EventArgs e)
+        {
+            if (!MoveBothWindows) return;
+            if (Owner is null) return;
+
+            ((MainWindow)Owner).MoveBothWindows = false;
+            Owner.Left = this.Left;
+            Owner.Top = this.Top - Owner.Height;
+            ((MainWindow)Owner).MoveBothWindows = true;
         }
     }
 }

@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:MHWRoommates"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="MHW Roommates" Height="285" Width="625" MinHeight="285" MinWidth="625" MaxHeight="285">
+        Title="MHW Roommates" Height="285" Width="625" MinHeight="285" MinWidth="625" MaxHeight="285"
+        LocationChanged="Window_LocationChanged">
     <StackPanel>
         <DockPanel LastChildFill="True">
             <Label IsHitTestVisible="False" DockPanel.Dock="Left">NPC:</Label>
@@ -71,5 +72,7 @@
         </DockPanel>
         <Button x:Name="Save_Button" Margin="100,10,100,3" TabIndex="12" IsEnabled="False" Click="SaveButton_Click" Background="#FF78B8F7" BorderBrush="#FF1E3042" Height="50" FontWeight="Bold">Save</Button>
         <Button x:Name="Delete_Button" Margin="160,3,160,5" TabIndex="13" IsEnabled="False" Content="Delete" Click="Delete_Button_Click" BorderBrush="#FF422323" Background="#FFF56767" FontWeight="Bold"/>
+        <CheckBox x:Name="Window_Follow_CheckBox" HorizontalAlignment="Right" IsChecked="True" Unchecked="Window_Follow_CheckBox_Unchecked" Checked="Window_Follow_CheckBox_Checked"
+                  FlowDirection="RightToLeft" Content="Move Both Windows" Margin="0,-15,5,0"/>
     </StackPanel>
 </Window>

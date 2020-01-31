@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MHWRoommates"
         mc:Ignorable="d"
-        Title="NPC Lists" Height="490" MinHeight="490" Width="625" MinWidth="625" Closing="Window_Closing">
+        Title="NPC Lists" Height="490" MinHeight="490" Width="625" MinWidth="625" Closing="Window_Closing"
+        LocationChanged="Window_LocationChanged">
     <TabControl x:Name="Room_Tabs" ScrollViewer.VerticalScrollBarVisibility="Disabled" 
                 SelectionChanged="Room_Tabs_SelectionChanged" TabStripPlacement="Left" HorizontalContentAlignment="Left">
         <TabItem Width="125" Height="45">

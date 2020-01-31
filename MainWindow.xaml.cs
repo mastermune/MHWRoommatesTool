@@ -10,11 +10,13 @@ namespace MHWRoommates
     public partial class MainWindow : Window
     {
         private NPCList npcList;
+        public bool MoveBothWindows;
 
         private readonly string curDir = Directory.GetCurrentDirectory();
 
         public MainWindow(NPCList list)
         {
+            MoveBothWindows = true;
             InitializeComponent();
             PopulateRoomComboBox();
             npcList = list;
@@ -434,6 +436,38 @@ namespace MHWRoommates
                 "Light Blue: Something to do with Iceborne. Be careful.";
 
             MessageBox.Show(colourInfo, "Colour Key", MessageBoxButton.OK, MessageBoxImage.Question);
+        }
+
+        private void Window_LocationChanged(object sender, System.EventArgs e)
+        {
+            if (OwnedWindows.Count <= 0) return;
+            if (!MoveBothWindows) return;
+
+            EditRoomsWindow roomsWindow = (EditRoomsWindow)OwnedWindows[0];
+            roomsWindow.MoveBothWindows = false;
+            roomsWindow.Top = this.Top + this.Height;
+            roomsWindow.Left = this.Left;
+            roomsWindow.MoveBothWindows = true;
+        }
+
+        private void Window_Follow_CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            setWindowFollow(true);
+        }
+
+        private void Window_Follow_CheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            setWindowFollow(false);
+        }
+
+        private void setWindowFollow(bool isFollowing)
+        {
+            this.MoveBothWindows = isFollowing;
+
+            if (OwnedWindows.Count <= 0) return;
+
+            EditRoomsWindow roomsWindow = (EditRoomsWindow)OwnedWindows[0];
+            roomsWindow.MoveBothWindows = this.MoveBothWindows;
         }
     }
 }
